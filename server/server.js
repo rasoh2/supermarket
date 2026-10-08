@@ -14,7 +14,9 @@ import {
   verifyPassword, 
   encryptField, 
   encryptDeterministic, 
-  decryptField 
+  decryptField,
+  generateSessionToken,
+  verifySessionToken
 } from './crypto-security.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -57,15 +59,27 @@ function parseBody(req) {
   });
 }
 
-// Helper para responder JSON
+// Helper para responder JSON con cabeceras defensivas (SecOps Gilfoyle Standards)
 function sendJson(res, statusCode, data) {
   res.writeHead(statusCode, {
     'Content-Type': 'application/json; charset=utf-8',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'X-Content-Type-Options': 'nosniff',
+    'X-Frame-Options': 'DENY',
+    'X-XSS-Protection': '1; mode=block',
+    'Referrer-Policy': 'strict-origin-when-cross-origin'
   });
   res.end(JSON.stringify(data));
+}
+
+// Helper para extraer y verificar usuario autenticado desde cabecera Authorization (Bearer)
+function getAuthenticatedUser(req) {
+  const authHeader = req.headers['authorization'];
+  if (!authHeader) return null;
+  const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : authHeader;
+  return verifySessionToken(token);
 }
 
 // Helper para registrar log SIEM
@@ -157,8 +171,8 @@ async function handleApi(req, res, url) {
     db.prepare('UPDATE USUARIO_SISTEMA SET ultimo_acceso = ? WHERE id_usuario = ?').run(new Date().toISOString(), user.id_usuario);
     logSiem('ADMIN_AUTH_SUCCESS', 'INFO', { id_usuario: user.id_usuario, username: user.username, rol: user.rol }, ip, ua);
 
-    // Token simulado para la sesión
-    const token = `supermarket_jwt_${user.id_usuario}_${Date.now()}`;
+    // Token firmado criptográficamente con HMAC-SHA256 (SecOps Gilfoyle Standards)
+    const token = generateSessionToken(user);
     return sendJson(res, 200, {
       success: true,
       token,
@@ -597,7 +611,11 @@ const server = http.createServer(async (req, res) => {
       }
       res.writeHead(200, {
         'Content-Type': contentType,
-        'Cache-Control': 'no-cache'
+        'Cache-Control': 'no-cache',
+        'X-Content-Type-Options': 'nosniff',
+        'X-Frame-Options': 'DENY',
+        'X-XSS-Protection': '1; mode=block',
+        'Referrer-Policy': 'strict-origin-when-cross-origin'
       });
       res.end(content);
     });

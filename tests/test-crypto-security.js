@@ -11,7 +11,9 @@ import {
   verifyPassword, 
   encryptField, 
   encryptDeterministic, 
-  decryptField 
+  decryptField,
+  generateSessionToken,
+  verifySessionToken
 } from '../server/crypto-security.js';
 import { db, initDatabase } from '../server/db.js';
 
@@ -85,6 +87,24 @@ async function runCryptoTests() {
   const clientesEnBd = db.prepare("SELECT id_cliente, telefono_whatsapp, direccion_despacho FROM CLIENTE_CRM LIMIT 3").all();
   const clientesCifradosEnDisco = clientesEnBd.some(c => c.telefono_whatsapp.startsWith('enc_') || c.direccion_despacho.startsWith('enc$'));
   assertTest('C-12: Columnas sensibles de CLIENTE_CRM cifradas en almacenamiento persistente', clientesCifradosEnDisco, `Datos en disco protegidos con AES-256-GCM.`);
+
+  // 8. Verificación de tokens de sesión con firma criptográfica (SecOps Gilfoyle Standards)
+  const dummyUser = { id_usuario: 99, username: 'auditor_gilfoyle', rol: 'SUPER_ADMIN' };
+  const validToken = generateSessionToken(dummyUser, 3600000);
+  const parsedPayload = verifySessionToken(validToken);
+
+  assertTest('C-13: Emisión de token de sesión con firma HMAC-SHA256', validToken.startsWith('sm_sec_') && validToken.includes('.'), `Token firmado: ${validToken.slice(0, 35)}...`);
+  assertTest('C-14: Integridad de firma y validación de payload de sesión', parsedPayload && parsedPayload.username === 'auditor_gilfoyle' && parsedPayload.rol === 'SUPER_ADMIN', `Payload verificado: @${parsedPayload?.username} [${parsedPayload?.rol}]`);
+
+  // Manipulación maliciosa de firma (Tampering)
+  const tamperedToken = validToken.slice(0, -4) + 'abcd';
+  const tamperedResult = verifySessionToken(tamperedToken);
+  assertTest('C-15: Detección y rechazo inmediato de tokens adulterados (Anti-Tampering)', tamperedResult === null, 'Firma no coincide con el payload manipulado.');
+
+  // Token expirado
+  const expiredToken = generateSessionToken(dummyUser, -1000);
+  const expiredResult = verifySessionToken(expiredToken);
+  assertTest('C-16: Rechazo automático de tokens con timestamp expirado', expiredResult === null, 'Token vencido denegado.');
 
   console.log('\n===============================================================');
   console.log(`RESUMEN DE PRUEBAS CRIPTOGRÁFICAS: ${passed} Pasadas, ${failed} Falladas`);
