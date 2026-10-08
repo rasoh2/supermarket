@@ -1,0 +1,274 @@
+[
+  {
+    "sku": "AB-001",
+    "nombre": "Arroz Grado 1 Extra Selección 1kg",
+    "descripcion": "Arroz grano largo y ancho seleccionado, ideal para preparaciones diarias en hogar y gastronomía.",
+    "categoria_tienda": "ABARROTES",
+    "stock_actual": 85,
+    "stock_minimo": 15,
+    "imagen_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 1490, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 1290, "descuento_pct": 13.4 },
+      { "umbral": 6, "precio": 1100, "descuento_pct": 26.2 }
+    ]
+  },
+  {
+    "sku": "AB-002",
+    "nombre": "Aceite Vegetal 100% Puro 900ml",
+    "descripcion": "Aceite de cocina de alta pureza, sin colesterol ni grasas trans. Rendimiento óptimo.",
+    "categoria_tienda": "ABARROTES",
+    "stock_actual": 60,
+    "stock_minimo": 12,
+    "imagen_url": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 2190, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 1890, "descuento_pct": 13.7 },
+      { "umbral": 6, "precio": 1650, "descuento_pct": 24.7 }
+    ]
+  },
+  {
+    "sku": "AB-003",
+    "nombre": "Fideos Spaghetti N°5 400g",
+    "descripcion": "Pasta de trigo candeal seleccionada al dente, perfecta consistencia y rápida cocción.",
+    "categoria_tienda": "ABARROTES",
+    "stock_actual": 120,
+    "stock_minimo": 20,
+    "imagen_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281691?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 850, "descuento_pct": 14.1 },
+      { "umbral": 6, "precio": 690, "descuento_pct": 30.3 }
+    ]
+  },
+  {
+    "sku": "AB-004",
+    "nombre": "Atún en Lomitos en Aceite 160g",
+    "descripcion": "Lomitos de atún de aleta amarilla en aceite vegetal. Rico en Omega-3 y proteínas.",
+    "categoria_tienda": "ABARROTES",
+    "stock_actual": 90,
+    "stock_minimo": 15,
+    "imagen_url": "https://images.unsplash.com/photo-1544943910-4c1dc44a046c?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 1690, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 1450, "descuento_pct": 14.2 },
+      { "umbral": 6, "precio": 1250, "descuento_pct": 26.0 }
+    ]
+  },
+  {
+    "sku": "AB-005",
+    "nombre": "Azúcar Blanca Refinada Grado 1 1kg",
+    "descripcion": "Azúcar granulada de máxima disolución y pureza. Envase resistente hermético.",
+    "categoria_tienda": "ABARROTES",
+    "stock_actual": 75,
+    "stock_minimo": 10,
+    "imagen_url": "https://images.unsplash.com/photo-1581441363689-1f3c3c414635?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 1390, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 1190, "descuento_pct": 14.4 },
+      { "umbral": 6, "precio": 990, "descuento_pct": 28.8 }
+    ]
+  },
+  {
+    "sku": "BE-001",
+    "nombre": "Bebida Gaseosa Cola 2.5 Litros",
+    "descripcion": "Refrescante bebida cola familiar, burbujeante y de sabor tradicional. Formato conveniente.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 110,
+    "stock_minimo": 25,
+    "imagen_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 2490, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 2150, "descuento_pct": 13.7 },
+      { "umbral": 6, "precio": 1850, "descuento_pct": 25.7 }
+    ]
+  },
+  {
+    "sku": "BE-002",
+    "nombre": "Cerveza Lager Tradicional Sixpack 6x355ml",
+    "descripcion": "Cerveza rubia refrescante, graduación equilibrada 4.8° y notas a lúpulo aromático.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 50,
+    "stock_minimo": 10,
+    "imagen_url": "https://images.unsplash.com/photo-1608270190861-2495b4507005?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 5990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 5190, "descuento_pct": 13.4 },
+      { "umbral": 6, "precio": 4490, "descuento_pct": 25.0 }
+    ]
+  },
+  {
+    "sku": "BE-003",
+    "nombre": "Agua Mineral sin Gas Vertiente 1.5L",
+    "descripcion": "Agua pura de vertiente andina, baja en sodio y rica en minerales esenciales.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 80,
+    "stock_minimo": 15,
+    "imagen_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 1090, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 890, "descuento_pct": 18.3 },
+      { "umbral": 6, "precio": 720, "descuento_pct": 33.9 }
+    ]
+  },
+  {
+    "sku": "BE-004",
+    "nombre": "Vino Tinto Cabernet Sauvignon Reserva 750ml",
+    "descripcion": "Valle Central de Chile. Cuerpo balanceado con notas a frutos rojos y sutil toque de roble.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 6490, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 5490, "descuento_pct": 15.4 },
+      { "umbral": 6, "precio": 4790, "descuento_pct": 26.2 }
+    ]
+  },
+  {
+    "sku": "AS-001",
+    "nombre": "Detergente Líquido Activo Concentrado 3 Litros",
+    "descripcion": "Fórmula con enzimas activas remueve manchas difíciles en ropa blanca y color. Rinde 45 lavados.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 65,
+    "stock_minimo": 10,
+    "imagen_url": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 7990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 6790, "descuento_pct": 15.0 },
+      { "umbral": 6, "precio": 5890, "descuento_pct": 26.3 }
+    ]
+  },
+  {
+    "sku": "AS-002",
+    "nombre": "Cloro Gel Desinfectante Triple Acción 900ml",
+    "descripcion": "Máxima adherencia y desinfección profunda. Elimina 99.9% de gérmenes y bacterias en superficies.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 95,
+    "stock_minimo": 20,
+    "imagen_url": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 1790, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 1490, "descuento_pct": 16.8 },
+      { "umbral": 6, "precio": 1250, "descuento_pct": 30.2 }
+    ]
+  },
+  {
+    "sku": "AS-003",
+    "nombre": "Lavaloza Bio Antigrasa Limón 750ml",
+    "descripcion": "Poderoso desengrasante con extracto de limón. Suave con las manos, alto poder espumante.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 110,
+    "stock_minimo": 15,
+    "imagen_url": "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 1990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 1690, "descuento_pct": 15.1 },
+      { "umbral": 6, "precio": 1390, "descuento_pct": 30.2 }
+    ]
+  },
+  {
+    "sku": "AS-004",
+    "nombre": "Papel Higiénico Doble Hoja Premium Pack 8x25m",
+    "descripcion": "Máxima suavidad y resistencia. 8 rollos compactos de fibra virgen seleccionada.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 85,
+    "stock_minimo": 15,
+    "imagen_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 3890, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 3290, "descuento_pct": 15.4 },
+      { "umbral": 6, "precio": 2790, "descuento_pct": 28.3 }
+    ]
+  },
+  {
+    "sku": "DI-001",
+    "nombre": "Disfraz Superhéroe Nocturno Capa y Antifaz Talla Única",
+    "descripcion": "Capa de satín negro premium con antifaz ergonómico ajustable. Para eventos y cosplay.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 35,
+    "stock_minimo": 5,
+    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 12990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 10990, "descuento_pct": 15.4 },
+      { "umbral": 6, "precio": 8990, "descuento_pct": 30.8 }
+    ]
+  },
+  {
+    "sku": "DI-002",
+    "nombre": "Máscara LED Neón Cosplay Fiesta Cyberpunk",
+    "descripcion": "Iluminación neón fría en 3 modos: fija, parpadeo lento y rápido. No calienta el rostro.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 42,
+    "stock_minimo": 8,
+    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      { "umbral": 1, "precio": 8990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 7490, "descuento_pct": 16.7 },
+      { "umbral": 6, "precio": 5990, "descuento_pct": 33.4 }
+    ]
+  },
+  {
+    "sku": "DI-003",
+    "nombre": "Set Cotillón Carnaval Neón Glow Pack 25 Personas",
+    "descripcion": "Pack de fiesta temático: pulseras luminosas, antifaces metalizados, corbatas y serpentinas.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 30,
+    "stock_minimo": 5,
+    "imagen_url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 14990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 12490, "descuento_pct": 16.7 },
+      { "umbral": 6, "precio": 9990, "descuento_pct": 33.4 }
+    ]
+  },
+  {
+    "sku": "DI-004",
+    "nombre": "Sombrero Mago Galera Terciopelo con Varita Mágica",
+    "descripcion": "Galera de alta costura con forro satinado y varita con punta metálica. Clásico infaltable.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 25,
+    "stock_minimo": 5,
+    "imagen_url": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      { "umbral": 1, "precio": 6990, "descuento_pct": 0 },
+      { "umbral": 3, "precio": 5790, "descuento_pct": 17.2 },
+      { "umbral": 6, "precio": 4690, "descuento_pct": 32.9 }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matriz de Pruebas QA (CP-01 a CP-13) | MEGASUPER.CL</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    body { padding: 2rem; max-width: 1000px; margin: 0 auto; background: #f8fafc; font-family: 'Inter', sans-serif; }
+    .test-header { margin-bottom: 2rem; }
+    .test-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .test-card.passed { border-left: 6px solid #059669; }
+    .test-card.failed { border-left: 6px solid #dc2626; }
+    .test-badge { padding: 0.25rem 0.6rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 800; }
+    .test-badge.pass { background: #d1fae5; color: #065f46; }
+    .test-badge.fail { background: #fee2e2; color: #991b1b; }
+    .test-details { font-size: 0.85rem; color: #475569; margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <div class="test-header">
+    <h1>MEGASUPER.CL — Matriz Formal de Pruebas (CP-01 a CP-13)</h1>
+    <p>Verificación de Aseguramiento de Calidad según INFORME_MEGASUPER.docx (Rodrigo Bravo, DBA & QA Lead)</p>
+    <div id="test-summary" style="margin-top: 1rem; font-weight: 700; font-size: 1.1rem;">Ejecutando pruebas...</div>
+  </div>
+
+  <div id="test-results-container"></div>
+
+  <script type="module">
+    import { runAllTests } from './test-runner.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const results = await runAllTests();
+      const container = document.getElementById('test-results-container');
+      const summary = document.getElementById('test-summary');
+
+      const passedCount = results.filter(r => r.passed).length;
+      summary.innerHTML = `Resultados: <span style="color: #059669;">${passedCount} / ${results.length} Pruebas Pasadas (${Math.round((passedCount/results.length)*100)}% Conformidad)</span>`;
+
+      container.innerHTML = results.map(r => `
+        <div class="test-card ${r.passed ? 'passed' : 'failed'}">
+          <div>
+            <strong>[${r.id}] ${r.name}</strong>
+            <div class="test-details">${r.details}</div>
+          </div>
+          <span class="test-badge ${r.passed ? 'pass' : 'fail'}">${r.passed ? 'APROBADO' : 'FALLIDO'}</span>
+        </div>
+      `).join('');
+    });
+  </script>
+</body>
+</html>
