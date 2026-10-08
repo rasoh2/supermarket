@@ -7,6 +7,7 @@ import { db, TABLES } from './storage.js';
 import { wafEngine } from './waf-engine.js';
 import { cartStore } from './cart-store.js';
 import { PriceEngine } from './price-engine.js';
+import { apiSync } from './api-sync.js';
 
 export class OrderService {
   /**
@@ -156,6 +157,14 @@ export class OrderService {
 
     // 8. Limpiar carrito de compras
     cartStore.clear();
+
+    // Replicar en backend SQLite si está conectado
+    apiSync.notifyOrderCreated({
+      customer: sanitizedCustomer,
+      items: items.map(i => ({ sku: i.sku, cantidad: i.cantidad })),
+      paymentMethod: sanitizedCustomer.metodoPago,
+      notes: sanitizedCustomer.notas
+    });
 
     // 9. Registrar evento en bitácora SIEM
     wafEngine.logSecurityIncident('ORDER_CREATED_SUCCESS', 'INFO', {

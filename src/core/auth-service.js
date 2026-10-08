@@ -5,6 +5,7 @@
 
 import { db, TABLES } from './storage.js';
 import { wafEngine } from './waf-engine.js';
+import { apiSync } from './api-sync.js';
 
 const AUTH_TOKEN_KEY = 'megasuper_auth_token_session';
 const CURRENT_USER_KEY = 'megasuper_active_user_data';
@@ -177,6 +178,7 @@ class AuthService {
     };
 
     db.insert(TABLES.USUARIO_SISTEMA, newUser);
+    apiSync.notifyUserCreated(newUser);
 
     wafEngine.logSecurityIncident('USER_ACCOUNT_CREATED', 'INFO', {
       created_by: this.user.username,
@@ -219,6 +221,7 @@ class AuthService {
     if (typeof userData.activo === 'boolean') updates.activo = userData.activo;
 
     db.update(TABLES.USUARIO_SISTEMA, u => u.id_usuario === Number(idUsuario), () => updates);
+    apiSync.notifyUserUpdated(idUsuario, updates);
 
     wafEngine.logSecurityIncident('USER_ACCOUNT_UPDATED', 'INFO', {
       modified_by: this.user.username,
@@ -245,6 +248,7 @@ class AuthService {
     db.update(TABLES.USUARIO_SISTEMA, u => u.id_usuario === Number(idUsuario), () => ({
       activo: newStatus
     }));
+    apiSync.notifyUserStatus(idUsuario, newStatus);
 
     wafEngine.logSecurityIncident('USER_STATUS_MODIFIED', 'WARNING', {
       modified_by: this.user.username,

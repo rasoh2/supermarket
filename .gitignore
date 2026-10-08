@@ -9,3 +9,7 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+*.db

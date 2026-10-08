@@ -1,0 +1,24 @@
+{
+  "name": "megasuper",
+  "version": "1.0.0",
+  "description": "MEGASUPER.CL - Marketplace Mayorista Inteligente con arquitectura 4 en 1, Backend SQLite 3FN y Spec Kit",
+  "type": "module",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node tests/cli-test-runner.js && node tests/test-admin-view.js && node tests/test-sqlite-api.js",
+    "test:cli": "node tests/cli-test-runner.js",
+    "test:admin": "node tests/test-admin-view.js",
+    "test:sqlite": "node tests/test-sqlite-api.js"
+  },
+  "keywords": [
+    "marketplace",
+    "supermarket",
+    "ecommerce",
+    "sqlite",
+    "clean-architecture",
+    "spec-kit"
+  ],
+  "author": "MEGASUPER Team",
+  "license": "ISC"
+}

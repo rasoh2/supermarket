@@ -4,6 +4,7 @@
  */
 
 import { db } from './core/storage.js';
+import { apiSync } from './core/api-sync.js';
 import { cartStore } from './core/cart-store.js';
 import { authService } from './core/auth-service.js';
 import { wafEngine } from './core/waf-engine.js';
@@ -35,6 +36,9 @@ class App {
 
       // 2. Inicializar motor relacional en 3FN
       await db.init(catalogData);
+
+      // 3. Sincronizar con backend SQLite si está disponible
+      await apiSync.init();
 
       // 3. Inicializar vistas y componentes UI
       this.catalogView = new CatalogView('catalog-view-root');

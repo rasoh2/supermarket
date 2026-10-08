@@ -5,6 +5,7 @@
 
 import { db, TABLES } from './storage.js';
 import { wafEngine } from './waf-engine.js';
+import { apiSync } from './api-sync.js';
 
 export class InventoryService {
   /**
@@ -53,6 +54,7 @@ export class InventoryService {
       id_usuario: userId
     };
     db.insert(TABLES.INVENTARIO_MOVIMIENTO, movimiento);
+    apiSync.notifyInventoryMovement({ sku, tipo, cantidad: qty, motivo, userId });
 
     // Auditoría SIEM
     wafEngine.logSecurityIncident('INVENTORY_MANUAL_ADJUSTMENT', 'INFO', {
