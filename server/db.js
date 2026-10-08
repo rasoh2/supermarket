@@ -102,18 +102,18 @@ export function initDatabase() {
   }
 
   // 3. Verificar e insertar catálogo si está vacío
+  const catalog = fs.existsSync(CATALOG_PATH) ? JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8')) : [];
   const productCount = db.prepare('SELECT COUNT(*) as count FROM PRODUCTO').get().count;
-  if (productCount === 0 && fs.existsSync(CATALOG_PATH)) {
-    console.log('[SQLite] Sembrando catálogo maestro desde catalog.json...');
-    const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
+  if (productCount < catalog.length && catalog.length > 0) {
+    console.log(`[SQLite] Sincronizando catálogo maestro (${catalog.length} productos)...`);
 
     const insertProd = db.prepare(`
-      INSERT INTO PRODUCTO (sku, nombre, categoria_tienda, stock_actual, stock_minimo, imagen_url, activo, destacado, descripcion)
+      INSERT OR IGNORE INTO PRODUCTO (sku, nombre, categoria_tienda, stock_actual, stock_minimo, imagen_url, activo, destacado, descripcion)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
 
     const insertTramo = db.prepare(`
-      INSERT INTO PRECIO_TRAMO (producto_sku, tramo_umbral, precio_unitario, porcentaje_descuento)
+      INSERT OR IGNORE INTO PRECIO_TRAMO (producto_sku, tramo_umbral, precio_unitario, porcentaje_descuento)
       VALUES (?, ?, ?, ?)
     `);
 
@@ -141,14 +141,17 @@ export function initDatabase() {
     }
     console.log(`[SQLite] ${catalog.length} productos y sus tramos normalizados insertados.`);
 
-    // Clientes de ejemplo en el CRM con campos sensibles cifrados
-    const insertCliente = db.prepare(`
-      INSERT INTO CLIENTE_CRM (nombre_completo, telefono_whatsapp, direccion_despacho, comuna_rm, fecha_registro, total_pedidos, recurrente_flag)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
-    `);
-    insertCliente.run('Carlos Mardones Silva', encryptDeterministic('+56987654321'), encryptField('Av. Providencia 1240, Depto 402'), 'Providencia', new Date().toISOString(), 2, 1);
-    insertCliente.run('Almacén Don Tito', encryptDeterministic('+56991234567'), encryptField('San Diego 850, Local 4'), 'Santiago Centro', new Date().toISOString(), 3, 1);
-    insertCliente.run('Mariana Valenzuela Pinto', encryptDeterministic('+56976543210'), encryptField('Los Leones 2350'), 'Ñuñoa', new Date().toISOString(), 1, 0);
+    // Clientes de ejemplo en el CRM con campos sensibles cifrados (solo si tabla vacía)
+    const clientCount = db.prepare('SELECT COUNT(*) as count FROM CLIENTE_CRM').get().count;
+    if (clientCount === 0) {
+      const insertCliente = db.prepare(`
+        INSERT INTO CLIENTE_CRM (nombre_completo, telefono_whatsapp, direccion_despacho, comuna_rm, fecha_registro, total_pedidos, recurrente_flag)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+      `);
+      insertCliente.run('Carlos Mardones Silva', encryptDeterministic('+56987654321'), encryptField('Av. Providencia 1240, Depto 402'), 'Providencia', new Date().toISOString(), 2, 1);
+      insertCliente.run('Almacén Don Tito', encryptDeterministic('+56991234567'), encryptField('San Diego 850, Local 4'), 'Santiago Centro', new Date().toISOString(), 3, 1);
+      insertCliente.run('Mariana Valenzuela Pinto', encryptDeterministic('+56976543210'), encryptField('Los Leones 2350'), 'Ñuñoa', new Date().toISOString(), 1, 0);
+    }
 
     // Registro inicial en bitácora SIEM
     const insertLog = db.prepare(`
