@@ -1,0 +1,258 @@
+/* ==========================================================================
+   SuperMarket.cl - Custom Bootstrap & Theme Styling (custom-bootstrap.css)
+   ========================================================================== */
+
+:root {
+  --sm-primary: #0d6efd;
+  --sm-primary-hover: #0b5ed7;
+  --sm-success: #198754;
+  --sm-warning: #ffc107;
+  --sm-danger: #dc3545;
+  --sm-dark-bg: #121824;
+  --sm-card-bg: #1a2234;
+  --sm-border-color: #2a354c;
+  --sm-text-muted: #94a3b8;
+  --sm-accent-glow: rgba(13, 110, 253, 0.25);
+}
+
+/* Global enhancements */
+body {
+  background-color: #0b0f17;
+  color: #f1f5f9;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Brand styling */
+.brand-badge-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #0d6efd 0%, #00d2ff 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.35);
+  margin-right: 12px;
+}
+
+.brand-text h1 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.brand-text h1 span {
+  color: #38bdf8;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  color: var(--sm-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--sm-border-color);
+  z-index: 1030;
+}
+
+/* Product Cards */
+.product-card {
+  background-color: var(--sm-card-bg);
+  border: 1px solid var(--sm-border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #0f172a;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.category-badge-floating {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.stock-badge-floating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+/* Pricing Tiers Pills in Card */
+.pricing-tiers-list {
+  background-color: rgba(11, 15, 23, 0.6);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin: 12px 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tier-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.825rem;
+  padding: 3px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.tier-item:last-child {
+  border-bottom: none;
+}
+
+.tier-item.active-tier {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.tier-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* Category Filter Buttons */
+.category-filter-btn {
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid var(--sm-border-color);
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+.category-filter-btn:hover,
+.category-filter-btn.active {
+  background: linear-gradient(135deg, #0d6efd 0%, #0284c7 100%);
+  color: #ffffff;
+  border-color: #38bdf8;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* Cart Offcanvas */
+.offcanvas-dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  border-left: 1px solid var(--sm-border-color);
+}
+
+.offcanvas-dark .offcanvas-header {
+  border-bottom: 1px solid var(--sm-border-color);
+}
+
+.offcanvas-dark .offcanvas-footer {
+  border-top: 1px solid var(--sm-border-color);
+  background-color: #162032;
+  padding: 1rem;
+}
+
+.cart-item-card {
+  background-color: #1e293b;
+  border: 1px solid var(--sm-border-color);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* Savings Callout */
+.savings-callout {
+  background: linear-gradient(135deg, rgba(25, 135, 84, 0.15) 0%, rgba(13, 110, 253, 0.15) 100%);
+  border: 1px solid rgba(25, 135, 84, 0.4);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* Modals */
+.modal-content-dark {
+  background-color: #131c2e;
+  color: #f1f5f9;
+  border: 1px solid var(--sm-border-color);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-dark .modal-header {
+  border-bottom: 1px solid var(--sm-border-color);
+}
+
+.modal-content-dark .modal-footer {
+  border-top: 1px solid var(--sm-border-color);
+}
+
+.form-control-dark, .form-select-dark {
+  background-color: #0f172a;
+  border: 1px solid var(--sm-border-color);
+  color: #ffffff;
+}
+
+.form-control-dark:focus, .form-select-dark:focus {
+  background-color: #0f172a;
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25);
+}
+
+/* Backoffice Tables */
+.table-dark-custom {
+  --bs-table-bg: #162032;
+  --bs-table-striped-bg: #1a263c;
+  --bs-table-hover-bg: #22324e;
+  border-color: var(--sm-border-color);
+  color: #f1f5f9;
+}
+
+/* Badges */
+.badge-tier-1 { background-color: #0d6efd; color: #fff; }
+.badge-tier-2 { background-color: #198754; color: #fff; }
+.badge-tier-3 { background-color: #f59e0b; color: #000; font-weight: 700; }

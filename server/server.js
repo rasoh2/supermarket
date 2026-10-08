@@ -547,11 +547,13 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // Servir archivos estáticos del frontend
-  let filePath = path.join(ROOT_DIR, url.pathname === '/' ? 'index.html' : url.pathname);
+  // Servir archivos estáticos del frontend (priorizar dist/ para bundle de React si existe)
+  const distDir = path.join(ROOT_DIR, 'dist');
+  const baseDir = fs.existsSync(distDir) ? distDir : ROOT_DIR;
+  let filePath = path.join(baseDir, url.pathname === '/' ? 'index.html' : url.pathname);
 
   // Evitar Directory Traversal
-  if (!filePath.startsWith(ROOT_DIR)) {
+  if (!filePath.startsWith(baseDir)) {
     res.writeHead(403);
     return res.end('Acceso denegado');
   }
@@ -559,7 +561,7 @@ const server = http.createServer(async (req, res) => {
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
       // Fallback a index.html para soportar navegación SPA
-      filePath = path.join(ROOT_DIR, 'index.html');
+      filePath = path.join(baseDir, 'index.html');
     }
 
     const ext = path.extname(filePath).toLowerCase();

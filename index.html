@@ -9,82 +9,10 @@
   <meta property="og:description" content="Compra con precios mayoristas en Santiago. Descuentos automáticos al llevar 3 y 6 unidades en abarrotes, bebidas, aseo y disfraces." />
   <meta property="og:type" content="website" />
   <title>SuperMarket.cl | Marketplace Mayorista en Santiago</title>
-  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>" />
 </head>
 <body>
-  <!-- Header y Navegación Principal -->
-  <header class="site-header" id="main-site-header">
-    <div class="header-container">
-      <div class="brand-wrapper">
-        <div class="brand-badge-logo">SM</div>
-        <div class="brand-text">
-          <h1>SUPER<span>MARKET</span>.CL</h1>
-          <span class="brand-subtitle">Supermercado Mayorista Santiago</span>
-        </div>
-      </div>
-
-      <nav class="header-nav" aria-label="Navegación del sitio">
-        <button id="nav-btn-catalog" class="nav-view-btn active" data-view="catalog">
-          🏪 Catálogo
-        </button>
-        <button id="nav-btn-admin" class="nav-view-btn" data-view="admin">
-          ⚙️ Administración
-        </button>
-        <button id="header-open-cart-btn" class="header-cart-btn" aria-label="Abrir carrito de compras">
-          <span>🛒 Mi Carrito</span>
-          <span id="cart-badge-count" class="cart-count-badge" style="display: none;">0</span>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Contenedor Principal de Vistas -->
-  <main id="app-main-content">
-    <!-- Vista 1: Catálogo Público -->
-    <div id="catalog-view-root"></div>
-
-    <!-- Vista 2: Panel Administrativo -->
-    <div id="admin-view-root" style="display: none;"></div>
-  </main>
-
-  <!-- Footer Comercial Oficial para Producción -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h4>SuperMarket.cl</h4>
-        <p>Tu supermercado digital con precios mayoristas para familias y comerciantes de Santiago. Compra de cuatro tiendas en un solo pedido con un único despacho.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Precios Mayoristas para Todos</h4>
-        <p>• <strong>1 a 2 unidades:</strong> Precio normal unitario.<br>
-           • <strong>3 a 5 unidades:</strong> Tarifa mayorista (~15% descuento).<br>
-           • <strong>6 o más unidades:</strong> Precio distribuidor (~30% descuento).</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Despachos en Santiago</h4>
-        <p>• Cobertura en toda la Región Metropolitana.<br>
-           • Entregas en 24 a 48 horas hábiles.<br>
-           • Pago por transferencia o efectivo al recibir.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Atención y Contacto</h4>
-        <p>• <strong>Horario:</strong> Lunes a Sábado de 08:30 a 20:00 hrs.<br>
-           • <strong>WhatsApp:</strong> +56 9 8765 4321<br>
-           • <strong>Email:</strong> ventas@supermarket.cl<br>
-           • Santiago, Chile.</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 SuperMarket.cl — Todos los derechos reservados. Precios en pesos chilenos ($ CLP).</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap de Aplicación Modular -->
-  <script type="module" src="src/app.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/react/main.jsx"></script>
 </body>
 </html>

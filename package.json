@@ -6,6 +6,10 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
+    "server": "node server/server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "node tests/cli-test-runner.js && node tests/test-admin-view.js && node tests/test-sqlite-api.js",
     "test:cli": "node tests/cli-test-runner.js",
     "test:admin": "node tests/test-admin-view.js",
@@ -20,5 +24,15 @@
     "spec-kit"
   ],
   "author": "SuperMarket Team",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  }
 }
