@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Servicio Transaccional de Órdenes y WhatsApp Gateway
+ * SuperMarket.cl - Servicio Transaccional de Órdenes y WhatsApp Gateway
  * Implementa RF-06, RF-07, RF-11, CU-04, CU-05 según spec.md
  */
 
@@ -11,11 +11,11 @@ import { apiSync } from './api-sync.js';
 
 export class OrderService {
   /**
-   * Genera un código de pedido público único en formato MS-2026-XXXX
+   * Genera un código de pedido público único en formato SM-2026-XXXX
    */
   static generateOrderCode() {
     const random = Math.floor(1000 + Math.random() * 9000);
-    return `MS-2026-${random}`;
+    return `SM-2026-${random}`;
   }
 
   /**
@@ -187,7 +187,7 @@ export class OrderService {
    * Construye el mensaje estructurado para WhatsApp Gateway
    */
   static buildWhatsAppUrl(orderCode, customer, totals) {
-    let msg = `🛒 *NUEVA ORDEN DE VENTA - MEGASUPER.CL*\n`;
+    let msg = `🛒 *NUEVA ORDEN DE VENTA - SUPERMARKET.CL*\n`;
     msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
     msg += `📋 *Código de Pedido:* \`${orderCode}\`\n`;
     msg += `👤 *Cliente:* ${customer.nombre}\n`;
@@ -213,7 +213,7 @@ export class OrderService {
     msg += `Por favor coordinar horario de entrega para Santiago. ¡Muchas gracias!`;
 
     const encoded = encodeURIComponent(msg);
-    // Número oficial de la central logística de MEGASUPER.CL
+    // Número oficial de la central logística de SuperMarket.cl
     return `https://wa.me/56987654321?text=${encoded}`;
   }
 }

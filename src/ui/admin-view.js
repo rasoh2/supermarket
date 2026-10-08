@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Panel de Administración y Control Operativo (admin-view.js)
+ * SuperMarket.cl - Panel de Administración y Control Operativo (admin-view.js)
  * Respeta la separación de funciones del modelo UML del sistema
  */
 
@@ -18,7 +18,7 @@ export class AdminView {
 
   init() {
     this.render();
-    window.addEventListener('megasuper:auth-changed', (e) => {
+    const handleAuth = (e) => {
       const user = e.detail?.user;
       if (user) {
         // Asignar pestaña principal según rol UML
@@ -27,13 +27,17 @@ export class AdminView {
         else this.activeTab = 'INVENTARIO';
       }
       this.render();
-    });
+    };
+    window.addEventListener('supermarket:auth-changed', handleAuth);
+    window.addEventListener('megasuper:auth-changed', handleAuth);
 
-    window.addEventListener('megasuper:db-updated', () => {
+    const handleDbUpdate = () => {
       if (authService.isAuthenticated()) {
         this.renderTabContent();
       }
-    });
+    };
+    window.addEventListener('supermarket:db-updated', handleDbUpdate);
+    window.addEventListener('megasuper:db-updated', handleDbUpdate);
   }
 
   render() {

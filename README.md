@@ -1,6 +1,6 @@
-# 🛒 MEGASUPER.CL — Marketplace Mayorista Inteligente
+# 🛒 SuperMarket.cl — Marketplace Mayorista Inteligente
 
-**MEGASUPER.CL** es una plataforma web de comercio electrónico y administración mayorista para Santiago de Chile. Permite a familias y comerciantes adquirir productos de 4 categorías principales (**Abarrotes**, **Bebidas**, **Aseo** y **Disfraces**) en un solo pedido consolidado con despacho único y descuentos deterministas por volumen.
+**SuperMarket.cl** es una plataforma web de comercio electrónico y administración mayorista para Santiago de Chile. Permite a familias y comerciantes adquirir productos de 4 categorías principales (**Abarrotes**, **Bebidas**, **Aseo** y **Disfraces**) en un solo pedido consolidado con despacho único y descuentos deterministas por volumen.
 
 Desarrollada bajo la metodología **Spec-Driven Development (SDD / GitHub Spec Kit)**, arquitectura limpia desacoplada (**Clean Architecture / DDD**) y **Backend nativo en Node.js con SQLite relacional en Tercera Forma Normal (3FN)**.
 
@@ -14,8 +14,8 @@ Desarrollada bajo la metodología **Spec-Driven Development (SDD / GitHub Spec K
   - **3 a 5 unidades:** Tarifa Mayorista (~15% de descuento).
   - **6 o más unidades:** Precio Distribuidor (~30% de descuento).
 - **Calculadora de Ahorro Determinista:** Exhibición inmediata del ahorro en pesos chilenos ($ CLP).
-- **Persistencia Híbrida (Offline-First + SQLite):** Almacenamiento rápido en cliente con sincronización a base de datos física SQLite (`data/megasuper.db`).
-- **Checkout Rápido & Pasarela WhatsApp:** Generación de órdenes con código único (`MS-2026-XXXX`) y comprobante preformateado.
+- **Persistencia Híbrida (Offline-First + SQLite):** Almacenamiento rápido en cliente con sincronización a base de datos física SQLite (`data/supermarket.db`).
+- **Checkout Rápido & Pasarela WhatsApp:** Generación de órdenes con código único (`SM-2026-XXXX`) y comprobante preformateado.
 - **Backoffice Administrativo (RBAC):**
   - **Super Admin (`CU-13`):** Gestión exclusiva de cuentas y accesos (crear, modificar usuarios, asignar roles y suspender/reactivar cuentas) y auditoría de accesos.
   - **Administrador de Tienda (`CU-08`, `CU-09`, `CU-11`):** Catálogo, control de stock Kardex (entradas y salidas) y métricas comerciales.
@@ -93,7 +93,7 @@ Todas las suites se ejecutan con **100% de éxito y conformidad técnica**.
 ```text
 ├── .specify/                # Constitución y memoria metodológica Spec Kit
 ├── data/
-│   └── megasuper.db         # Base de datos SQLite física (auto-generada)
+│   └── supermarket.db         # Base de datos SQLite física (auto-generada)
 ├── server/                  # Backend Node.js
 │   ├── db.js                # Conexión, inicialización y migraciones SQLite
 │   ├── schema.sql           # Esquema relacional DDL formal en 3FN (9 tablas)
@@ -130,4 +130,4 @@ Todas las suites se ejecutan con **100% de éxito y conformidad técnica**.
 ---
 
 ## 📄 Licencia
-© 2026 MEGASUPER.CL. Todos los derechos reservados.
+© 2026 SuperMarket.cl. Todos los derechos reservados.

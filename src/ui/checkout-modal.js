@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Modal de Checkout sin Registro Obligatorio (Compra Rápida)
+ * SuperMarket.cl - Modal de Checkout sin Registro Obligatorio (Compra Rápida)
  * Captura datos para despacho domiciliario en Santiago y canaliza por WhatsApp
  */
 
@@ -26,9 +26,9 @@ export class CheckoutModal {
     this.createDom();
     this.attachEvents();
 
-    window.addEventListener('megasuper:open-checkout', () => {
-      this.open();
-    });
+    const handleOpen = () => this.open();
+    window.addEventListener('supermarket:open-checkout', handleOpen);
+    window.addEventListener('megasuper:open-checkout', handleOpen);
   }
 
   createDom() {

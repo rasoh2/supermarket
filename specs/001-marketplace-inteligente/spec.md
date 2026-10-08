@@ -1,22 +1,22 @@
-# Feature Specification: Marketplace Inteligente MEGASUPER.CL
+# Feature Specification: Marketplace Inteligente SuperMarket.cl
 
 **Feature Branch**: `001-marketplace-inteligente`  
 **Created**: 2026-10-08  
 **Status**: Approved / In-Progress  
-**Reference Document**: `INFORME_MEGASUPER.docx` (Ingeniería de Software C1)  
+**Reference Document**: `INFORME_SuperMarket.docx` (Ingeniería de Software C1)  
 
 ---
 
 ## 1. Visión y Propósito del Sistema
 
-MEGASUPER.CL es una plataforma web de comercio electrónico y administración operativa orientada a la Región Metropolitana (Santiago de Chile). Integra un catálogo unificado de 4 tiendas especializadas (**Abarrotes, Bebidas, Aseo y Disfraces**), una política de descuentos por tramo mayorista en tiempo real (**1-2, 3-5, 6+ unidades**), un carrito de compras interactivo con persistencia reactiva, un proceso de finalización de compra sin fricción (**Guest Browsing & Checkout**) canalizado por WhatsApp Gateway, y un panel administrativo seguro con control de acceso basado en roles (**RBAC**), control de stock (**Kardex**), trazabilidad logística de despachos, CRM y bitácora de seguridad (**SIEM**).
+SuperMarket.cl es una plataforma web de comercio electrónico y administración operativa orientada a la Región Metropolitana (Santiago de Chile). Integra un catálogo unificado de 4 tiendas especializadas (**Abarrotes, Bebidas, Aseo y Disfraces**), una política de descuentos por tramo mayorista en tiempo real (**1-2, 3-5, 6+ unidades**), un carrito de compras interactivo con persistencia reactiva, un proceso de finalización de compra sin fricción (**Guest Browsing & Checkout**) canalizado por WhatsApp Gateway, y un panel administrativo seguro con control de acceso basado en roles (**RBAC**), control de stock (**Kardex**), trazabilidad logística de despachos, CRM y bitácora de seguridad (**SIEM**).
 
 ---
 
 ## 2. Historias de Usuario Priorizadas (User Stories)
 
 ### User Story 1 - Catálogo Multitienda 4 en 1 con Precios Escalonados (Priority: P1)
-**Como** comprador mayorista o cliente de hogar en MEGASUPER.CL,  
+**Como** comprador mayorista o cliente de hogar en SuperMarket.cl,  
 **Quiero** navegar fluidamente por las 4 categorías (Abarrotes, Bebidas, Aseo, Disfraces), buscar productos por texto predictivo y visualizar las tarifas de descuento por tramo (1-2 u., 3-5 u., 6+ u.),  
 **Para** armar pedidos combinados y conseguir el mejor precio por volumen con absoluta transparencia.
 

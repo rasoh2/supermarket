@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Bootstrap Principal de la Aplicación SPA (app.js)
+ * SuperMarket.cl - Bootstrap Principal de la Aplicación SPA (app.js)
  * Orquestador modular Clean Architecture
  */
 
@@ -27,7 +27,7 @@ class App {
   }
 
   async start() {
-    console.log('[MEGASUPER] Iniciando plataforma bajo estándar GitHub Spec Kit...');
+    console.log('[SuperMarket] Iniciando plataforma bajo estándar GitHub Spec Kit...');
 
     try {
       // 1. Cargar datos semilla del catálogo
@@ -57,7 +57,7 @@ class App {
       this.setupNavigation();
 
       // 5. Exponer API en ventana para verificación y pruebas automatizadas (CP-01 a CP-13)
-      window.MEGASUPER = {
+      window.SuperMarket = {
         db,
         cartStore,
         authService,
@@ -69,10 +69,11 @@ class App {
         openCart: () => this.cartDrawer.open(),
         openCheckout: () => this.checkoutModal.open()
       };
+      window.MEGASUPER = window.SuperMarket; // Compatibilidad de pruebas
 
-      console.log('✓ MEGASUPER.CL iniciado correctamente con arquitectura 4 en 1.');
+      console.log('✓ SuperMarket.cl iniciado correctamente con arquitectura 4 en 1.');
     } catch (err) {
-      console.error('[MEGASUPER] Error crítico durante el inicio:', err);
+      console.error('[SuperMarket] Error crítico durante el inicio:', err);
     }
   }
 

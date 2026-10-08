@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - CLI Test Runner for Node.js
+ * SuperMarket.cl - CLI Test Runner for Node.js
  * Validates CP-01 to CP-13 from terminal
  */
 
@@ -38,7 +38,7 @@ global.CustomEvent = class {
 if (!global.navigator?.userAgent) {
   try {
     Object.defineProperty(global, 'navigator', {
-      value: { userAgent: 'NodeTestRunner/1.0 (MEGASUPER CLI)' },
+      value: { userAgent: 'NodeTestRunner/1.0 (SuperMarket CLI)' },
       configurable: true
     });
   } catch {}
@@ -55,7 +55,7 @@ async function main() {
   const { InventoryService } = await import('../src/core/inventory-service.js');
 
   console.log('===============================================================');
-  console.log('   MEGASUPER.CL - EJECUCIÓN FORMAL DE PRUEBAS DE CAJA NEGRA    ');
+  console.log('   SuperMarket.cl - EJECUCIÓN FORMAL DE PRUEBAS DE CAJA NEGRA    ');
   console.log('           Matriz CP-01 a CP-13 (INFORME_MEGASUPER.docx)       ');
   console.log('===============================================================\n');
 
@@ -101,7 +101,7 @@ async function main() {
   cartStore.clear();
   const prodTarget = db.findOne(TABLES.PRODUCTO, p => p.sku === 'AB-001');
   cartStore.addItem(prodTarget, 5);
-  const stored = JSON.parse(localStorage.getItem('megasuper_cart_state_v1') || '[]');
+  const stored = JSON.parse((localStorage.getItem('supermarket_cart_state_v1') || localStorage.getItem('megasuper_cart_state_v1')) || '[]');
   const inStore = stored.find(i => i.sku === 'AB-001');
   report('CP-04', 'Persistencia del carrito ante recarga (LocalStorage) (RF-05, RNF-07)', inStore && inStore.cantidad === 5, `Recuperó 5 unidades de "${prodTarget.nombre}" desde almacenamiento local.`);
 
@@ -114,7 +114,7 @@ async function main() {
     metodoPago: 'TRANSFERENCIA',
     notas: 'Dejar en conserjería'
   });
-  report('CP-05', 'Emisión de orden de venta y pasarela WhatsApp Gateway (RF-06, RF-07)', orderRes.success && orderRes.orderCode.startsWith('MS-2026-'), `Código: ${orderRes.orderCode}, WhatsApp URL: ${orderRes.whatsappUrl.substring(0, 45)}...`);
+  report('CP-05', 'Emisión de orden de venta y pasarela WhatsApp Gateway (RF-06, RF-07)', orderRes.success && (orderRes.orderCode.startsWith('SM-2026-') || orderRes.orderCode.startsWith('MS-2026-')), `Código: ${orderRes.orderCode}, WhatsApp URL: ${orderRes.whatsappUrl.substring(0, 45)}...`);
 
   // CP-06: Kardex de inventario
   const stockInit = db.findOne(TABLES.PRODUCTO, p => p.sku === 'BE-001').stock_actual;

@@ -1,12 +1,12 @@
 /**
- * MEGASUPER.CL - Gestor de Estado Reactivo del Carrito de Compras
+ * SuperMarket.cl - Gestor de Estado Reactivo del Carrito de Compras
  * Implementa persistencia en LocalStorage y reactividad según RF-05 y RNF-07
  */
 
 import { PriceEngine } from './price-engine.js';
 import { db, TABLES } from './storage.js';
 
-const CART_STORAGE_KEY = 'megasuper_cart_state_v1';
+const CART_STORAGE_KEY = 'supermarket_cart_state_v1';
 
 class CartStore {
   constructor() {
@@ -15,7 +15,7 @@ class CartStore {
 
   loadFromStorage() {
     try {
-      const data = localStorage.getItem(CART_STORAGE_KEY);
+      const data = localStorage.getItem(CART_STORAGE_KEY) || localStorage.getItem('megasuper_cart_state_v1');
       return data ? JSON.parse(data) : [];
     } catch (e) {
       console.error('[CartStore] Error al cargar carrito de LocalStorage:', e);
@@ -34,6 +34,12 @@ class CartStore {
 
   notify() {
     const totals = this.getTotals();
+    window.dispatchEvent(new CustomEvent('supermarket:cart-changed', {
+      detail: {
+        items: this.items,
+        totals
+      }
+    }));
     window.dispatchEvent(new CustomEvent('megasuper:cart-changed', {
       detail: {
         items: this.items,

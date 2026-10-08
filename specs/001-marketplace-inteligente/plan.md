@@ -1,12 +1,12 @@
-# Implementation Plan: Marketplace Inteligente MEGASUPER.CL
+# Implementation Plan: Marketplace Inteligente SuperMarket.cl
 
-**Branch**: `001-marketplace-inteligente` | **Date**: 2026-10-08 | **Spec**: [spec.md](file:///c:/Users/sebas/Desktop/megasuper/specs/001-marketplace-inteligente/spec.md)
+**Branch**: `001-marketplace-inteligente` | **Date**: 2026-10-08 | **Spec**: [spec.md](file:///c:/Users/sebas/Desktop/SuperMarket/specs/001-marketplace-inteligente/spec.md)
 
 ---
 
 ## 1. Resumen de la Solución Técnica
 
-Implementación de la arquitectura desacoplada **"Integrated 4-in-1 Marketplace Technical Architecture"** para MEGASUPER.CL.  
+Implementación de la arquitectura desacoplada **"Integrated 4-in-1 Marketplace Technical Architecture"** para SuperMarket.cl.  
 El sistema se compone de dos frentes integrados:
 1. **Frontend Público (B2C / Mayorista):** SPA ultrarrápida con catálogo 4 en 1, filtrado predictivo, cotizador de precios por tramo (1, 3, 6+), carrito persistente en `LocalStorage` con cálculo de ahorro en tiempo real, y Checkout sin fricción conectado a WhatsApp Gateway.
 2. **Backoffice Administrativo (B2B / Operativo):** Consola interna protegida por autenticación JWT con control de tasa (rate-limiting), WAF perimetral y bitácora SIEM inmutable. Permite la administración de productos, Kardex de inventario (entradas, salidas, mermas), despacho con trazabilidad de ciclo de vida (Pendiente → Preparación → En Ruta → Entregado), CRM de clientes con recurrencia y tablero de indicadores matemáticos (AOV, CR, ITR).
@@ -37,7 +37,7 @@ El sistema se compone de dos frentes integrados:
 | **I. Multitienda 4 en 1 Unificada** | Cumple | Catálogo segmentado en Abarrotes, Bebidas, Aseo y Disfraces con un solo carrito y un despacho único. |
 | **II. Precios por Tramo y Ahorro** | Cumple | `PriceEngine` aplica descuentos escalonados deterministas a 1-2, 3-5 y 6+ unidades con visualización de ahorro en $ CLP. |
 | **III. Guest Browsing & LocalStorage** | Cumple | Navegación y compra sin login previo obligatorio. Carrito persistente ante recargas (F5). |
-| **IV. Modelo Relacional 3FN** | Cumple | Implementación de las 9 entidades documentadas en [data-model.md](file:///c:/Users/sebas/Desktop/megasuper/specs/001-marketplace-inteligente/data-model.md). |
+| **IV. Modelo Relacional 3FN** | Cumple | Implementación de las 9 entidades documentadas en [data-model.md](file:///c:/Users/sebas/Desktop/SuperMarket/specs/001-marketplace-inteligente/data-model.md). |
 | **V. Seguridad RBAC, WAF y SIEM** | Cumple | Matriz de 4 roles, token JWT, WAF con bloqueo anti fuerza bruta y log inmutable de seguridad. |
 | **VI. Rendimiento y WCAG AA** | Cumple | Estilos sin bloqueos, UI optimizada mobile-first y contraste cromático auditado. |
 
@@ -46,7 +46,7 @@ El sistema se compone de dos frentes integrados:
 ## 4. Estructura de Componentes y Código Fuente
 
 ```text
-c:\Users\sebas\Desktop\megasuper\
+c:\Users\sebas\Desktop\SuperMarket\
 ├── .specify/                         # Configuración y memoria Spec Kit
 │   ├── memory/constitution.md
 │   ├── templates/

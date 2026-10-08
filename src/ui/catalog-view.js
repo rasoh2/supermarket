@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Catálogo Público de Productos
+ * SuperMarket.cl - Catálogo Público de Productos
  * Navegación por departamentos, búsqueda y cálculo de precios mayoristas
  */
 
@@ -20,11 +20,13 @@ export class CatalogView {
     this.render();
     this.attachEvents();
 
-    window.addEventListener('megasuper:db-updated', (e) => {
+    const handleUpdate = (e) => {
       if (e.detail?.table === TABLES.PRODUCTO || e.detail?.table === TABLES.PRECIO_TRAMO) {
         this.renderProductGrid();
       }
-    });
+    };
+    window.addEventListener('supermarket:db-updated', handleUpdate);
+    window.addEventListener('megasuper:db-updated', handleUpdate);
   }
 
   getFilteredProducts() {
@@ -443,7 +445,7 @@ export class CatalogView {
   openVendorConsultation(product, quantity) {
     const tramos = this.getTramos(product.sku);
     const pricing = PriceEngine.calculateItemPricing(quantity, tramos);
-    const msg = `Hola MEGASUPER.CL! Quiero consultar por volumen con un vendedor:\n\n` +
+    const msg = `Hola SuperMarket.cl! Quiero consultar por volumen con un vendedor:\n\n` +
       `📦 Producto: ${product.nombre} (SKU: ${product.sku})\n` +
       `🏢 Categoría: ${product.categoria_tienda}\n` +
       `🔢 Cantidad: ${quantity} unidades\n` +

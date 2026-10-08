@@ -1,4 +1,4 @@
-# MEGASUPER.CL Constitution
+# SuperMarket.cl Constitution
 
 ## Core Principles
 

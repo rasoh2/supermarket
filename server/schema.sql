@@ -1,5 +1,5 @@
 -- ========================================================================
--- MEGASUPER.CL - Esquema Relacional de Base de Datos en Tercera Forma Normal (3FN)
+-- SuperMarket.cl - Esquema Relacional de Base de Datos en Tercera Forma Normal (3FN)
 -- Conforme al Diccionario de Datos Formal (Tabla 5, INFORME_MEGASUPER.docx)
 -- Motor: SQLite 3 (node:sqlite / standalone)
 -- ========================================================================

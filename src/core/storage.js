@@ -1,9 +1,9 @@
 /**
- * MEGASUPER.CL - Capa de Persistencia Relacional Normalizada
+ * SuperMarket.cl - Capa de Persistencia Relacional Normalizada
  * Gestiona almacenamiento en producción para catálogo, inventario, pedidos y usuarios
  */
 
-const STORAGE_KEY_PREFIX = 'megasuper_prod_';
+const STORAGE_KEY_PREFIX = 'supermarket_prod_';
 
 const TABLES = {
   PRODUCTO: 'producto',
@@ -29,7 +29,7 @@ class StorageEngine {
 
   getTable(table) {
     try {
-      const data = localStorage.getItem(this.getKey(table));
+      const data = localStorage.getItem(this.getKey(table)) || localStorage.getItem(`megasuper_prod_${table}`);
       return data ? JSON.parse(data) : [];
     } catch (e) {
       console.error(`Error al leer tabla ${table}:`, e);
@@ -40,6 +40,7 @@ class StorageEngine {
   setTable(table, rows) {
     try {
       localStorage.setItem(this.getKey(table), JSON.stringify(rows));
+      window.dispatchEvent(new CustomEvent('supermarket:db-updated', { detail: { table, count: rows.length } }));
       window.dispatchEvent(new CustomEvent('megasuper:db-updated', { detail: { table, count: rows.length } }));
       return true;
     } catch (e) {
@@ -282,7 +283,7 @@ class StorageEngine {
         event_type: 'SYSTEM_BOOT',
         severity: 'INFO',
         ip_origen: '190.161.42.18',
-        user_agent: 'MEGASUPER Production System',
+        user_agent: 'SuperMarket Production System',
         details_payload: JSON.stringify({ message: 'Sistema de producción inicializado con éxito.' }),
         resuelto: true
       }

@@ -1,7 +1,7 @@
 {
-  "name": "megasuper",
+  "name": "supermarket",
   "version": "1.0.0",
-  "description": "MEGASUPER.CL - Marketplace Mayorista Inteligente con arquitectura 4 en 1, Backend SQLite 3FN y Spec Kit",
+  "description": "SuperMarket.cl - Marketplace Mayorista Inteligente con arquitectura 4 en 1, Backend SQLite 3FN y Spec Kit",
   "type": "module",
   "main": "server/server.js",
   "scripts": {
@@ -19,6 +19,6 @@
     "clean-architecture",
     "spec-kit"
   ],
-  "author": "MEGASUPER Team",
+  "author": "SuperMarket Team",
   "license": "ISC"
 }

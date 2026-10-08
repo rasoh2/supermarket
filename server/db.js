@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DATA_DIR = path.resolve(__dirname, '../data');
-const DB_PATH = path.join(DATA_DIR, 'megasuper.db');
+const DB_PATH = path.join(DATA_DIR, 'supermarket.db');
 const SCHEMA_PATH = path.join(__dirname, 'schema.sql');
 const CATALOG_PATH = path.resolve(__dirname, '../src/data/catalog.json');
 

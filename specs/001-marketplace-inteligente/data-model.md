@@ -1,4 +1,4 @@
-# Data Model: MEGASUPER.CL (3FN Relational Specification)
+# Data Model: SuperMarket.cl (3FN Relational Specification)
 
 **Feature Branch**: `001-marketplace-inteligente`  
 **Status**: Normalized (Third Normal Form - 3FN)  

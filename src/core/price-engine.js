@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Motor Determinista de Precios por Tramo y Calculadora de Ahorro
+ * SuperMarket.cl - Motor Determinista de Precios por Tramo y Calculadora de Ahorro
  * Implementa las reglas de negocio RF-03 y RF-04 según spec.md
  */
 

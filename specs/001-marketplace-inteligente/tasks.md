@@ -1,7 +1,7 @@
-# Task Breakdown: Marketplace Inteligente MEGASUPER.CL
+# Task Breakdown: Marketplace Inteligente SuperMarket.cl
 
 **Feature Branch**: `001-marketplace-inteligente`  
-**Spec Reference**: [spec.md](file:///c:/Users/sebas/Desktop/megasuper/specs/001-marketplace-inteligente/spec.md) | [plan.md](file:///c:/Users/sebas/Desktop/megasuper/specs/001-marketplace-inteligente/plan.md)  
+**Spec Reference**: [spec.md](file:///c:/Users/sebas/Desktop/SuperMarket/specs/001-marketplace-inteligente/spec.md) | [plan.md](file:///c:/Users/sebas/Desktop/SuperMarket/specs/001-marketplace-inteligente/plan.md)  
 **Total Story Points**: 47 SP | **Sprints**: 4 Sprints  
 
 ---

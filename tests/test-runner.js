@@ -1,7 +1,6 @@
 /**
- * MEGASUPER.CL - Suite de Pruebas de Calidad Formal (CP-01 a CP-13)
- * Matriz de Pruebas Funcionales de Caja Negra según INFORME_MEGASUPER.docx
- * Responsable de Ejecución: Rodrigo Bravo (DBA & QA Lead)
+ * SuperMarket.cl - Suite de Pruebas de Calidad Formal (CP-01 a CP-13)
+ * Matriz de Pruebas Funcionales de Caja Negra
  */
 
 import { db, TABLES } from '../src/core/storage.js';
@@ -101,7 +100,7 @@ export async function runAllTests() {
     cartStore.addItem(prod, 4);
 
     // Simular lectura directa de LocalStorage (como ocurre ante F5)
-    const stored = JSON.parse(localStorage.getItem('megasuper_cart_state_v1') || '[]');
+    const stored = JSON.parse((localStorage.getItem('supermarket_cart_state_v1') || localStorage.getItem('megasuper_cart_state_v1')) || '[]');
     const itemInStore = stored.find(i => i.sku === 'AB-001');
 
     assert(
@@ -128,7 +127,7 @@ export async function runAllTests() {
     });
 
     assert(
-      orderRes.success && orderRes.orderCode.startsWith('MS-2026-') && orderRes.whatsappUrl.includes('wa.me'),
+      orderRes.success && (orderRes.orderCode.startsWith('SM-2026-') || orderRes.orderCode.startsWith('MS-2026-')) && orderRes.whatsappUrl.includes('wa.me'),
       'CP-05',
       'Emisión de orden de venta y pasarela WhatsApp Gateway',
       `Orden generada con código ${orderRes.orderCode} y URL de WhatsApp estructurada correctamente.`

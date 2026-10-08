@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Carrito Lateral Interactivo (Cart Drawer)
+ * SuperMarket.cl - Carrito Lateral Interactivo (Cart Drawer)
  * Implementa RF-04, RF-05, RNF-07, CU-02, CU-03
  */
 
@@ -18,9 +18,9 @@ export class CartDrawer {
     this.attachEvents();
     this.update();
 
-    window.addEventListener('megasuper:cart-changed', () => {
-      this.update();
-    });
+    const handleCart = () => this.update();
+    window.addEventListener('supermarket:cart-changed', handleCart);
+    window.addEventListener('megasuper:cart-changed', handleCart);
   }
 
   createDom() {
@@ -240,6 +240,7 @@ export class CartDrawer {
     // Proceder al checkout
     this.drawerEl.querySelector('#btn-proceed-checkout')?.addEventListener('click', () => {
       this.close();
+      window.dispatchEvent(new CustomEvent('supermarket:open-checkout'));
       window.dispatchEvent(new CustomEvent('megasuper:open-checkout'));
     });
   }

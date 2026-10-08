@@ -7,7 +7,7 @@ import { db, initDatabase } from '../server/db.js';
 
 async function runSqliteTests() {
   console.log('===============================================================');
-  console.log('   MEGASUPER.CL - VALIDACIÓN FORMAL DE BACKEND SQLITE 3FN      ');
+  console.log('   SuperMarket.cl - VALIDACIÓN FORMAL DE BACKEND SQLITE 3FN      ');
   console.log('            Esquema Relacional de 9 Tablas y API REST          ');
   console.log('===============================================================\n');
 

@@ -1,6 +1,6 @@
 /**
  * server/server.js
- * Servidor Web y API REST de Producción para MEGASUPER.CL
+ * Servidor Web y API REST de Producción para SuperMarket.cl
  * Desarrollado con Node.js nativo (node:http + node:sqlite) - Sin dependencias externas
  */
 
@@ -151,7 +151,7 @@ async function handleApi(req, res, url) {
     logSiem('ADMIN_AUTH_SUCCESS', 'INFO', { id_usuario: user.id_usuario, username: user.username, rol: user.rol }, ip, ua);
 
     // Token simulado para la sesión
-    const token = `megasuper_jwt_${user.id_usuario}_${Date.now()}`;
+    const token = `supermarket_jwt_${user.id_usuario}_${Date.now()}`;
     return sendJson(res, 200, {
       success: true,
       token,
@@ -338,7 +338,7 @@ async function handleApi(req, res, url) {
     logSiem('ORDER_CREATED_SUCCESS', 'INFO', { codigo_pedido: orderCode, totalPagar, comuna: customer.comuna }, ip, ua);
 
     // Estructurar comprobante de WhatsApp
-    let msg = `🛒 *NUEVO PEDIDO MEGASUPER.CL* 🛒\n`;
+    let msg = `🛒 *NUEVO PEDIDO SuperMarket.cl* 🛒\n`;
     msg += `📄 *Código:* ${orderCode}\n`;
     msg += `👤 *Cliente:* ${customer.nombre}\n`;
     msg += `📞 *Teléfono:* ${customer.telefono}\n`;
@@ -584,9 +584,9 @@ initDatabase();
 
 server.listen(PORT, () => {
   console.log('================================================================');
-  console.log(`  🚀 MEGASUPER.CL - SERVIDOR FULL-STACK EN EJECUCIÓN           `);
+  console.log(`  🚀 SuperMarket.cl - SERVIDOR FULL-STACK EN EJECUCIÓN           `);
   console.log(`  🌐 Frontend:  http://localhost:${PORT}/index.html            `);
   console.log(`  ⚙️  Backoffice: http://localhost:${PORT}/index.html#admin      `);
-  console.log(`  🗄️  Base de Datos: SQLite (3FN en data/megasuper.db)         `);
+  console.log(`  🗄️  Base de Datos: SQLite (3FN en data/supermarket.db)         `);
   console.log('================================================================');
 });

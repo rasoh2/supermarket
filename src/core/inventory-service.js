@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Servicio de Inventario Kardex y Reversión de Stock
+ * SuperMarket.cl - Servicio de Inventario Kardex y Reversión de Stock
  * Implementa RF-10, RF-11, RF-15, RF-16, CU-09, CU-10 según spec.md
  */
 

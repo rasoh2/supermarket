@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Servicio de Autenticación y Gestión de Usuarios (auth-service.js)
+ * SuperMarket.cl - Servicio de Autenticación y Gestión de Usuarios (auth-service.js)
  * Control de acceso jerárquico según modelo UML del sistema
  */
 
@@ -7,18 +7,18 @@ import { db, TABLES } from './storage.js';
 import { wafEngine } from './waf-engine.js';
 import { apiSync } from './api-sync.js';
 
-const AUTH_TOKEN_KEY = 'megasuper_auth_token_session';
-const CURRENT_USER_KEY = 'megasuper_active_user_data';
+const AUTH_TOKEN_KEY = 'supermarket_auth_token_session';
+const CURRENT_USER_KEY = 'supermarket_active_user_data';
 
 class AuthService {
   constructor() {
-    this.token = sessionStorage.getItem(AUTH_TOKEN_KEY) || null;
+    this.token = sessionStorage.getItem(AUTH_TOKEN_KEY) || sessionStorage.getItem('megasuper_auth_token_session') || null;
     this.user = this.loadUser();
   }
 
   loadUser() {
     try {
-      const data = sessionStorage.getItem(CURRENT_USER_KEY);
+      const data = sessionStorage.getItem(CURRENT_USER_KEY) || sessionStorage.getItem('megasuper_active_user_data');
       return data ? JSON.parse(data) : null;
     } catch {
       return null;
@@ -111,6 +111,7 @@ class AuthService {
       rol: user.rol
     });
 
+    window.dispatchEvent(new CustomEvent('supermarket:auth-changed', { detail: { user: this.user } }));
     window.dispatchEvent(new CustomEvent('megasuper:auth-changed', { detail: { user: this.user } }));
     return { success: true, user: this.user, token };
   }
@@ -126,7 +127,10 @@ class AuthService {
     this.user = null;
     sessionStorage.removeItem(AUTH_TOKEN_KEY);
     sessionStorage.removeItem(CURRENT_USER_KEY);
+    sessionStorage.removeItem('megasuper_auth_token_session');
+    sessionStorage.removeItem('megasuper_active_user_data');
 
+    window.dispatchEvent(new CustomEvent('supermarket:auth-changed', { detail: { user: null } }));
     window.dispatchEvent(new CustomEvent('megasuper:auth-changed', { detail: { user: null } }));
   }
 

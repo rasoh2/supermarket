@@ -1,5 +1,5 @@
 /**
- * MEGASUPER.CL - Motor de Seguridad Perimetral WAF y Rate Limiting
+ * SuperMarket.cl - Motor de Seguridad Perimetral WAF y Rate Limiting
  * Implementa RNF-02, RF-12, RF-19 y directrices OWASP 2025
  */
 
@@ -145,7 +145,7 @@ class WAFEngine {
         event_type: eventType,
         severity,
         ip_origen: '190.161.42.18', // Simulación IP Santiago RM
-        user_agent: navigator.userAgent || 'Mozilla/5.0 MEGASUPER Client',
+        user_agent: (typeof navigator !== 'undefined' && navigator.userAgent) || 'Mozilla/5.0 SuperMarket Client',
         details_payload: JSON.stringify(detailsObj),
         resuelto: severity === 'INFO'
       };

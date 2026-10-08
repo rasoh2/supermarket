@@ -1,7 +1,7 @@
 /**
  * src/core/api-sync.js
  * Sincronizador bidireccional entre la interfaz web y el backend SQLite
- * Garantiza persistencia en base de datos real (megasuper.db) y funcionamiento offline-first
+ * Garantiza persistencia en base de datos real (supermarket.db) y funcionamiento offline-first
  */
 
 import { db, TABLES } from './storage.js';
