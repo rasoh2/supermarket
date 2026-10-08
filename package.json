@@ -10,10 +10,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/cli-test-runner.js && node tests/test-admin-view.js && node tests/test-sqlite-api.js",
+    "test": "node tests/cli-test-runner.js && node tests/test-admin-view.js && node tests/test-sqlite-api.js && node tests/test-crypto-security.js",
     "test:cli": "node tests/cli-test-runner.js",
     "test:admin": "node tests/test-admin-view.js",
-    "test:sqlite": "node tests/test-sqlite-api.js"
+    "test:sqlite": "node tests/test-sqlite-api.js",
+    "test:crypto": "node tests/test-crypto-security.js"
   },
   "keywords": [
     "marketplace",

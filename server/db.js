@@ -29,6 +29,8 @@ export const db = new DatabaseSync(DB_PATH);
 db.exec('PRAGMA foreign_keys = ON;');
 db.exec('PRAGMA journal_mode = WAL;');
 
+import { hashPassword, encryptDeterministic, encryptField } from './crypto-security.js';
+
 /**
  * Inicializar esquema y datos semilla
  */
@@ -43,16 +45,60 @@ export function initDatabase() {
   // 2. Verificar e insertar usuarios iniciales si no existen
   const userCount = db.prepare('SELECT COUNT(*) as count FROM USUARIO_SISTEMA').get().count;
   if (userCount === 0) {
-    console.log('[SQLite] Sembrando usuarios de producción...');
+    console.log('[SQLite] Sembrando usuarios de producción con contraseñas en hash scrypt...');
     const insertUser = db.prepare(`
       INSERT INTO USUARIO_SISTEMA (username, nombre_real, password_hash, rol, activo, ultimo_acceso)
       VALUES (?, ?, ?, ?, ?, ?)
     `);
 
-    insertUser.run('superadmin', 'Super Admin', 'admin123', 'SUPER_ADMIN', 1, new Date().toISOString());
-    insertUser.run('admin', 'Administrador de Tienda', 'tienda123', 'ADMIN_TIENDA', 1, new Date().toISOString());
-    insertUser.run('despacho', 'Despachador Logístico', 'ruta123', 'DESPACHADOR', 1, new Date().toISOString());
-    console.log('[SQLite] Usuarios @superadmin, @admin y @despacho registrados.');
+    insertUser.run('superadmin', 'Super Admin', hashPassword('admin123'), 'SUPER_ADMIN', 1, new Date().toISOString());
+    insertUser.run('admin', 'Administrador de Tienda', hashPassword('tienda123'), 'ADMIN_TIENDA', 1, new Date().toISOString());
+    insertUser.run('despacho', 'Despachador Logístico', hashPassword('ruta123'), 'DESPACHADOR', 1, new Date().toISOString());
+    console.log('[SQLite] Usuarios @superadmin, @admin y @despacho registrados con contraseñas cifradas.');
+  } else {
+    // Migración automática de contraseñas existentes no hasheadas
+    try {
+      const unhashed = db.prepare("SELECT id_usuario, password_hash FROM USUARIO_SISTEMA WHERE password_hash NOT LIKE 'scrypt$%'").all();
+      if (unhashed.length > 0) {
+        const updateStmt = db.prepare('UPDATE USUARIO_SISTEMA SET password_hash = ? WHERE id_usuario = ?');
+        for (const u of unhashed) {
+          updateStmt.run(hashPassword(u.password_hash), u.id_usuario);
+        }
+        console.log(`[SQLite Crypto] Migradas ${unhashed.length} contraseñas a scrypt + salt.`);
+      }
+    } catch (e) {
+      console.warn('[SQLite Crypto] Advertencia en migración de hashes:', e);
+    }
+  }
+
+  // Migración automática de clientes CRM a columnas cifradas AES-256-GCM
+  try {
+    const unencryptedClients = db.prepare("SELECT id_cliente, telefono_whatsapp, direccion_despacho FROM CLIENTE_CRM WHERE telefono_whatsapp NOT LIKE 'enc_%' AND telefono_whatsapp NOT LIKE 'enc$%'").all();
+    if (unencryptedClients.length > 0) {
+      const updateClientStmt = db.prepare('UPDATE CLIENTE_CRM SET telefono_whatsapp = ?, direccion_despacho = ? WHERE id_cliente = ?');
+      for (const c of unencryptedClients) {
+        try {
+          updateClientStmt.run(
+            encryptDeterministic(c.telefono_whatsapp),
+            encryptField(c.direccion_despacho),
+            c.id_cliente
+          );
+        } catch (innerErr) {
+          // Si ya existe otro registro con el mismo teléfono determinístico, reasignar órdenes y depurar duplicado
+          if (String(innerErr).includes('UNIQUE constraint')) {
+            const encTel = encryptDeterministic(c.telefono_whatsapp);
+            const canonical = db.prepare('SELECT id_cliente FROM CLIENTE_CRM WHERE telefono_whatsapp = ?').get(encTel);
+            if (canonical) {
+              db.prepare('UPDATE ORDEN_PEDIDO SET id_cliente = ? WHERE id_cliente = ?').run(canonical.id_cliente, c.id_cliente);
+              db.prepare('DELETE FROM CLIENTE_CRM WHERE id_cliente = ?').run(c.id_cliente);
+            }
+          }
+        }
+      }
+      console.log(`[SQLite Crypto] Cifrados datos de clientes en CLIENTE_CRM con AES-256-GCM.`);
+    }
+  } catch (e) {
+    console.warn('[SQLite Crypto] Advertencia en migración de CLIENTE_CRM:', e);
   }
 
   // 3. Verificar e insertar catálogo si está vacío
@@ -95,14 +141,14 @@ export function initDatabase() {
     }
     console.log(`[SQLite] ${catalog.length} productos y sus tramos normalizados insertados.`);
 
-    // Clientes de ejemplo en el CRM
+    // Clientes de ejemplo en el CRM con campos sensibles cifrados
     const insertCliente = db.prepare(`
       INSERT INTO CLIENTE_CRM (nombre_completo, telefono_whatsapp, direccion_despacho, comuna_rm, fecha_registro, total_pedidos, recurrente_flag)
       VALUES (?, ?, ?, ?, ?, ?, ?)
     `);
-    insertCliente.run('Carlos Mardones Silva', '+56987654321', 'Av. Providencia 1240, Depto 402', 'Providencia', new Date().toISOString(), 2, 1);
-    insertCliente.run('Almacén Don Tito', '+56991234567', 'San Diego 850, Local 4', 'Santiago Centro', new Date().toISOString(), 3, 1);
-    insertCliente.run('Mariana Valenzuela Pinto', '+56976543210', 'Los Leones 2350', 'Ñuñoa', new Date().toISOString(), 1, 0);
+    insertCliente.run('Carlos Mardones Silva', encryptDeterministic('+56987654321'), encryptField('Av. Providencia 1240, Depto 402'), 'Providencia', new Date().toISOString(), 2, 1);
+    insertCliente.run('Almacén Don Tito', encryptDeterministic('+56991234567'), encryptField('San Diego 850, Local 4'), 'Santiago Centro', new Date().toISOString(), 3, 1);
+    insertCliente.run('Mariana Valenzuela Pinto', encryptDeterministic('+56976543210'), encryptField('Los Leones 2350'), 'Ñuñoa', new Date().toISOString(), 1, 0);
 
     // Registro inicial en bitácora SIEM
     const insertLog = db.prepare(`

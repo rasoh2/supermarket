@@ -9,6 +9,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { db, initDatabase } from './db.js';
+import { 
+  hashPassword, 
+  verifyPassword, 
+  encryptField, 
+  encryptDeterministic, 
+  decryptField 
+} from './crypto-security.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -135,7 +142,7 @@ async function handleApi(req, res, url) {
     }
 
     const user = db.prepare('SELECT * FROM USUARIO_SISTEMA WHERE username = ?').get(username);
-    if (!user || user.password_hash !== password) {
+    if (!user || !verifyPassword(password, user.password_hash)) {
       failedAttempts.set(username, attempts + 1);
       logSiem('ADMIN_AUTH_FAILED', 'WARNING', { username, reason: 'Credenciales inválidas' }, ip, ua);
       return sendJson(res, 401, { error: 'Usuario o contraseña incorrectos.' });
@@ -183,7 +190,7 @@ async function handleApi(req, res, url) {
         INSERT INTO USUARIO_SISTEMA (username, nombre_real, password_hash, rol, activo, ultimo_acceso)
         VALUES (?, ?, ?, ?, 1, NULL)
       `);
-      const result = stmt.run(username.trim().toLowerCase(), nombre_real.trim(), password, rol);
+      const result = stmt.run(username.trim().toLowerCase(), nombre_real.trim(), hashPassword(password), rol);
       logSiem('USER_ACCOUNT_CREATED', 'INFO', { new_username: username, assigned_role: rol }, ip, ua);
       return sendJson(res, 201, { success: true, id_usuario: result.lastInsertRowid });
     } catch (err) {
@@ -207,7 +214,7 @@ async function handleApi(req, res, url) {
 
     if (password && password.trim()) {
       sql += ', password_hash = ?';
-      params.push(password);
+      params.push(hashPassword(password.trim()));
     }
     sql += ' WHERE id_usuario = ?';
     params.push(id);
@@ -243,22 +250,26 @@ async function handleApi(req, res, url) {
       return sendJson(res, 400, { error: 'El pedido debe contener al menos un producto.' });
     }
 
-    // Registrar o actualizar cliente en CRM
-    let cliente = db.prepare('SELECT * FROM CLIENTE_CRM WHERE telefono_whatsapp = ?').get(customer.telefono.trim());
+    // Registrar o actualizar cliente en CRM con campos sensibles cifrados (AES-256-GCM)
+    const plainTel = customer.telefono.trim();
+    const encTel = encryptDeterministic(plainTel);
+    const encDir = encryptField(customer.direccion.trim());
+
+    let cliente = db.prepare('SELECT * FROM CLIENTE_CRM WHERE telefono_whatsapp = ? OR telefono_whatsapp = ?').get(encTel, plainTel);
     let id_cliente;
     if (cliente) {
       id_cliente = cliente.id_cliente;
       db.prepare(`
         UPDATE CLIENTE_CRM SET 
-          nombre_completo = ?, direccion_despacho = ?, comuna_rm = ?, 
+          nombre_completo = ?, telefono_whatsapp = ?, direccion_despacho = ?, comuna_rm = ?, 
           total_pedidos = total_pedidos + 1, recurrente_flag = 1 
         WHERE id_cliente = ?
-      `).run(customer.nombre.trim(), customer.direccion.trim(), customer.comuna.trim(), id_cliente);
+      `).run(customer.nombre.trim(), encTel, encDir, customer.comuna.trim(), id_cliente);
     } else {
       const resC = db.prepare(`
         INSERT INTO CLIENTE_CRM (nombre_completo, telefono_whatsapp, direccion_despacho, comuna_rm, fecha_registro, total_pedidos, recurrente_flag)
         VALUES (?, ?, ?, ?, ?, 1, 0)
-      `).run(customer.nombre.trim(), customer.telefono.trim(), customer.direccion.trim(), customer.comuna.trim(), new Date().toISOString());
+      `).run(customer.nombre.trim(), encTel, encDir, customer.comuna.trim(), new Date().toISOString());
       id_cliente = resC.lastInsertRowid;
     }
 
@@ -379,6 +390,8 @@ async function handleApi(req, res, url) {
     const details = db.prepare('SELECT * FROM DETALLE_ORDEN').all();
     const result = orders.map(o => ({
       ...o,
+      telefono_whatsapp: decryptField(o.telefono_whatsapp),
+      direccion_despacho: decryptField(o.direccion_despacho),
       items: details.filter(d => d.id_orden === o.id_orden)
     }));
     return sendJson(res, 200, result);
@@ -457,7 +470,12 @@ async function handleApi(req, res, url) {
       JOIN CLIENTE_CRM c ON o.id_cliente = c.id_cliente
       ORDER BY d.id_despacho DESC
     `).all();
-    return sendJson(res, 200, list);
+    const decryptedList = list.map(d => ({
+      ...d,
+      telefono_whatsapp: decryptField(d.telefono_whatsapp),
+      direccion_despacho: decryptField(d.direccion_despacho)
+    }));
+    return sendJson(res, 200, decryptedList);
   }
 
   if (pathname.startsWith('/api/dispatch/') && pathname.endsWith('/status') && method === 'PATCH') {
@@ -493,7 +511,12 @@ async function handleApi(req, res, url) {
   // 9. Clientes CRM (RF-17 / CU-11)
   if (pathname === '/api/customers' && method === 'GET') {
     const clientes = db.prepare('SELECT * FROM CLIENTE_CRM ORDER BY id_cliente DESC').all();
-    return sendJson(res, 200, clientes);
+    const decryptedClientes = clientes.map(c => ({
+      ...c,
+      telefono_whatsapp: decryptField(c.telefono_whatsapp),
+      direccion_despacho: decryptField(c.direccion_despacho)
+    }));
+    return sendJson(res, 200, decryptedClientes);
   }
 
   // 10. Métricas Comerciales (RF-18 / CU-11)

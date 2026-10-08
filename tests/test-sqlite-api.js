@@ -4,6 +4,7 @@
  */
 
 import { db, initDatabase } from '../server/db.js';
+import { encryptDeterministic, encryptField } from '../server/crypto-security.js';
 
 async function runSqliteTests() {
   console.log('===============================================================');
@@ -66,12 +67,14 @@ async function runSqliteTests() {
   const stockInitial = db.prepare("SELECT stock_actual FROM PRODUCTO WHERE sku = 'AB-001'").get().stock_actual;
   const orderCode = `TEST-SQLITE-${Math.floor(1000 + Math.random() * 9000)}`;
 
-  // Crear cliente
-  const cliRes = db.prepare(`
+  // Crear cliente (con columnas sensibles cifradas)
+  const testPhone = encryptDeterministic('+56900112233');
+  const testAddress = encryptField('Av. Central 500');
+  db.prepare(`
     INSERT OR IGNORE INTO CLIENTE_CRM (nombre_completo, telefono_whatsapp, direccion_despacho, comuna_rm, fecha_registro, total_pedidos, recurrente_flag)
-    VALUES ('Cliente Test SQLite', '+56900112233', 'Av. Central 500', 'Santiago', ?, 1, 0)
-  `).run(new Date().toISOString());
-  const cliente = db.prepare("SELECT id_cliente FROM CLIENTE_CRM WHERE telefono_whatsapp = '+56900112233'").get();
+    VALUES ('Cliente Test SQLite', ?, ?, 'Santiago', ?, 1, 0)
+  `).run(testPhone, testAddress, new Date().toISOString());
+  const cliente = db.prepare("SELECT id_cliente FROM CLIENTE_CRM WHERE telefono_whatsapp = ? OR telefono_whatsapp = '+56900112233'").get(testPhone);
 
   // Crear orden
   const ordRes = db.prepare(`
