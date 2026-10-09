@@ -78,19 +78,19 @@ export default function ProductCard({ product }) {
             <div className={`tier-item ${pricing.tramoAplicado === 1 ? 'active-tier' : ''}`}>
               <span>1 - 2 u. <span className="text-muted">(Retail)</span></span>
               <span className="fw-semibold">
-                {product.tramos?.[0]?.precio_unitario ? formatCLP(product.tramos[0].precio_unitario) : '$0'}
+                {(product.tramos?.[0]?.precio_unitario || product.tramos?.[0]?.precio) ? formatCLP(product.tramos[0].precio_unitario || product.tramos[0].precio) : '$0'}
               </span>
             </div>
             <div className={`tier-item ${pricing.tramoAplicado === 3 ? 'active-tier' : ''}`}>
               <span>3 - 5 u. <span className="text-success fw-bold">(Mayorista)</span></span>
               <span className="fw-semibold text-success">
-                {product.tramos?.[1]?.precio_unitario ? formatCLP(product.tramos[1].precio_unitario) : '$0'}
+                {(product.tramos?.[1]?.precio_unitario || product.tramos?.[1]?.precio) ? formatCLP(product.tramos[1].precio_unitario || product.tramos[1].precio) : '$0'}
               </span>
             </div>
             <div className={`tier-item ${pricing.tramoAplicado === 6 ? 'active-tier' : ''}`}>
               <span>6+ u. <span className="text-warning fw-bold">(Distribuidor)</span></span>
               <span className="fw-semibold text-warning">
-                {product.tramos?.[2]?.precio_unitario ? formatCLP(product.tramos[2].precio_unitario) : '$0'}
+                {(product.tramos?.[2]?.precio_unitario || product.tramos?.[2]?.precio) ? formatCLP(product.tramos[2].precio_unitario || product.tramos[2].precio) : '$0'}
               </span>
             </div>
           </div>

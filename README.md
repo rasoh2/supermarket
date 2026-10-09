@@ -40,23 +40,36 @@ El sistema integra un backend en Node.js nativo con SQLite (`node:sqlite` sin de
 
 ---
 
-## 🚀 Puesta en Marcha Local
+## 🚀 Puesta en Marcha Local (Para Desarrolladores)
 
 ### Prerrequisitos
 - **Node.js v22+** (incluye soporte nativo para `node:sqlite`).
+- **NPM** (Gestor de paquetes).
 
-### Ejecución
+### Instalación
+Al clonar o descargar el repositorio, primero debes instalar las dependencias necesarias:
 ```bash
-# 1. Iniciar servidor Full-Stack (API REST + Frontend estático)
-npm start
-# O directamente:
-node server/server.js
+npm install
 ```
 
-Abrir en el navegador:
-- **Tienda Pública:** [http://localhost:8080/index.html](http://localhost:8080/index.html)
-- **Panel Administrativo:** [http://localhost:8080/index.html#admin](http://localhost:8080/index.html#admin)
-- **Healthcheck API:** [http://localhost:8080/api/health](http://localhost:8080/api/health)
+### Ejecución del Entorno de Desarrollo
+Este proyecto consta de dos partes (Frontend en React+Vite y Backend en Node.js+SQLite). Para el desarrollo local, debes abrir **dos terminales separadas** y correr ambos comandos:
+
+**Terminal 1: Iniciar servidor Backend (API y Base de Datos)**
+```bash
+npm run server
+```
+*El backend quedará escuchando en `http://localhost:8080`*
+
+**Terminal 2: Iniciar servidor Frontend (React + Vite)**
+```bash
+npm run dev
+```
+*El frontend iniciará con Hot-Reload en `http://localhost:5173`*
+
+Abrir en el navegador (Entorno Dev):
+- **Tienda Pública:** [http://localhost:5173/](http://localhost:5173/)
+- **Healthcheck API Backend:** [http://localhost:8080/api/health](http://localhost:8080/api/health)
 
 ---
 

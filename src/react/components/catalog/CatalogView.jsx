@@ -62,7 +62,7 @@ export default function CatalogView() {
             Cuatro Tiendas en un Solo Pedido y un Único Despacho
           </h1>
           <p className="col-lg-8 fs-6 text-secondary mb-3">
-            Explora nuestro catálogo unificado de <strong>Abarrotes</strong>, <strong>Bebidas</strong>, <strong>Aseo</strong> y <strong>Disfraces</strong> con más de 200 productos. Ahorra automáticamente hasta un <strong>30% de descuento</strong> al llevar por volumen (3 y 6+ unidades). Cobertura garantizada en toda la Región Metropolitana.
+            Explora nuestro catálogo unificado de <strong>Abarrotes</strong>, <strong>Bebidas</strong>, <strong>Aseo</strong> y <strong>Disfraces</strong> con varios productos. Ahorra automáticamente hasta un <strong>30% de descuento</strong> al llevar por volumen (3 y 6+ unidades). Cobertura garantizada en toda la Región Metropolitana.
           </p>
 
           <div className="d-flex flex-wrap gap-3 text-secondary small">
@@ -86,7 +86,7 @@ export default function CatalogView() {
           <div className="spinner-border text-primary" role="status">
             <span className="visually-hidden">Cargando catálogo...</span>
           </div>
-          <p className="text-secondary mt-3">Sincronizando 200 productos con la base de datos relacional...</p>
+          <p className="text-secondary mt-3">Sincronizando productos con la base de datos relacional...</p>
         </div>
       ) : error ? (
         <div className="alert alert-danger text-center p-4">

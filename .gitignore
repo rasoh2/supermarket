@@ -13,3 +13,7 @@ data/*.db
 data/*.db-wal
 data/*.db-shm
 *.db
+
+# Documentos
+*.docx
+*.pdf
