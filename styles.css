@@ -2050,5 +2050,5 @@ button, input, select, textarea {
   text-align: center;
   font-size: 0.8rem;
 }
-@ m e d i a   ( m a x - w i d t h :   7 6 8 p x )   {   . b r a n d - t e x t   h 1   {   f o n t - s i z e :   1 . 1 r e m ;   }   . b r a n d - s u b t i t l e   {   d i s p l a y :   n o n e ;   }   . n a v b a r - c u s t o m   . c o n t a i n e r   {   f l e x - d i r e c t i o n :   c o l u m n ;   g a p :   1 0 p x ;   }   }  
- 
+@ m e d i a   ( m a x - w i d t h :   7 6 8 p x )   {   . b r a n d - t e x t   h 1   {   f o n t - s i z e :   1 . 1 r e m ;   }   . b r a n d - s u b t i t l e   {   d i s p l a y :   n o n e ;   }   . n a v b a r - c u s t o m   . c o n t a i n e r   {   f l e x - d i r e c t i o n :   c o l u m n ;   g a p :   1 0 p x ;   }   } 
+@media (max-width: 768px) { .brand-text h1 { font-size: 1.1rem; } .brand-subtitle { display: none; } }

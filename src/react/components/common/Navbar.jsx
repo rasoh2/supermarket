@@ -29,21 +29,25 @@ export default function Navbar({ currentView, onNavigate }) {
             id="nav-btn-catalog"
             className={`btn btn-sm ${currentView === 'catalog' ? 'btn-primary' : 'btn-outline-light'}`}
             onClick={() => onNavigate('catalog')}
+            title="Catálogo"
           >
-            <i className="bi bi-shop me-1"></i> Catálogo
+            <i className="bi bi-shop me-1"></i> <span className="d-none d-sm-inline">Catálogo</span>
           </button>
 
           <button
             id="nav-btn-admin"
             className={`btn btn-sm ${currentView === 'admin' ? 'btn-primary' : 'btn-outline-light'}`}
             onClick={() => onNavigate('admin')}
+            title="Administración"
           >
             <i className="bi bi-shield-lock me-1"></i>
-            {isAuthenticated ? (
-              user?.rol === 'SUPER_ADMIN' ? 'Super Admin' : 'Panel de Control'
-            ) : (
-              'Administración'
-            )}
+            <span className="d-none d-sm-inline">
+              {isAuthenticated ? (
+                user?.rol === 'SUPER_ADMIN' ? 'Super Admin' : 'Panel de Control'
+              ) : (
+                'Administración'
+              )}
+            </span>
           </button>
 
           {isAuthenticated && (
@@ -59,11 +63,12 @@ export default function Navbar({ currentView, onNavigate }) {
           {/* Botón de Carrito */}
           <button 
             id="header-open-cart-btn"
-            className="btn btn-sm btn-success position-relative ms-2 fw-semibold px-3"
+            className="btn btn-sm btn-success position-relative ms-2 fw-semibold px-3 px-sm-3 px-2"
             onClick={openCart}
             aria-label="Abrir carrito de compras"
+            title="Mi Carrito"
           >
-            <i className="bi bi-cart3 me-1"></i> Mi Carrito
+            <i className="bi bi-cart3 me-1"></i> <span className="d-none d-sm-inline">Mi Carrito</span>
             {totalUnidades > 0 && (
               <span 
                 id="cart-badge-count" 
