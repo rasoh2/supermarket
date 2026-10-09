@@ -34,6 +34,9 @@ function AppContent() {
   const navigateTo = (view) => {
     setCurrentView(view);
     window.location.hash = view === 'admin' ? '#admin' : '#catalogo';
+    
+    // Si ya está en la vista, hace scroll hacia arriba (útil para el botón Catálogo)
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

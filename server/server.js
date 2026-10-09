@@ -112,13 +112,43 @@ async function handleApi(req, res, url) {
     return res.end();
   }
 
-  // SEC-01 Fix: Verificar token en rutas protegidas
-  if (pathname.startsWith('/api/') && pathname !== '/api/health' && pathname !== '/api/auth/login') {
-    const user = getAuthenticatedUser(req);
+  // SEC-01 Fix: Verificación de token y RBAC en rutas protegidas
+  const publicRoutes = ['/api/health', '/api/auth/login', '/api/catalog'];
+  const isPublicRoute = publicRoutes.includes(pathname) || 
+                        (pathname === '/api/orders' && method === 'POST'); // Checkout es público
+                        
+  let user = null;
+  if (pathname.startsWith('/api/') && !isPublicRoute) {
+    user = getAuthenticatedUser(req);
     if (!user) {
       logSiem('AUTH_REJECTED', 'WARNING', { path: pathname, ip, reason: 'Token inválido o ausente' }, ip, ua);
       return sendJson(res, 401, { error: 'No autorizado. Token inválido o ausente.' });
     }
+  }
+
+  // Verificación de Roles (RBAC) para rutas específicas
+  if (pathname.startsWith('/api/users') && user && user.rol !== 'SUPER_ADMIN') {
+    return sendJson(res, 403, { error: 'Prohibido. Se requiere rol SUPER_ADMIN.' });
+  }
+
+  if (pathname.startsWith('/api/security/logs') && user && user.rol !== 'SUPER_ADMIN') {
+    return sendJson(res, 403, { error: 'Prohibido. Se requiere rol SUPER_ADMIN para ver bitácora.' });
+  }
+
+  if (pathname.startsWith('/api/inventory/movements') && user && !['SUPER_ADMIN', 'ADMIN_TIENDA'].includes(user.rol)) {
+    return sendJson(res, 403, { error: 'Prohibido. Se requiere rol ADMIN_TIENDA o superior.' });
+  }
+
+  if (pathname.startsWith('/api/dispatch') && user && !['SUPER_ADMIN', 'DESPACHADOR'].includes(user.rol)) {
+    return sendJson(res, 403, { error: 'Prohibido. Se requiere rol DESPACHADOR o superior.' });
+  }
+
+  if (pathname.startsWith('/api/metrics') && user && !['SUPER_ADMIN', 'ADMIN_TIENDA'].includes(user.rol)) {
+    return sendJson(res, 403, { error: 'Prohibido. Se requiere rol ADMIN_TIENDA o superior para métricas.' });
+  }
+  
+  if (pathname.startsWith('/api/customers') && user && !['SUPER_ADMIN', 'ADMIN_TIENDA'].includes(user.rol)) {
+    return sendJson(res, 403, { error: 'Prohibido. Se requiere rol ADMIN_TIENDA o superior para clientes.' });
   }
 
   // 1. Estado y Healthcheck

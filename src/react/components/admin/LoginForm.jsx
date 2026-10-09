@@ -3,8 +3,8 @@ import { useAuth } from '../../context/AuthContext.jsx';
 
 export default function LoginForm() {
   const { login, isLoading, authError } = useAuth();
-  const [username, setUsername] = useState('superadmin');
-  const [password, setPassword] = useState('admin123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ export default function LoginForm() {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} id="admin-login-form">
+            <form onSubmit={handleSubmit} id="admin-login-form" autoComplete="off">
               <div className="mb-3">
                 <label className="form-label text-light small fw-bold">Usuario de Sistema</label>
                 <div className="input-group">

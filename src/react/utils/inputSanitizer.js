@@ -4,13 +4,14 @@
  */
 
 export const SANTIAGO_COMUNAS = [
-  'Santiago Centro', 'Cerrillos', 'Cerro Navia', 'Conchalí', 'El Bosque',
-  'Estación Central', 'Huechuraba', 'Independencia', 'La Cisterna', 'La Florida',
-  'La Granja', 'La Pintana', 'La Reina', 'Las Condes', 'Lo Barnechea',
-  'Lo Espejo', 'Lo Prado', 'Macul', 'Maipú', 'Ñuñoa', 'Pedro Aguirre Cerda',
-  'Peñalolén', 'Providencia', 'Pudahuel', 'Quilicura', 'Quinta Normal',
-  'Recoleta', 'Renca', 'San Joaquín', 'San Miguel', 'San Ramón', 'Vitacura',
-  'Puente Alto', 'San Bernardo', 'Padre Hurtado', 'Lampa', 'Colina'
+  'Alhué', 'Buin', 'Calera de Tango', 'Cerrillos', 'Cerro Navia', 'Colina', 'Conchalí', 
+  'Curacaví', 'El Bosque', 'El Monte', 'Estación Central', 'Huechuraba', 'Independencia', 
+  'Isla de Maipo', 'La Cisterna', 'La Florida', 'La Granja', 'La Pintana', 'La Reina', 
+  'Lampa', 'Las Condes', 'Lo Barnechea', 'Lo Espejo', 'Lo Prado', 'Macul', 'Maipú', 
+  'María Pinto', 'Melipilla', 'Ñuñoa', 'Padre Hurtado', 'Paine', 'Pedro Aguirre Cerda', 
+  'Peñaflor', 'Peñalolén', 'Pirque', 'Providencia', 'Pudahuel', 'Puente Alto', 'Quilicura', 
+  'Quinta Normal', 'Recoleta', 'Renca', 'San Bernardo', 'San Joaquín', 'San José de Maipo', 
+  'San Miguel', 'San Pedro', 'San Ramón', 'Santiago Centro', 'Talagante', 'Til Til', 'Vitacura'
 ].sort();
 
 export function inspectAndSanitize(input, fieldName = 'campo') {

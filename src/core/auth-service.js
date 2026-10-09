@@ -69,54 +69,47 @@ class AuthService {
       return { success: false, error: inspPass.reason };
     }
 
-    // 3. Consulta de credenciales en base de datos
-    const user = db.findOne(TABLES.USUARIO_SISTEMA, u =>
-      u.username.toLowerCase() === username.trim().toLowerCase() &&
-      u.activo !== false
-    );
-
-    // En frontend asume hash simulado (en prod usar bcrypt real)
-    const simulatedHash = btoa(password + 'salt123');
-    if (!user || (user.password_hash !== password && user.password_hash !== simulatedHash)) {
-      wafEngine.recordFailedAttempt(key);
-      wafEngine.logSecurityIncident('ADMIN_AUTH_FAILED', 'WARNING', {
-        username,
-        reason: 'Credenciales inválidas'
+    // 3. Consulta de credenciales en base de datos (Backend)
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: username.trim(), password })
       });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        wafEngine.recordFailedAttempt(key);
+        wafEngine.logSecurityIncident('ADMIN_AUTH_FAILED', 'WARNING', {
+          username,
+          reason: data.error || 'Credenciales inválidas'
+        });
+        return {
+          success: false,
+          error: data.error || 'Usuario o contraseña incorrectos. Verifique sus credenciales.'
+        };
+      }
+
+      // 4. Éxito
+      wafEngine.recordSuccessfulAttempt(key);
+
+      this.token = data.token;
+      this.user = data.user;
+
+      sessionStorage.setItem(AUTH_TOKEN_KEY, this.token);
+      sessionStorage.setItem(CURRENT_USER_KEY, JSON.stringify(this.user));
+
+      window.dispatchEvent(new CustomEvent('supermarket:auth-changed', { detail: { user: this.user } }));
+      window.dispatchEvent(new CustomEvent('megasuper:auth-changed', { detail: { user: this.user } }));
+      return { success: true, user: this.user, token: this.token };
+    } catch (error) {
+      wafEngine.recordFailedAttempt(key);
       return {
         success: false,
-        error: 'Usuario o contraseña incorrectos. Verifique sus credenciales.'
+        error: 'Error de conexión con el servidor.'
       };
     }
-
-    // 4. Éxito
-    wafEngine.recordSuccessfulAttempt(key);
-
-    const token = this.generateJwt(user);
-    this.token = token;
-    this.user = {
-      id_usuario: user.id_usuario,
-      username: user.username,
-      nombre_real: user.nombre_real,
-      rol: user.rol
-    };
-
-    sessionStorage.setItem(AUTH_TOKEN_KEY, token);
-    sessionStorage.setItem(CURRENT_USER_KEY, JSON.stringify(this.user));
-
-    db.update(TABLES.USUARIO_SISTEMA, u => u.id_usuario === user.id_usuario, () => ({
-      ultimo_acceso: new Date().toISOString()
-    }));
-
-    wafEngine.logSecurityIncident('ADMIN_AUTH_SUCCESS', 'INFO', {
-      id_usuario: user.id_usuario,
-      username: user.username,
-      rol: user.rol
-    });
-
-    window.dispatchEvent(new CustomEvent('supermarket:auth-changed', { detail: { user: this.user } }));
-    window.dispatchEvent(new CustomEvent('megasuper:auth-changed', { detail: { user: this.user } }));
-    return { success: true, user: this.user, token };
   }
 
   logout() {
