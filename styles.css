@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SuperMarket.cl - Sistema de Diseño y Estilos Oficiales (Clean Architecture)
+   SuperMarket - Sistema de  Diseño y Estilos Oficiales (Clean Architecture)
    Norma de Calidad ISO/IEC 25010 y Accesibilidad Universal WCAG 2.1 Nivel AA
    ========================================================================== */
 
@@ -7,14 +7,17 @@
 
 :root {
   /* Paleta Cromática Armoniosa */
-  --primary: #0284c7;        /* Azul Comercial Primario (Contraste AA: > 4.8:1) */
+  --primary: #0284c7;
+  /* Azul Comercial Primario (Contraste AA: > 4.8:1) */
   --primary-hover: #0369a1;
   --primary-dark: #0c4a6e;
   --primary-light: #e0f2fe;
 
-  --accent-wholesale: #059669; /* Verde Ahorro Mayorista */
+  --accent-wholesale: #059669;
+  /* Verde Ahorro Mayorista */
   --accent-wholesale-light: #d1fae5;
-  --accent-super: #7c3aed;     /* Púrpura Distribuidor */
+  --accent-super: #7c3aed;
+  /* Púrpura Distribuidor */
   --accent-super-light: #ede9fe;
 
   --warning: #d97706;
@@ -30,8 +33,10 @@
   --border-focus: #0284c7;
 
   /* Tipografía */
-  --text-main: #0f172a;        /* Contraste 13.8:1 sobre fondo claro */
-  --text-muted: #475569;       /* Contraste 5.5:1 (Cumple WCAG AA) */
+  --text-main: #0f172a;
+  /* Contraste 13.8:1 sobre fondo claro */
+  --text-muted: #475569;
+  /* Contraste 5.5:1 (Cumple WCAG AA) */
   --text-light: #ffffff;
 
   /* Elevaciones */
@@ -50,7 +55,9 @@
 }
 
 /* Reset y Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -69,7 +76,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, .brand-logo, .hero-title {
+h1,
+h2,
+h3,
+h4,
+.brand-logo,
+.hero-title {
   font-family: 'Outfit', sans-serif;
   color: var(--text-main);
 }
@@ -79,7 +91,10 @@ a {
   text-decoration: none;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
 }
@@ -493,10 +508,25 @@ button, input, select, textarea {
   border-radius: var(--radius-full);
 }
 
-.category-pill.abarrotes { background: #fef3c7; color: #92400e; }
-.category-pill.bebidas { background: #e0f2fe; color: #0369a1; }
-.category-pill.aseo { background: #dcfce7; color: #166534; }
-.category-pill.disfraces { background: #f3e8ff; color: #6b21a8; }
+.category-pill.abarrotes {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.category-pill.bebidas {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.category-pill.aseo {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.category-pill.disfraces {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
 
 .sku-badge {
   font-size: 0.75rem;
@@ -786,7 +816,8 @@ button, input, select, textarea {
 /* ==========================================================================
    CARRITO LATERAL (DRAWER)
    ========================================================================== */
-.cart-backdrop, .modal-backdrop {
+.cart-backdrop,
+.modal-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(15, 23, 42, 0.6);
@@ -797,7 +828,8 @@ button, input, select, textarea {
   transition: opacity var(--transition-normal), visibility var(--transition-normal);
 }
 
-.cart-backdrop.open, .modal-backdrop.open {
+.cart-backdrop.open,
+.modal-backdrop.open {
   opacity: 1;
   visibility: visible;
 }
@@ -922,10 +954,25 @@ button, input, select, textarea {
   border-radius: var(--radius-full);
 }
 
-.cart-item-category.abarrotes { background: #fef3c7; color: #92400e; }
-.cart-item-category.bebidas { background: #e0f2fe; color: #0369a1; }
-.cart-item-category.aseo { background: #dcfce7; color: #166534; }
-.cart-item-category.disfraces { background: #f3e8ff; color: #6b21a8; }
+.cart-item-category.abarrotes {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.cart-item-category.bebidas {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.cart-item-category.aseo {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.cart-item-category.disfraces {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
 
 .cart-item-remove-btn {
   background: none;
@@ -1244,8 +1291,13 @@ button, input, select, textarea {
   gap: 0.75rem;
 }
 
-.form-row .col-7 { flex: 7; }
-.form-row .col-5 { flex: 5; }
+.form-row .col-7 {
+  flex: 7;
+}
+
+.form-row .col-5 {
+  flex: 5;
+}
 
 .payment-options-grid {
   display: grid;
@@ -1267,7 +1319,7 @@ button, input, select, textarea {
   background: #f8fafc;
 }
 
-.payment-card input[type="radio"]:checked + .payment-card-content {
+.payment-card input[type="radio"]:checked+.payment-card-content {
   color: var(--primary);
 }
 
@@ -1604,9 +1656,23 @@ button, input, select, textarea {
   border-radius: var(--radius-full);
 }
 
-.admin-badge-role.super_admin { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-.admin-badge-role.admin_tienda { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
-.admin-badge-role.despachador { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.admin-badge-role.super_admin {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.admin-badge-role.admin_tienda {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.admin-badge-role.despachador {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
 
 .btn-logout {
   background: var(--bg-subtle);
@@ -1722,9 +1788,20 @@ button, input, select, textarea {
   font-weight: 700;
 }
 
-.status-pill.green { background: #dcfce7; color: #166534; }
-.status-pill.orange { background: #fef3c7; color: #92400e; }
-.status-pill.red { background: #fee2e2; color: #991b1b; }
+.status-pill.green {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pill.orange {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-pill.red {
+  background: #fee2e2;
+  color: #991b1b;
+}
 
 .status-badge-dispatch {
   padding: 0.25rem 0.65rem;
@@ -1733,11 +1810,30 @@ button, input, select, textarea {
   font-weight: 800;
 }
 
-.status-badge-dispatch.status-pendiente { background: #fef3c7; color: #92400e; }
-.status-badge-dispatch.status-en_preparacion { background: #e0f2fe; color: #0369a1; }
-.status-badge-dispatch.status-en_ruta { background: #f3e8ff; color: #6b21a8; }
-.status-badge-dispatch.status-entregado { background: #dcfce7; color: #166534; }
-.status-badge-dispatch.status-cancelado { background: #fee2e2; color: #991b1b; }
+.status-badge-dispatch.status-pendiente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge-dispatch.status-en_preparacion {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-badge-dispatch.status-en_ruta {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.status-badge-dispatch.status-entregado {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-badge-dispatch.status-cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+}
 
 .action-btn-group {
   display: flex;
@@ -1854,9 +1950,20 @@ button, input, select, textarea {
   font-weight: 800;
 }
 
-.mov-badge.entrada { background: #dcfce7; color: #166534; }
-.mov-badge.salida { background: #fee2e2; color: #991b1b; }
-.mov-badge.ajuste { background: #e0f2fe; color: #0369a1; }
+.mov-badge.entrada {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.mov-badge.salida {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.mov-badge.ajuste {
+  background: #e0f2fe;
+  color: #0369a1;
+}
 
 /* KPIs Grid */
 .kpi-cards-grid {
@@ -1931,9 +2038,20 @@ button, input, select, textarea {
   font-weight: 800;
 }
 
-.severity-tag.info { background: #e0f2fe; color: #0369a1; }
-.severity-tag.warning { background: #fef3c7; color: #92400e; }
-.severity-tag.critical { background: #fee2e2; color: #991b1b; }
+.severity-tag.info {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.severity-tag.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.severity-tag.critical {
+  background: #fee2e2;
+  color: #991b1b;
+}
 
 .json-payload {
   font-family: monospace;
@@ -1954,8 +2072,16 @@ button, input, select, textarea {
   font-weight: 700;
 }
 
-.crm-badge.recurring { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
-.crm-badge.new { background: #f1f5f9; color: #475569; }
+.crm-badge.recurring {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.crm-badge.new {
+  background: #f1f5f9;
+  color: #475569;
+}
 
 /* Mini Modales */
 .mini-modal {
@@ -2050,5 +2176,3 @@ button, input, select, textarea {
   text-align: center;
   font-size: 0.8rem;
 }
-@ m e d i a   ( m a x - w i d t h :   7 6 8 p x )   {   . b r a n d - t e x t   h 1   {   f o n t - s i z e :   1 . 1 r e m ;   }   . b r a n d - s u b t i t l e   {   d i s p l a y :   n o n e ;   }   . n a v b a r - c u s t o m   . c o n t a i n e r   {   f l e x - d i r e c t i o n :   c o l u m n ;   g a p :   1 0 p x ;   }   } 
-@media (max-width: 768px) { .brand-text h1 { font-size: 1.1rem; } .brand-subtitle { display: none; } }
