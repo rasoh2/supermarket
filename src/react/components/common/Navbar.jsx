@@ -18,7 +18,7 @@ export default function Navbar({ currentView, onNavigate }) {
         >
           <div className="brand-badge-logo">SM</div>
           <div className="brand-text">
-            <h1>SUPER<span>MARKET</span>.CL</h1>
+            <h1>SUPER<span>MARKET</span></h1>
             <span className="brand-subtitle">Supermercado Mayorista Santiago</span>
           </div>
         </div>
