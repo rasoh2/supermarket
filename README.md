@@ -73,6 +73,22 @@ Abrir en el navegador (Entorno Dev):
 
 ---
 
+## 🌍 Despliegue en Producción (Cloud)
+
+Este proyecto está configurado y "dockerizado" para desplegarse automáticamente de forma gratuita en **Fly.io** utilizando un **Volumen Persistente** para garantizar que la base de datos de SQLite (`data/supermarket.db`) nunca pierda datos entre reinicios o despliegues.
+
+**Enlace Público Actual:**
+👉 [https://supermarket-cl.fly.dev/](https://supermarket-cl.fly.dev/)
+
+### Comandos de Despliegue Rápido
+Cualquier cambio que realices en el código local puede actualizar la tienda en producción ejecutando en la terminal:
+```bash
+fly deploy
+```
+*(Requiere tener [flyctl](https://fly.io/docs/hands-on/install-flyctl/) instalado y haber iniciado sesión con `fly auth login`)*.
+
+---
+
 ## 👥 Credenciales de Acceso al Panel
 
 | Rol | Usuario | Contraseña | Alcance / Permisos |

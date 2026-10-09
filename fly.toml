@@ -1,0 +1,20 @@
+app = "supermarket-cl"
+primary_region = "gru" # Sao Paulo (SCL Santiago ya no acepta nuevos servidores en Fly.io)
+
+
+
+[env]
+  PORT = "8080"
+  NODE_ENV = "production"
+
+[mounts]
+  source = "sqlite_data"
+  destination = "/workspace/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
