@@ -8,7 +8,8 @@
 import crypto from 'node:crypto';
 
 // Clave maestra para AES-256 (32 bytes = 256 bits)
-const MASTER_KEY_SOURCE = process.env.SUPERMARKET_ENCRYPTION_KEY || 'supermarket_master_encryption_key_2026_aes256_santiago_rm';
+const MASTER_KEY_SOURCE = process.env.SUPERMARKET_ENCRYPTION_KEY;
+if (!MASTER_KEY_SOURCE) throw new Error('SUPERMARKET_ENCRYPTION_KEY missing');
 const AES_KEY = crypto.createHash('sha256').update(MASTER_KEY_SOURCE).digest();
 
 /**
@@ -170,10 +171,7 @@ export function generateSessionToken(user, expiresInMs = 2 * 60 * 60 * 1000) {
 export function verifySessionToken(token) {
   if (!token || typeof token !== 'string') return null;
 
-  // Compatibilidad transparente con tokens legados en suites de tests existentes
-  if (token.startsWith('supermarket_jwt_') || token.startsWith('session_token_')) {
-    return { id_usuario: 1, username: 'admin', rol: 'SUPER_ADMIN' };
-  }
+  
 
   if (!token.startsWith('sm_sec_')) return null;
 

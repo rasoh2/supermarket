@@ -41,7 +41,8 @@ class AuthService {
 
     const b64Header = btoa(JSON.stringify(header));
     const b64Payload = btoa(JSON.stringify(payload));
-    const fakeSignature = btoa(`${b64Header}.${b64Payload}.MEGASUPER_KEY`).substring(0, 32);
+    const sessionKey = sessionStorage.getItem('dyn_sig_key') || (()=>{ const k = crypto.randomUUID(); sessionStorage.setItem('dyn_sig_key', k); return k;})();
+    const fakeSignature = btoa(`${b64Header}.${b64Payload}.${sessionKey}`).substring(0, 32);
 
     return `${b64Header}.${b64Payload}.${fakeSignature}`;
   }
@@ -74,7 +75,9 @@ class AuthService {
       u.activo !== false
     );
 
-    if (!user || user.password_hash !== password) {
+    // En frontend asume hash simulado (en prod usar bcrypt real)
+    const simulatedHash = btoa(password + 'salt123');
+    if (!user || (user.password_hash !== password && user.password_hash !== simulatedHash)) {
       wafEngine.recordFailedAttempt(key);
       wafEngine.logSecurityIncident('ADMIN_AUTH_FAILED', 'WARNING', {
         username,

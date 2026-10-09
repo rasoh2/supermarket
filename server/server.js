@@ -63,7 +63,7 @@ function parseBody(req) {
 function sendJson(res, statusCode, data) {
   res.writeHead(statusCode, {
     'Content-Type': 'application/json; charset=utf-8',
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': process.env.ALLOWED_ORIGIN || 'https://supermarket.cl',
     'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'X-Content-Type-Options': 'nosniff',
@@ -105,11 +105,20 @@ async function handleApi(req, res, url) {
   // Manejar pre-flight CORS
   if (method === 'OPTIONS') {
     res.writeHead(204, {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': process.env.ALLOWED_ORIGIN || 'https://supermarket.cl',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, Authorization'
     });
     return res.end();
+  }
+
+  // SEC-01 Fix: Verificar token en rutas protegidas
+  if (pathname.startsWith('/api/') && pathname !== '/api/health' && pathname !== '/api/auth/login') {
+    const user = getAuthenticatedUser(req);
+    if (!user) {
+      logSiem('AUTH_REJECTED', 'WARNING', { path: pathname, ip, reason: 'Token inválido o ausente' }, ip, ua);
+      return sendJson(res, 401, { error: 'No autorizado. Token inválido o ausente.' });
+    }
   }
 
   // 1. Estado y Healthcheck
