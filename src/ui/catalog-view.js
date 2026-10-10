@@ -205,7 +205,7 @@ export class CatalogView {
             alt="${product.nombre}" 
             class="product-image" 
             loading="lazy"
-            onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80'"
+            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'><rect fill=\'%231a2332\' width=\'400\' height=\'300\'/><text fill=\'%236c757d\' font-family=\'sans-serif\' font-size=\'60\' x=\'50%\' y=\'45%\' text-anchor=\'middle\'>🛒</text><text fill=\'%23adb5bd\' font-family=\'sans-serif\' font-size=\'15\' font-weight=\'bold\' x=\'50%\' y=\'70%\' text-anchor=\'middle\'>SuperMarket.cl</text></svg>'"
           />
         </div>
 

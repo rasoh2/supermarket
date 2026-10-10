@@ -140,10 +140,16 @@ export function initDatabase() {
           const umbral = t.umbral ?? t.tramo_umbral ?? 1;
           const precio = t.precio ?? t.precio_unitario ?? 0;
           const pct = t.descuento_pct ?? t.porcentaje_descuento ?? 0.0;
-          insertTramo.run(p.sku, Number(umbral), Number(precio), Number(pct));
         }
       }
     }
+
+    // Desactivar cualquier producto heredado fuera del catálogo maestro oficial de 100 SKUs
+    const validSkus = catalog.map(p => p.sku);
+    const placeholders = validSkus.map(() => '?').join(',');
+    db.prepare(`UPDATE PRODUCTO SET activo = 0 WHERE sku NOT IN (${placeholders})`).run(...validSkus);
+    db.prepare(`UPDATE PRODUCTO SET imagen_url = '/images/products/' || sku || '.jpg' WHERE imagen_url LIKE '%unsplash%'`).run();
+
     console.log(`[SQLite] ${catalog.length} productos y sus tramos normalizados sincronizados.`);
 
     // Clientes de ejemplo en el CRM con campos sensibles cifrados (solo si tabla vacía)

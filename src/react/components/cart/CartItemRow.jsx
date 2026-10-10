@@ -19,13 +19,13 @@ export default function CartItemRow({ item }) {
       <div className="d-flex gap-3 align-items-start">
         {/* Miniatura */}
         <img
-          src={item.imagen_url || 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=100'}
+          src={item.imagen_url || `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%231a2332" width="100" height="100"/><text fill="%236c757d" font-family="sans-serif" font-size="35" x="50%" y="60%" text-anchor="middle">🛒</text></svg>`}
           alt={item.nombre}
           className="rounded border border-secondary"
-          style={{ width: '60px', height: '60px', objectFit: 'cover' }}
+          style={{ width: '60px', height: '60px', objectFit: 'contain', backgroundColor: '#ffffff' }}
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=100';
+            e.target.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%231a2332" width="100" height="100"/><text fill="%236c757d" font-family="sans-serif" font-size="35" x="50%" y="60%" text-anchor="middle">🛒</text></svg>`;
           }}
         />
 
