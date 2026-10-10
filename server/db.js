@@ -101,15 +101,18 @@ export function initDatabase() {
     console.warn('[SQLite Crypto] Advertencia en migración de CLIENTE_CRM:', e);
   }
 
-  // 3. Verificar e insertar catálogo si está vacío
+  // 3. Verificar e insertar o actualizar catálogo maestro
   const catalog = fs.existsSync(CATALOG_PATH) ? JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8')) : [];
-  const productCount = db.prepare('SELECT COUNT(*) as count FROM PRODUCTO').get().count;
-  if (productCount < catalog.length && catalog.length > 0) {
+  if (catalog.length > 0) {
     console.log(`[SQLite] Sincronizando catálogo maestro (${catalog.length} productos)...`);
 
     const insertProd = db.prepare(`
       INSERT OR IGNORE INTO PRODUCTO (sku, nombre, categoria_tienda, stock_actual, stock_minimo, imagen_url, activo, destacado, descripcion)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+
+    const updateProdImg = db.prepare(`
+      UPDATE PRODUCTO SET imagen_url = ?, nombre = ?, categoria_tienda = ? WHERE sku = ?
     `);
 
     const insertTramo = db.prepare(`
@@ -130,6 +133,8 @@ export function initDatabase() {
         p.descripcion || ''
       );
 
+      updateProdImg.run(p.imagen_url || '', p.nombre, p.categoria_tienda, p.sku);
+
       if (p.tramos && Array.isArray(p.tramos)) {
         for (const t of p.tramos) {
           const umbral = t.umbral ?? t.tramo_umbral ?? 1;
@@ -139,7 +144,7 @@ export function initDatabase() {
         }
       }
     }
-    console.log(`[SQLite] ${catalog.length} productos y sus tramos normalizados insertados.`);
+    console.log(`[SQLite] ${catalog.length} productos y sus tramos normalizados sincronizados.`);
 
     // Clientes de ejemplo en el CRM con campos sensibles cifrados (solo si tabla vacía)
     const clientCount = db.prepare('SELECT COUNT(*) as count FROM CLIENTE_CRM').get().count;
