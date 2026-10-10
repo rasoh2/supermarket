@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="col-12 col-md-3">
             <h5 className="text-white fw-bold mb-3">Atención y Contacto</h5>
             <p className="small mb-1"><i className="bi bi-clock text-info me-1"></i> Lunes a Sábado: 08:30 a 20:00 hrs.</p>
-            <p className="small mb-1"><i className="bi bi-whatsapp text-success me-1"></i> +56 9 8765 4321</p>
+            <p className="small mb-1"><i className="bi bi-whatsapp text-success me-1"></i> +56 9 6675 3705</p>
             <p className="small"><i className="bi bi-envelope text-warning me-1"></i> ventas@supermarket.cl</p>
           </div>
         </div>

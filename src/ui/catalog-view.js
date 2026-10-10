@@ -453,7 +453,7 @@ export class CatalogView {
       `¿Tienen disponibilidad y factura para entrega en Santiago?`;
 
     const encoded = encodeURIComponent(msg);
-    const whatsappUrl = `https://wa.me/56987654321?text=${encoded}`;
+    const whatsappUrl = `https://wa.me/56966753705?text=${encoded}`;
     window.open(whatsappUrl, '_blank');
   }
 }

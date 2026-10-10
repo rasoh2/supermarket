@@ -417,7 +417,7 @@ async function handleApi(req, res, url) {
     msg += `\n💳 *Método de Pago:* ${paymentMethod || 'Transferencia'}`;
     if (notes) msg += `\n📝 *Notas:* ${notes}`;
 
-    const whatsappUrl = `https://wa.me/56987654321?text=${encodeURIComponent(msg)}`;
+    const whatsappUrl = `https://wa.me/56966753705?text=${encodeURIComponent(msg)}`;
 
     return sendJson(res, 201, {
       success: true,

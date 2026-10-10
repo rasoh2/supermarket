@@ -214,6 +214,6 @@ export class OrderService {
 
     const encoded = encodeURIComponent(msg);
     // Número oficial de la central logística de SuperMarket.cl
-    return `https://wa.me/56987654321?text=${encoded}`;
+    return `https://wa.me/56966753705?text=${encoded}`;
   }
 }
