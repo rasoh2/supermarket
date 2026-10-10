@@ -643,6 +643,9 @@ const server = http.createServer(async (req, res) => {
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
+    const isMediaOrFont = ['.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.ico', '.woff', '.woff2'].includes(ext);
+    const cacheHeader = isMediaOrFont ? 'public, max-age=31536000, immutable' : 'no-cache';
+
     fs.readFile(filePath, (readErr, content) => {
       if (readErr) {
         res.writeHead(500);
@@ -650,7 +653,7 @@ const server = http.createServer(async (req, res) => {
       }
       res.writeHead(200, {
         'Content-Type': contentType,
-        'Cache-Control': 'no-cache',
+        'Cache-Control': cacheHeader,
         'X-Content-Type-Options': 'nosniff',
         'X-Frame-Options': 'DENY',
         'X-XSS-Protection': '1; mode=block',
