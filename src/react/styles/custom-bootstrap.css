@@ -247,15 +247,28 @@ body {
 
 .form-control-dark, .form-select-dark {
   background-color: #0f172a;
-  border: 1px solid var(--sm-border-color);
-  color: #ffffff;
+  border: 1px solid #334155;
+  color: #f8fafc !important;
+  font-weight: 500;
+}
+
+.form-control-dark::placeholder, input::placeholder, textarea::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1 !important;
 }
 
 .form-control-dark:focus, .form-select-dark:focus {
   background-color: #0f172a;
   border-color: #38bdf8;
-  color: #ffffff;
-  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25);
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.3);
+}
+
+.input-group-text.bg-dark {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #38bdf8 !important;
+  font-size: 1.1rem;
 }
 
 /* Backoffice Tables */
