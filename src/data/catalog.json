@@ -953,7 +953,7 @@
   },
   {
     "sku": "BE-010",
-    "nombre": "Bebida Sprite Lima-Limón 2.5 L",
+    "nombre": "Agua Purificada Bidón 20L Retornable",
     "descripcion": "Recarga familiar de agua pura para dispensador frío y calor en Santiago.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 73,
@@ -981,7 +981,7 @@
   },
   {
     "sku": "BE-011",
-    "nombre": "Bebida Fanta Naranja 2.5 L",
+    "nombre": "Cerveza Kunstmann Torobayo 500ml",
     "descripcion": "Cerveza artesanal de Valdivia con notas a caramelo y 5.0° de alcohol.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 45,
@@ -1009,7 +1009,7 @@
   },
   {
     "sku": "BE-012",
-    "nombre": "Bebida Crush Sabor Piña 2.5 L",
+    "nombre": "Cerveza Budweiser Sixpack Latas 6x354ml",
     "descripcion": "Cerveza lager americana King of Beers de cuerpo suave y refrescante.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 50,
@@ -1037,7 +1037,7 @@
   },
   {
     "sku": "BE-013",
-    "nombre": "Bebida Canada Dry Ginger Ale 1.5 L",
+    "nombre": "Vino Carmenere Reserva Especial 750ml",
     "descripcion": "Cepa chilena de taninos suaves y notas a especias del valle central.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 55,
