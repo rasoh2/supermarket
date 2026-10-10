@@ -2176,3 +2176,26 @@ textarea {
   text-align: center;
   font-size: 0.8rem;
 }
+
+/* Badges de categorías y contenedor de imágenes con fondo blanco */
+.bg-teal {
+  background-color: #0d9488 !important;
+  color: #ffffff !important;
+}
+
+.bg-purple {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+}
+
+.product-image-wrapper {
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.product-image-wrapper img {
+  object-fit: contain !important;
+  padding: 10px !important;
+}
