@@ -121,12 +121,12 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
-.bg-teal {
+.category-badge-floating.bg-teal, .bg-teal {
   background-color: #0d9488 !important;
   color: #ffffff !important;
 }
 
-.bg-purple {
+.category-badge-floating.bg-purple, .bg-purple {
   background-color: #7c3aed !important;
   color: #ffffff !important;
 }

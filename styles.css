@@ -2178,12 +2178,12 @@ textarea {
 }
 
 /* Badges de categorías y contenedor de imágenes con fondo blanco */
-.bg-teal {
+.category-badge-floating.bg-teal, .bg-teal {
   background-color: #0d9488 !important;
   color: #ffffff !important;
 }
 
-.bg-purple {
+.category-badge-floating.bg-purple, .bg-purple {
   background-color: #7c3aed !important;
   color: #ffffff !important;
 }
