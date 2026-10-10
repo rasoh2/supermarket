@@ -113,6 +113,7 @@ class App {
       btnCatalog?.classList.add('active');
       btnAdmin?.classList.remove('active');
       window.location.hash = '#catalogo';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (view === 'admin') {
       catalogRoot.style.display = 'none';
       adminRoot.style.display = 'block';

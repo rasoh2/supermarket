@@ -67,6 +67,11 @@ export function CatalogProvider({ children }) {
     });
   }, [products, selectedCategory, searchQuery]);
 
+  const resetFilters = useCallback(() => {
+    setSelectedCategory('TODOS');
+    setSearchQuery('');
+  }, []);
+
   const value = {
     products,
     filteredProducts,
@@ -77,6 +82,7 @@ export function CatalogProvider({ children }) {
     error,
     setCategory: setSelectedCategory,
     setSearch: setSearchQuery,
+    resetFilters,
     refreshCatalog: fetchCatalog
   };
 

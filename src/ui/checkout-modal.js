@@ -8,12 +8,15 @@ import { PriceEngine } from '../core/price-engine.js';
 import { OrderService } from '../core/order-service.js';
 
 const COMUNAS_SANTIAGO = [
-  'Santiago Centro', 'Providencia', 'Las Condes', 'Ñuñoa', 'La Florida',
-  'Maipú', 'Puente Alto', 'San Miguel', 'Macul', 'Peñalolén',
-  'La Reina', 'Vitacura', 'Lo Barnechea', 'Independencia', 'Recoleta',
-  'Quinta Normal', 'Estación Central', 'Cerrillos', 'Pudahuel', 'Quilicura',
-  'San Bernardo', 'Huechuraba', 'Conchalí', 'Renca', 'San Joaquín'
-];
+  'Alhué', 'Buin', 'Calera de Tango', 'Cerrillos', 'Cerro Navia', 'Colina', 'Conchalí', 
+  'Curacaví', 'El Bosque', 'El Monte', 'Estación Central', 'Huechuraba', 'Independencia', 
+  'Isla de Maipo', 'La Cisterna', 'La Florida', 'La Granja', 'La Pintana', 'La Reina', 
+  'Lampa', 'Las Condes', 'Lo Barnechea', 'Lo Espejo', 'Lo Prado', 'Macul', 'Maipú', 
+  'María Pinto', 'Melipilla', 'Ñuñoa', 'Padre Hurtado', 'Paine', 'Pedro Aguirre Cerda', 
+  'Peñaflor', 'Peñalolén', 'Pirque', 'Providencia', 'Pudahuel', 'Puente Alto', 'Quilicura', 
+  'Quinta Normal', 'Recoleta', 'Renca', 'San Bernardo', 'San Joaquín', 'San José de Maipo', 
+  'San Miguel', 'San Pedro', 'San Ramón', 'Santiago Centro', 'Talagante', 'Til Til', 'Vitacura'
+].sort();
 
 export class CheckoutModal {
   constructor() {

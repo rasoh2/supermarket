@@ -44,12 +44,23 @@ export default function ProductCard({ product }) {
         {/* Imagen del Producto con Badges Flotantes */}
         <div className="product-image-wrapper">
           <img
-            src={product.imagen_url || 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=500'}
+            src={product.imagen_url || `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect fill="%231a2332" width="400" height="300"/><text fill="%236c757d" font-family="sans-serif" font-size="60" x="50%" y="45%" text-anchor="middle">${(product.categoria_tienda || product.categoria) === 'BEBIDAS' ? '🥤' : (product.categoria_tienda || product.categoria) === 'ASEO' ? '🧼' : (product.categoria_tienda || product.categoria) === 'DISFRACES' ? '🎭' : '🛒'}</text><text fill="%23adb5bd" font-family="sans-serif" font-size="15" font-weight="bold" x="50%" y="70%" text-anchor="middle">SuperMarket.cl</text></svg>`}
             alt={product.nombre}
             loading="lazy"
             onError={(e) => {
+              const currentSrc = e.target.src;
+              if (currentSrc.endsWith('.jpg')) {
+                e.target.src = currentSrc.replace('.jpg', '.png');
+                return;
+              }
+              if (currentSrc.endsWith('.png')) {
+                e.target.src = currentSrc.replace('.png', '.webp');
+                return;
+              }
               e.target.onerror = null;
-              e.target.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=500';
+              const cat = product.categoria_tienda || product.categoria;
+              const icon = cat === 'BEBIDAS' ? '🥤' : cat === 'ASEO' ? '🧼' : cat === 'DISFRACES' ? '🎭' : '🛒';
+              e.target.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect fill="%231a2332" width="400" height="300"/><text fill="%236c757d" font-family="sans-serif" font-size="60" x="50%" y="45%" text-anchor="middle">${icon}</text><text fill="%23adb5bd" font-family="sans-serif" font-size="15" font-weight="bold" x="50%" y="70%" text-anchor="middle">SuperMarket.cl</text></svg>`;
             }}
           />
           <span className={`category-badge-floating ${CATEGORY_COLORS[product.categoria_tienda || product.categoria] || 'bg-secondary text-white'}`}>

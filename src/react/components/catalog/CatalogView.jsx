@@ -86,7 +86,7 @@ export default function CatalogView() {
           <div className="spinner-border text-primary" role="status">
             <span className="visually-hidden">Cargando catálogo...</span>
           </div>
-          <p className="text-secondary mt-3">Sincronizando productos con la base de datos relacional...</p>
+          <p className="text-secondary mt-3">Cargando productos del catálogo...</p>
         </div>
       ) : error ? (
         <div className="alert alert-danger text-center p-4">

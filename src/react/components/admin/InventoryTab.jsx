@@ -64,7 +64,7 @@ export default function InventoryTab() {
             Control de Inventario y Kardex (Admin Tienda)
           </h4>
           <p className="text-secondary small mb-0">
-            Registro transaccional de entradas, salidas por ventas y ajustes manuales de stock en SQLite 3FN.
+            Registro de movimientos: entradas de proveedores, salidas por pedidos y ajustes de stock en bodega.
           </p>
         </div>
 

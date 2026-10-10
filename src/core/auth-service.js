@@ -69,9 +69,13 @@ class AuthService {
       return { success: false, error: inspPass.reason };
     }
 
-    // 3. Consulta de credenciales en base de datos (Backend)
+    // 3. Consulta de credenciales en base de datos (Backend con fallback local)
     try {
-      const response = await fetch('/api/auth/login', {
+      const authUrl = (typeof window !== 'undefined' && window.location?.origin) 
+        ? `${window.location.origin}/api/auth/login` 
+        : 'http://localhost:8080/api/auth/login';
+
+      const response = await fetch(authUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username: username.trim(), password })
@@ -104,11 +108,40 @@ class AuthService {
       window.dispatchEvent(new CustomEvent('megasuper:auth-changed', { detail: { user: this.user } }));
       return { success: true, user: this.user, token: this.token };
     } catch (error) {
-      wafEngine.recordFailedAttempt(key);
-      return {
-        success: false,
-        error: 'Error de conexión con el servidor.'
+      // Fallback a db local si el endpoint no responde
+      const user = db.findOne(TABLES.USUARIO_SISTEMA, u =>
+        u.username.toLowerCase() === username.trim().toLowerCase() &&
+        u.activo !== false
+      );
+
+      if (!user || user.password_hash !== password) {
+        wafEngine.recordFailedAttempt(key);
+        wafEngine.logSecurityIncident('ADMIN_AUTH_FAILED', 'WARNING', {
+          username,
+          reason: 'Credenciales inválidas'
+        });
+        return {
+          success: false,
+          error: 'Usuario o contraseña incorrectos. Verifique sus credenciales.'
+        };
+      }
+
+      wafEngine.recordSuccessfulAttempt(key);
+      const token = this.generateJwt(user);
+      this.token = token;
+      this.user = {
+        id_usuario: user.id_usuario,
+        username: user.username,
+        nombre_real: user.nombre_real,
+        rol: user.rol
       };
+
+      sessionStorage.setItem(AUTH_TOKEN_KEY, token);
+      sessionStorage.setItem(CURRENT_USER_KEY, JSON.stringify(this.user));
+
+      window.dispatchEvent(new CustomEvent('supermarket:auth-changed', { detail: { user: this.user } }));
+      window.dispatchEvent(new CustomEvent('megasuper:auth-changed', { detail: { user: this.user } }));
+      return { success: true, user: this.user, token };
     }
   }
 

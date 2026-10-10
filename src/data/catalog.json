@@ -1,12 +1,12 @@
 [
   {
     "sku": "AB-001",
-    "nombre": "Arroz Grado 1 Extra Selección 1kg",
-    "descripcion": "Arroz grano largo y ancho seleccionado, ideal para preparaciones diarias en hogar y gastronomía.",
+    "nombre": "Arroz Tucapel Grado 1 Selección 1kg",
+    "descripcion": "Arroz grano largo y ancho seleccionado, ideal para preparaciones diarias.",
     "categoria_tienda": "ABARROTES",
     "stock_actual": 85,
     "stock_minimo": 15,
-    "imagen_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-001.jpg",
     "activo": true,
     "destacado": true,
     "tramos": [
@@ -17,8 +17,8 @@
       },
       {
         "umbral": 3,
-        "precio": 1290,
-        "descuento_pct": 13.4
+        "precio": 1280,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
@@ -29,12 +29,12 @@
   },
   {
     "sku": "AB-002",
-    "nombre": "Aceite Vegetal 100% Puro 900ml",
-    "descripcion": "Aceite de cocina de alta pureza, sin colesterol ni grasas trans. Rendimiento óptimo.",
+    "nombre": "Aceite Belmont 100% Vegetal 900ml",
+    "descripcion": "Aceite de cocina de alta pureza, sin colesterol ni grasas trans.",
     "categoria_tienda": "ABARROTES",
     "stock_actual": 60,
     "stock_minimo": 12,
-    "imagen_url": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-002.jpg",
     "activo": true,
     "destacado": true,
     "tramos": [
@@ -45,26 +45,26 @@
       },
       {
         "umbral": 3,
-        "precio": 1890,
-        "descuento_pct": 13.7
+        "precio": 1880,
+        "descuento_pct": 14.2
       },
       {
         "umbral": 6,
-        "precio": 1650,
-        "descuento_pct": 24.7
+        "precio": 1620,
+        "descuento_pct": 26
       }
     ]
   },
   {
     "sku": "AB-003",
-    "nombre": "Fideos Spaghetti N°5 400g",
-    "descripcion": "Pasta de trigo candeal seleccionada al dente, perfecta consistencia y rápida cocción.",
+    "nombre": "Fideos Carozzi Spaghetti N°5 400g",
+    "descripcion": "Pasta tradicional elaborada con sémola de trigos candeales seleccionados.",
     "categoria_tienda": "ABARROTES",
     "stock_actual": 120,
     "stock_minimo": 20,
-    "imagen_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281691?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-003.jpg",
     "activo": true,
-    "destacado": false,
+    "destacado": true,
     "tramos": [
       {
         "umbral": 1,
@@ -78,75 +78,75 @@
       },
       {
         "umbral": 6,
-        "precio": 690,
-        "descuento_pct": 30.3
+        "precio": 730,
+        "descuento_pct": 26.3
       }
     ]
   },
   {
     "sku": "AB-004",
-    "nombre": "Atún en Lomitos en Aceite 160g",
-    "descripcion": "Lomitos de atún de aleta amarilla en aceite vegetal. Rico en Omega-3 y proteínas.",
+    "nombre": "Atún San José en Lomitos en Aceite 160g",
+    "descripcion": "Lomos de atún claro en aceite vegetal de textura firme y sabor concentrado.",
     "categoria_tienda": "ABARROTES",
     "stock_actual": 90,
     "stock_minimo": 15,
-    "imagen_url": "https://images.unsplash.com/photo-1544943910-4c1dc44a046c?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-004.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1690,
+        "precio": 1490,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
+        "precio": 1280,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 1250,
-        "descuento_pct": 26.0
+        "precio": 1100,
+        "descuento_pct": 26.2
       }
     ]
   },
   {
     "sku": "AB-005",
-    "nombre": "Azúcar Blanca Refinada Grado 1 1kg",
-    "descripcion": "Azúcar granulada de máxima disolución y pureza. Envase resistente hermético.",
+    "nombre": "Azúcar Iansa Blanca Granulada 1kg",
+    "descripcion": "Azúcar de caña refinada de máxima pureza para repostería y endulzar.",
     "categoria_tienda": "ABARROTES",
     "stock_actual": 75,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1581441363689-1f3c3c414635?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AB-005.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1390,
+        "precio": 1290,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1190,
-        "descuento_pct": 14.4
+        "precio": 1110,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 990,
-        "descuento_pct": 28.8
+        "precio": 950,
+        "descuento_pct": 26.4
       }
     ]
   },
   {
     "sku": "AB-006",
-    "nombre": "Harina sin Polvos de Hornear 1kg",
-    "descripcion": "Harina de trigo tradicional para repostería y panadería casera.",
+    "nombre": "Harina Selecta sin Polvos de Hornear 1kg",
+    "descripcion": "Harina de trigo tradicional para panadería casera y queques.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 68,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 70,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/AB-006.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -162,47 +162,19 @@
       },
       {
         "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
+        "precio": 880,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "AB-007",
-    "nombre": "Azúcar Blanca Granulada 1kg",
-    "descripcion": "Azúcar de caña refinada de máxima pureza para endulzar tus recetas.",
+    "nombre": "Sal Lobos Fina Yodada 1kg",
+    "descripcion": "Sal marina purificada enriquecida con yodo para cocina diaria.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 71,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1622484216858-a57321e06917?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-008",
-    "nombre": "Sal de Mesa Yodada Fina 1kg",
-    "descripcion": "Sal marina purificada y enriquecida con flúor y yodo para cocina.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 74,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 100,
+    "stock_minimo": 20,
+    "imagen_url": "/images/products/AB-007.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -224,13 +196,13 @@
     ]
   },
   {
-    "sku": "AB-009",
-    "nombre": "Lentejas Grado 1 Seleccionadas 1kg",
-    "descripcion": "Legumbre seca de alto valor proteico y cocción pareja sin remojo prolongado.",
+    "sku": "AB-008",
+    "nombre": "Lentejas Iansa Agro Grado 1 1kg",
+    "descripcion": "Legumbre seca de alto valor proteico y cocción pareja sin remojo.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 77,
+    "stock_actual": 55,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-008.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -246,19 +218,19 @@
       },
       {
         "umbral": 6,
-        "precio": 1790,
-        "descuento_pct": 25.1
+        "precio": 1770,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
-    "sku": "AB-010",
-    "nombre": "Porotos Tórtola Chilenos 1kg",
-    "descripcion": "Porotos nacionales de cosecha fresca, ideales para platos tradicionales.",
+    "sku": "AB-009",
+    "nombre": "Porotos Tórtola Wasil 1kg",
+    "descripcion": "Porotos nacionales cosechados en Chile para platos tradicionales.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 80,
+    "stock_actual": 50,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1551462147-ff29053bfc14?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-009.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -274,19 +246,19 @@
       },
       {
         "umbral": 6,
-        "precio": 1940,
-        "descuento_pct": 25.1
+        "precio": 1920,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
-    "sku": "AB-011",
-    "nombre": "Garbanzos Selección Extra 1kg",
-    "descripcion": "Garbanzos tiernos de calibre homogéneo para guisos y ensaladas saludables.",
+    "sku": "AB-010",
+    "nombre": "Garbanzos Lucchetti Selección 1kg",
+    "descripcion": "Garbanzos tiernos de calibre homogéneo para guisos y ensaladas.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 83,
+    "stock_actual": 45,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-010.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -302,77 +274,21 @@
       },
       {
         "umbral": 6,
-        "precio": 1870,
-        "descuento_pct": 24.9
+        "precio": 1840,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-012",
-    "nombre": "Atún en Lomitos en Agua 160g",
-    "descripcion": "Lomos de atún en conserva al natural, bajo en sodio y sin grasas añadidas.",
+    "sku": "AB-011",
+    "nombre": "Jurel San José al Natural Chileno 425g",
+    "descripcion": "Pescado azul rico en Omega 3 de pesca sustentable en el sur de Chile.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 86,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 80,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AB-011.jpg",
     "activo": true,
     "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1200,
-        "descuento_pct": 13.7
-      },
-      {
-        "umbral": 6,
-        "precio": 1040,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AB-013",
-    "nombre": "Atún en Lomitos en Aceite 160g",
-    "descripcion": "Lomos de atún en aceite vegetal de textura firme y sabor concentrado.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 89,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-014",
-    "nombre": "Jurel al Natural Chileno 425g",
-    "descripcion": "Pescado azul rico en Omega 3 de captura sustentable en las costas de Chile.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 52,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
     "tramos": [
       {
         "umbral": 1,
@@ -386,19 +302,19 @@
       },
       {
         "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
+        "precio": 1250,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "AB-015",
-    "nombre": "Salsa de Tomates Italiana Tradicional 200g",
-    "descripcion": "Salsa espesa elaborada con tomates madurados al sol y hierbas aromáticas.",
+    "sku": "AB-012",
+    "nombre": "Salsa de Tomates Pomarola Carozzi 200g",
+    "descripcion": "Salsa tradicional con tomates madurados al sol y finas hierbas.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 55,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 110,
+    "stock_minimo": 20,
+    "imagen_url": "/images/products/AB-012.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -414,47 +330,19 @@
       },
       {
         "umbral": 6,
-        "precio": 490,
-        "descuento_pct": 24.6
+        "precio": 480,
+        "descuento_pct": 26.2
       }
     ]
   },
   {
-    "sku": "AB-016",
-    "nombre": "Salsa de Tomates con Carne Bolognesa 200g",
-    "descripcion": "Salsa lista para servir con carne picada seleccionada y especias.",
+    "sku": "AB-013",
+    "nombre": "Mayonesa Hellmann's Clásica Frasco 850g",
+    "descripcion": "Aderezo cremoso emulsionado con huevos de campo y toque de limón.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 58,
+    "stock_actual": 65,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281691?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 770,
-        "descuento_pct": 13.5
-      },
-      {
-        "umbral": 6,
-        "precio": 670,
-        "descuento_pct": 24.7
-      }
-    ]
-  },
-  {
-    "sku": "AB-017",
-    "nombre": "Mayonesa Tradicional Frasco 850g",
-    "descripcion": "Aderezo cremoso emulsionado con huevos pasteurizados y limón.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 61,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-013.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -466,23 +354,23 @@
       {
         "umbral": 3,
         "precio": 2570,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
+        "precio": 2210,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-018",
-    "nombre": "Kétchup Clásico Doypack 500g",
-    "descripcion": "Salsa de tomates dulces con vinagre y especias sin conservantes artificiales.",
+    "sku": "AB-014",
+    "nombre": "Kétchup JB Clásico Doypack 500g",
+    "descripcion": "Salsa de tomates dulces con vinagre y especias sin colorantes artificiales.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 64,
+    "stock_actual": 60,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-014.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -498,19 +386,19 @@
       },
       {
         "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
+        "precio": 1180,
+        "descuento_pct": 25.8
       }
     ]
   },
   {
-    "sku": "AB-019",
-    "nombre": "Mostaza Clásica en Pomo 250g",
-    "descripcion": "Condimento elaborado con semillas de mostaza molidas y vinagre suave.",
+    "sku": "AB-015",
+    "nombre": "Mostaza JB en Pomo 250g",
+    "descripcion": "Mostaza tradicional chilena de sabor suave para completos y sándwiches.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 67,
+    "stock_actual": 50,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-015.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -526,19 +414,19 @@
       },
       {
         "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
+        "precio": 880,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-020",
-    "nombre": "Café Instantáneo Clásico Frasco 170g",
-    "descripcion": "Café tostado granulado soluble con aroma intenso y cuerpo balanceado.",
+    "sku": "AB-016",
+    "nombre": "Café Nescafé Tradición Frasco 170g",
+    "descripcion": "Café soluble 100% puro tostado con aroma intenso para el desayuno.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 70,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AB-016.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -550,25 +438,25 @@
       {
         "umbral": 3,
         "precio": 4290,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
+        "precio": 3690,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-021",
-    "nombre": "Té Negro Ceylán Selección 100 bolsitas",
-    "descripcion": "Té negro fino de hojas seleccionadas para un desayuno reconfortante.",
+    "sku": "AB-017",
+    "nombre": "Té Supremo Ceylán Selección 100 bolsitas",
+    "descripcion": "Té negro fino de hojas seleccionadas para un sabor reconfortante.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 73,
+    "stock_actual": 55,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-017.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
@@ -578,79 +466,23 @@
       {
         "umbral": 3,
         "precio": 2830,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2470,
-        "descuento_pct": 24.9
+        "precio": 2430,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-022",
-    "nombre": "Té Verde Antioxidante 50 bolsitas",
-    "descripcion": "Infusión de hojas de té verde ricas en polifenoles sin aditivos.",
+    "sku": "AB-018",
+    "nombre": "Leche Colun Entera Larga Vida 1L",
+    "descripcion": "Leche natural de vaca de praderas del sur de Chile ultrapasteurizada.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 76,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1880,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AB-023",
-    "nombre": "Hierbas Surtidas Menta y Manzanilla 40 bolsitas",
-    "descripcion": "Pack relajante de infusiones naturales cosechadas en campos del sur.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 79,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1790,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1540,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1340,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AB-024",
-    "nombre": "Leche Entera Larga Vida UHT 1L",
-    "descripcion": "Leche de vaca 100% natural ultrapasteurizada con calcio y vitamina D.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 82,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 95,
+    "stock_minimo": 20,
+    "imagen_url": "/images/products/AB-018.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -666,19 +498,19 @@
       },
       {
         "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
+        "precio": 880,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-025",
-    "nombre": "Leche Descremada 0% Grasa UHT 1L",
-    "descripcion": "Leche fluida sin grasa fortificada con minerales esenciales.",
+    "sku": "AB-019",
+    "nombre": "Leche Soprole Descremada 0% Grasa 1L",
+    "descripcion": "Leche fluida sin grasa enriquecida con calcio y vitaminas A y D.",
     "categoria_tienda": "ABARROTES",
     "stock_actual": 85,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AB-019.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -694,47 +526,19 @@
       },
       {
         "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
+        "precio": 880,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-026",
-    "nombre": "Leche Condensada Tradicional Lata 397g",
-    "descripcion": "Leche concentrada azucarada ideal para postres, queques y repostería.",
+    "sku": "AB-020",
+    "nombre": "Manjar Colun Tradicional Bolsa 1kg",
+    "descripcion": "Dulce de leche artesanal chileno, cremoso y untable para pan y postres.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 88,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AB-027",
-    "nombre": "Manjar Tradicional Chileno Bolsa 1kg",
-    "descripcion": "Dulce de leche artesanal de receta clásica chilena, suave y untable.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 51,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AB-020.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -746,25 +550,25 @@
       {
         "umbral": 3,
         "precio": 3000,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2620,
-        "descuento_pct": 24.9
+        "precio": 2580,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-028",
-    "nombre": "Avena Instantánea Integral 800g",
-    "descripcion": "Copos de avena fina precocida con alto contenido de fibra soluble.",
+    "sku": "AB-021",
+    "nombre": "Avena Quaker Instantánea Integral 800g",
+    "descripcion": "Copos finos de avena integral precocida ricos en fibra soluble.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 54,
+    "stock_actual": 60,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-021.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
@@ -778,47 +582,47 @@
       },
       {
         "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
+        "precio": 1400,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
-    "sku": "AB-029",
-    "nombre": "Cereal Hojuelas de Maíz Glaseadas 500g",
-    "descripcion": "Hojuelas de maíz crujientes ligeramente azucaradas para el desayuno.",
+    "sku": "AB-022",
+    "nombre": "Cereal Chocapic Nestlé Caja 500g",
+    "descripcion": "Cereal de trigo integral con sabor a chocolate fortificado con hierro.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 57,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1521483451569-e33803c0330c?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AB-022.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2190,
+        "precio": 2690,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1880,
-        "descuento_pct": 14.2
+        "precio": 2310,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
+        "precio": 1990,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "AB-030",
-    "nombre": "Mermelada de Frambuesa Sureña 500g",
-    "descripcion": "Mermelada con trozos enteros de frambuesa fresca sin colorantes.",
+    "sku": "AB-023",
+    "nombre": "Mermelada Watt's de Frambuesa 500g",
+    "descripcion": "Mermelada con fruta seleccionada del sur de Chile sin colorantes.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 60,
+    "stock_actual": 50,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-023.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -834,47 +638,19 @@
       },
       {
         "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
+        "precio": 1470,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "AB-031",
-    "nombre": "Miel de Abejas de Ulmo Pura 500g",
-    "descripcion": "Miel nativa cremosa de aroma floral del bosque templado valdiviano.",
+    "sku": "AB-024",
+    "nombre": "Galletas McKay de Soda Pack 3x140g",
+    "descripcion": "Galletas crocantes horneadas con el toque justo de sal de mesa.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 63,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3860,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3370,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AB-032",
-    "nombre": "Galletas de Soda Familiares Pack 3x140g",
-    "descripcion": "Galletas crocantes y horneadas con un toque justo de sal de mesa.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 66,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 70,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AB-024.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -886,359 +662,23 @@
       {
         "umbral": 3,
         "precio": 1110,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
+        "precio": 950,
+        "descuento_pct": 26.4
       }
     ]
   },
   {
-    "sku": "AB-033",
-    "nombre": "Galletas de Agua Clásicas Pack 3x140g",
-    "descripcion": "Galletas tradicionales de masa delgada y liviana sin materias grasas.",
+    "sku": "AB-025",
+    "nombre": "Choclo Minuto Verde Dulce en Grano 300g",
+    "descripcion": "Granos dorados de choclo tierno y dulce cosechado en el valle central.",
     "categoria_tienda": "ABARROTES",
-    "stock_actual": 69,
+    "stock_actual": 55,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-034",
-    "nombre": "Galletas de Vino Dulces Pack 3x150g",
-    "descripcion": "Galletas crujientes aromatizadas con vainilla y caramelo.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 72,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1200,
-        "descuento_pct": 13.7
-      },
-      {
-        "umbral": 6,
-        "precio": 1040,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AB-035",
-    "nombre": "Levadura Seca Instantánea 100g",
-    "descripcion": "Fermento activo deshidratado para leudar masas de pan dulce y salado.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 75,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 850,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 740,
-        "descuento_pct": 25.3
-      }
-    ]
-  },
-  {
-    "sku": "AB-036",
-    "nombre": "Vinagre de Manzana Puro 500ml",
-    "descripcion": "Vinagre fermentado de sidra de manzana natural para aderezos de ensalada.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 78,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1200,
-        "descuento_pct": 13.7
-      },
-      {
-        "umbral": 6,
-        "precio": 1040,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AB-037",
-    "nombre": "Aceite de Oliva Extra Virgen 500ml",
-    "descripcion": "Aceite prensado en frío con acidez menor a 0.2%, frutado suave.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 81,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 6010,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 5240,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "AB-038",
-    "nombre": "Sopa Instantánea Cremosa de Verduras Pack 4u",
-    "descripcion": "Caldos concentrados en sobre con trocitos de zanahoria, apio y puerro.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 84,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1090,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 940,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 820,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-039",
-    "nombre": "Caldos de Carne Concentrados 12 cubos",
-    "descripcion": "Cubos sazonadores con extracto de carne de res y finas hierbas.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 87,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-040",
-    "nombre": "Champiñones Laminados en Conserva 400g",
-    "descripcion": "Hongos de parís fileteados en salmuera suave listos para pizzas.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 50,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1630,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AB-041",
-    "nombre": "Palmitos Enteros en Conserva 400g",
-    "descripcion": "Tallos tiernos de palmito en rodajas gruesas para entradas gourmet.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 53,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2790,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2400,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2090,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AB-042",
-    "nombre": "Maíz Dulce Choclo Grano Entero 300g",
-    "descripcion": "Choclo tierno desgranado cocido al vapor en lata abre fácil.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 56,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1020,
-        "descuento_pct": 14.3
-      },
-      {
-        "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AB-043",
-    "nombre": "Arvejas Verdes Tiernas en Lata 300g",
-    "descripcion": "Guisantes verdes cosechados en su punto óptimo de frescura.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 59,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 850,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 740,
-        "descuento_pct": 25.3
-      }
-    ]
-  },
-  {
-    "sku": "AB-044",
-    "nombre": "Sardinas en Salsa de Tomate 425g",
-    "descripcion": "Sardinas enteras seleccionadas en salsa de tomate concentrada.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 62,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-045",
-    "nombre": "Puré de Papas Instantáneo Caja 250g",
-    "descripcion": "Copos de papa natural deshidratada con leche, listo en 3 minutos.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 65,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AB-025.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -1254,159 +694,19 @@
       },
       {
         "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AB-046",
-    "nombre": "Cacao Amargo en Polvo 100g",
-    "descripcion": "Cacao 100% puro alcalinizado sin azúcar para repostería y chocolate caliente.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 68,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AB-047",
-    "nombre": "Polvos de Hornear Doble Acción 100g",
-    "descripcion": "Impulsor químico para lograr queques y masas esponjosas.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 71,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 590,
-        "descuento_pct": 14.5
-      },
-      {
-        "umbral": 6,
-        "precio": 520,
-        "descuento_pct": 24.6
-      }
-    ]
-  },
-  {
-    "sku": "AB-048",
-    "nombre": "Bicarbonato de Sodio Grado Alimentario 250g",
-    "descripcion": "Compuesto multiuso purificado para cocina y limpieza ecológica.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 74,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 770,
-        "descuento_pct": 13.5
-      },
-      {
-        "umbral": 6,
-        "precio": 670,
-        "descuento_pct": 24.7
-      }
-    ]
-  },
-  {
-    "sku": "AB-049",
-    "nombre": "Canela Entera en Rama 50g",
-    "descripcion": "Varas de canela aromática de Ceilán para postres tradicionales.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 77,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1020,
-        "descuento_pct": 14.3
-      },
-      {
-        "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AB-050",
-    "nombre": "Orégano Seco Entero del Norte 50g",
-    "descripcion": "Hojas aromáticas cosechadas en precordillera de aroma concentrado.",
-    "categoria_tienda": "ABARROTES",
-    "stock_actual": 80,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 850,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 740,
-        "descuento_pct": 25.3
+        "precio": 1100,
+        "descuento_pct": 26.2
       }
     ]
   },
   {
     "sku": "BE-001",
-    "nombre": "Bebida Coca-Cola 1.5 L",
-    "descripcion": "Refrescante bebida cola familiar, burbujeante y de sabor tradicional. Formato conveniente.",
+    "nombre": "Bebida Coca-Cola Original 2.5 L",
+    "descripcion": "Refrescante bebida cola familiar, burbujeante y de sabor tradicional.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 110,
     "stock_minimo": 25,
-    "imagen_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-001.jpg",
     "activo": true,
     "destacado": true,
     "tramos": [
@@ -1417,192 +717,52 @@
       },
       {
         "umbral": 3,
-        "precio": 2150,
-        "descuento_pct": 13.7
+        "precio": 2140,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 1850,
-        "descuento_pct": 25.7
+        "precio": 1840,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "BE-002",
-    "nombre": "Cerveza Lager Tradicional Sixpack 6x355ml",
-    "descripcion": "Cerveza rubia refrescante, graduación equilibrada 4.8° y notas a lúpulo aromático.",
+    "nombre": "Cerveza Cristal Sixpack Latas 6x350ml",
+    "descripcion": "Cerveza rubia lager tradicional chilena, refrescante con 4.6° de alcohol.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 50,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1608270190861-2495b4507005?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 70,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/BE-002.jpg",
     "activo": true,
     "destacado": true,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 5990,
+        "precio": 4990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 5190,
-        "descuento_pct": 13.4
+        "precio": 4290,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 4490,
-        "descuento_pct": 25.0
+        "precio": 3690,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "BE-003",
-    "nombre": "Agua Mineral sin Gas Vertiente 1.5L",
-    "descripcion": "Agua pura de vertiente andina, baja en sodio y rica en minerales esenciales.",
+    "nombre": "Agua Mineral Cachantun sin Gas 1.5L",
+    "descripcion": "Agua mineral de vertiente natural de Coinco, baja en sodio.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 80,
     "stock_minimo": 15,
-    "imagen_url": "https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1090,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 890,
-        "descuento_pct": 18.3
-      },
-      {
-        "umbral": 6,
-        "precio": 720,
-        "descuento_pct": 33.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-004",
-    "nombre": "Vino Tinto Cabernet Sauvignon Reserva 750ml",
-    "descripcion": "Valle Central de Chile. Cuerpo balanceado con notas a frutos rojos y sutil toque de roble.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 40,
-    "stock_minimo": 8,
-    "imagen_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 5490,
-        "descuento_pct": 15.4
-      },
-      {
-        "umbral": 6,
-        "precio": 4790,
-        "descuento_pct": 26.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-005",
-    "nombre": "Néctar de Naranja 1.5L",
-    "descripcion": "Jugo de fruta pasteurizado con pulpa natural y vitamina C.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 60,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1590,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-006",
-    "nombre": "Néctar de Durazno 1.5L",
-    "descripcion": "Bebida de duraznos maduros del valle central con textura sedosa.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 64,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1590,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-007",
-    "nombre": "Néctar de Manzana Verde 1.5L",
-    "descripcion": "Sabor refrescante y equilibrado con el toque justo de acidez.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 68,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1590,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-008",
-    "nombre": "Agua Mineral con Gas Manantial 1.5L",
-    "descripcion": "Agua mineralizada de vertiente andina con burbuja fina refrescante.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 72,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1559839914-ba2a5c5452d7?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-003.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -1618,19 +778,159 @@
       },
       {
         "umbral": 6,
-        "precio": 740,
-        "descuento_pct": 25.3
+        "precio": 730,
+        "descuento_pct": 26.3
+      }
+    ]
+  },
+  {
+    "sku": "BE-004",
+    "nombre": "Vino Casillero del Diablo Cabernet Sauvignon 750ml",
+    "descripcion": "Vino tinto reserva del valle de Maipo con intensas notas a mora y ciruela.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/BE-004.jpg",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 5990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 5150,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 4430,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "BE-005",
+    "nombre": "Néctar Watt's Naranja 1.5L",
+    "descripcion": "Jugo pasteurizado con pulpa natural de naranja dulce y vitamina C.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 65,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/BE-005.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1590,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1370,
+        "descuento_pct": 13.8
+      },
+      {
+        "umbral": 6,
+        "precio": 1180,
+        "descuento_pct": 25.8
+      }
+    ]
+  },
+  {
+    "sku": "BE-006",
+    "nombre": "Néctar Andina Durazno 1.5L",
+    "descripcion": "Bebida de duraznos maduros del valle central con textura suave.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 60,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/BE-006.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1590,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1370,
+        "descuento_pct": 13.8
+      },
+      {
+        "umbral": 6,
+        "precio": 1180,
+        "descuento_pct": 25.8
+      }
+    ]
+  },
+  {
+    "sku": "BE-007",
+    "nombre": "Bebida Sprite Lima-Limón 2.5 L",
+    "descripcion": "Refresco carbonatado sabor lima limón de gran frescura y burbujas.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 80,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/BE-007.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2290,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1970,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 1690,
+        "descuento_pct": 26.2
+      }
+    ]
+  },
+  {
+    "sku": "BE-008",
+    "nombre": "Bebida Fanta Naranja 2.5 L",
+    "descripcion": "Gaseosa con intenso sabor frutal a naranja para reuniones familiares.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 75,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/BE-008.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2290,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1970,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 1690,
+        "descuento_pct": 26.2
       }
     ]
   },
   {
     "sku": "BE-009",
-    "nombre": "Agua Purificada sin Gas Botellón 6L",
+    "nombre": "Agua Purificada Benedicto Botellón 6L",
     "descripcion": "Bidón familiar de agua purificada por osmosis inversa, bajo en sodio.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 76,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-009.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -1646,607 +946,47 @@
       },
       {
         "umbral": 6,
-        "precio": 1870,
-        "descuento_pct": 24.9
+        "precio": 1840,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "BE-010",
-    "nombre": "Bebida Gaseosa Sabor Limón 2.5L",
-    "descripcion": "Refresco carbonatado sabor lima limón sin azúcar, burbujeante.",
+    "nombre": "Bebida Sprite Lima-Limón 2.5 L",
+    "descripcion": "Recarga familiar de agua pura para dispensador frío y calor en Santiago.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 80,
+    "stock_actual": 73,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1581098365948-6a5a912b7a49?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-010.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1990,
+        "precio": 3990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
+        "precio": 3430,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
+        "precio": 2950,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "BE-011",
-    "nombre": "Bebida Gaseosa Sabor Naranja 2.5L",
-    "descripcion": "Gaseosa clásica con intenso sabor frutal a naranja valenciana.",
+    "nombre": "Bebida Fanta Naranja 2.5 L",
+    "descripcion": "Cerveza artesanal de Valdivia con notas a caramelo y 5.0° de alcohol.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 84,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-012",
-    "nombre": "Bebida Gaseosa Sabor Piña 2.5L",
-    "descripcion": "Refresco dulce y tropical muy popular en fiestas familiares.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 43,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-013",
-    "nombre": "Bebida Gaseosa Ginger Ale 1.5L",
-    "descripcion": "Bebida con extracto de jengibre natural, perfecta para coctelería.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 47,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-014",
-    "nombre": "Agua Tónica Premium 1.5L",
-    "descripcion": "Agua con quinina natural y burbuja persistente para tragos largos.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 51,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-015",
-    "nombre": "Cerveza Lager Tradicional Pack 6x330ml",
-    "descripcion": "Cerveza rubia de amargor moderado y final limpio con 4.8° de alcohol.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 55,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 4290,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-016",
-    "nombre": "Cerveza IPA Artesanal Sureña Pack 4x473ml",
-    "descripcion": "Cerveza lupulada de notas cítricas, herbales y final amargo intenso.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 59,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 5580,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 4870,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "BE-017",
-    "nombre": "Cerveza Negra Stout de Invierno Pack 4x330ml",
-    "descripcion": "Cerveza con maltas tostadas con notas a café espresso y chocolate.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 63,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1518099074172-bd5730d0db9e?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 5890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 5070,
-        "descuento_pct": 13.9
-      },
-      {
-        "umbral": 6,
-        "precio": 4420,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "BE-018",
-    "nombre": "Cerveza Sin Alcohol 0.0% Pack 6x330ml",
-    "descripcion": "Todo el sabor refrescante de la cebada malteada sin contenido alcohólico.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 67,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3860,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3370,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-019",
-    "nombre": "Bebida Energética Taurina y Cafeína 500ml",
-    "descripcion": "Fórmula estimulante enriquecida con vitaminas del complejo B.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 71,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "BE-020",
-    "nombre": "Bebida Energética Sin Azúcar 500ml",
-    "descripcion": "Energía concentrada sin calorías para jornadas deportivas o laborales.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 75,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "BE-021",
-    "nombre": "Bebida Isotónica Sabor Berry Blue 1L",
-    "descripcion": "Bebida hidratante con electrolitos para reponer sodio y potasio.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 79,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1630,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-022",
-    "nombre": "Bebida Isotónica Sabor Naranja Mandarina 1L",
-    "descripcion": "Fórmula rehidratante para deportistas con sales minerales esenciales.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 83,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1630,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-023",
-    "nombre": "Té Frío Helado Sabor Durazno 1.5L",
-    "descripcion": "Bebida ligera a base de extracto de té negro con dulce aroma a durazno.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 42,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1590,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-024",
-    "nombre": "Té Frío Helado Sabor Limón 1.5L",
-    "descripcion": "Refresco de té verde y jugo de limón para calmar la sed en verano.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 46,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1590,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-025",
-    "nombre": "Jugo Natural 100% Exprimido Naranja 1L",
-    "descripcion": "Jugo puro sin agua añadida ni azúcares refinados, refrigerado.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 50,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-026",
-    "nombre": "Jugo Natural de Arándanos Silvestres 1L",
-    "descripcion": "Bebida antioxidante con arándanos cosechados en el sur de Chile.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 54,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2830,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2470,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-027",
-    "nombre": "Bebida de Almendras Sin Azúcar 1L",
-    "descripcion": "Bebida vegetal alternativa a la leche, enriquecida con calcio y B12.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 58,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1970,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1720,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-028",
-    "nombre": "Bebida de Soya Vainilla 1L",
-    "descripcion": "Bebida vegetal cremosa con proteína vegetal y extracto de vainilla.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 62,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-029",
-    "nombre": "Agua Purificada con Gas Sabor Manzana 1.5L",
-    "descripcion": "Agua ligeramente gasificada con aroma sutil a manzana verde.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 66,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1559839914-ba2a5c5452d7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1020,
-        "descuento_pct": 14.3
-      },
-      {
-        "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-030",
-    "nombre": "Agua Purificada con Gas Sabor Pomelo 1.5L",
-    "descripcion": "Toque cítrico amargo sin calorías para acompañar almuerzos.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 70,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1559839914-ba2a5c5452d7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1020,
-        "descuento_pct": 14.3
-      },
-      {
-        "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "BE-031",
-    "nombre": "Vino Tinto Cabernet Sauvignon Reserva 750ml",
-    "descripcion": "Vino del valle de Colchagua con notas a mora, vainilla y roble francés.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 74,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/BE-011.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -2258,23 +998,23 @@
       {
         "umbral": 3,
         "precio": 5150,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 4490,
-        "descuento_pct": 25.0
+        "precio": 4430,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "BE-032",
-    "nombre": "Vino Tinto Carménère Valle Central 750ml",
-    "descripcion": "Cepa insignia chilena con taninos sedosos y toques a pimentón asado.",
+    "sku": "BE-012",
+    "nombre": "Bebida Crush Sabor Piña 2.5 L",
+    "descripcion": "Cerveza lager americana King of Beers de cuerpo suave y refrescante.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 78,
+    "stock_actual": 50,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-012.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -2286,51 +1026,51 @@
       {
         "umbral": 3,
         "precio": 4720,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 4120,
-        "descuento_pct": 25.0
+        "precio": 4060,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "BE-033",
-    "nombre": "Vino Blanco Sauvignon Blanc Costero 750ml",
-    "descripcion": "Blanco fresco y mineral con aromas a maracuyá y lima del valle de Casablanca.",
+    "sku": "BE-013",
+    "nombre": "Bebida Canada Dry Ginger Ale 1.5 L",
+    "descripcion": "Cepa chilena de taninos suaves y notas a especias del valle central.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 82,
+    "stock_actual": 55,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-013.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 4990,
+        "precio": 3990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 4290,
-        "descuento_pct": 14.0
+        "precio": 3430,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
+        "precio": 2950,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "BE-034",
-    "nombre": "Pisco Chileno Especial 35° Botella 1L",
-    "descripcion": "Destilado de uvas moscatel envejecido en cubas de roble.",
+    "sku": "BE-014",
+    "nombre": "Pisco Mistral 35° Botella 1L",
+    "descripcion": "Pisco añejado en barricas de roble americano en el valle del Elqui.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 41,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/BE-014.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -2346,19 +1086,19 @@
       },
       {
         "umbral": 6,
-        "precio": 5170,
-        "descuento_pct": 25.0
+        "precio": 5100,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "BE-035",
-    "nombre": "Pisco Reservado Transparente 40° 750ml",
-    "descripcion": "Pisco fino doble destilado ideal para pisco sour casero.",
+    "sku": "BE-015",
+    "nombre": "Pisco Alto del Carmen 40° Especial 750ml",
+    "descripcion": "Destilado fino de uvas moscatel con proceso de doble destilación.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 45,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 35,
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/BE-015.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -2370,387 +1110,107 @@
       {
         "umbral": 3,
         "precio": 6870,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 5990,
-        "descuento_pct": 25.0
+        "precio": 5910,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "BE-036",
-    "nombre": "Pack Coctelera Pisco 35° + Bebida Cola 2.5L",
-    "descripcion": "Combinado clásico para celebraciones de fin de semana.",
+    "sku": "BE-016",
+    "nombre": "Bebida Red Bull Energy Drink 250ml",
+    "descripcion": "Fórmula energizante con taurina y cafeína para vitalidad física.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 49,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 8490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 7300,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 6370,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "BE-037",
-    "nombre": "Espumante Brut Método Charmat 750ml",
-    "descripcion": "Burbujas finas y refrescantes para brindis y celebraciones.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 53,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 90,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/BE-016.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 4990,
+        "precio": 1690,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 4290,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-038",
-    "nombre": "Cerveza Artesanal Golden Ale 500ml",
-    "descripcion": "Cerveza rubia maltosa elaborada con agua de deshielo.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 57,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1880,
+        "precio": 1450,
         "descuento_pct": 14.2
       },
       {
         "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
+        "precio": 1250,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "BE-039",
-    "nombre": "Kombucha Fermentada Jengibre Limón 330ml",
-    "descripcion": "Té probiótico artesanal fermentado naturalmente para la digestión.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 61,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1970,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1720,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-040",
-    "nombre": "Kombucha Fermentada Frutos Rojos 330ml",
-    "descripcion": "Bebida viva sin pasteurizar con arándano y maqui silvestre.",
+    "sku": "BE-017",
+    "nombre": "Bebida Isotónica Gatorade Cool Blue 1L",
+    "descripcion": "Rehidratante deportivo formulado con sales minerales y electrolitos.",
     "categoria_tienda": "BEBIDAS",
     "stock_actual": 65,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-017.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2290,
+        "precio": 1890,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1970,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1720,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-041",
-    "nombre": "Bebida de Coco Sin Azúcar 1L",
-    "descripcion": "Bebida vegetal refrescante y ligera baja en carbohidratos.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 69,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2060,
+        "precio": 1630,
         "descuento_pct": 13.8
       },
       {
         "umbral": 6,
-        "precio": 1790,
-        "descuento_pct": 25.1
+        "precio": 1400,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
-    "sku": "BE-042",
-    "nombre": "Agua Purificada Bidón 20L Retornable",
-    "descripcion": "Recarga familiar para dispensador de frío y calor.",
+    "sku": "BE-018",
+    "nombre": "Bebida Canada Dry Ginger Ale 1.5 L",
+    "descripcion": "Gaseosa con extracto de jengibre natural, ideal para coctelería.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 73,
+    "stock_actual": 60,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3430,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2990,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "BE-043",
-    "nombre": "Limonada Casera con Menta y Jengibre 1L",
-    "descripcion": "Jugo exprimido fresco con hojas de menta orgánica molida.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 77,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-018.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2490,
+        "precio": 1890,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 2140,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1870,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-044",
-    "nombre": "Jarabe Concentrado de Frambuesa 1L",
-    "descripcion": "Jarabe dulce para diluir en agua mineral o coctelería.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 81,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2490,
+        "precio": 1630,
         "descuento_pct": 13.8
       },
       {
         "umbral": 6,
-        "precio": 2170,
-        "descuento_pct": 24.9
+        "precio": 1400,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
-    "sku": "BE-045",
-    "nombre": "Bebida Cola Zero Sin Cafeína 1.5L",
-    "descripcion": "Refresco clásico libre de azúcar y sin estimulantes nocturnos.",
+    "sku": "BE-019",
+    "nombre": "Cerveza Corona Extra Sixpack 6x330ml",
+    "descripcion": "Cerveza tipo clara muy refrescante para acompañar con limón.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 40,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-046",
-    "nombre": "Jugo en Polvo Sabor Naranja Pack 10 sobres",
-    "descripcion": "Polvo concentrado enriquecido con vitamina C para preparar 10L.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 44,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2500,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2150,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1880,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "BE-047",
-    "nombre": "Jugo en Polvo Sabor Frambuesa Pack 10 sobres",
-    "descripcion": "Rinde 1 litro por sobre, sin azúcar añadida.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 48,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2500,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2150,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1880,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "BE-048",
-    "nombre": "Bebida Tónica Zero Calorías 1.5L",
-    "descripcion": "Tónica amarga endulzada con sucralosa sin calorías.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 52,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "BE-049",
-    "nombre": "Cerveza Amber Ale Rojiza Pack 4x473ml",
-    "descripcion": "Cerveza acaramelada con notas a nuez y balance perfecto.",
-    "categoria_tienda": "BEBIDAS",
-    "stock_actual": 56,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/BE-019.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -2762,2291 +1222,415 @@
       {
         "umbral": 3,
         "precio": 5150,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 4490,
-        "descuento_pct": 25.0
+        "precio": 4430,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "BE-050",
-    "nombre": "Bebida Gasificada Sabor Pomelo Rosado 1.5L",
-    "descripcion": "Burbujas intensas y jugo de pomelo rosado natural.",
+    "sku": "BE-020",
+    "nombre": "Bebida Coca-Cola Sin Azúcar 1.5 L",
+    "descripcion": "Mismo sabor clásico de Coca-Cola libre de calorías y azúcares.",
     "categoria_tienda": "BEBIDAS",
-    "stock_actual": 60,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1559839914-ba2a5c5452d7?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 75,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/BE-020.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1590,
+        "precio": 1690,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
+        "precio": 1450,
+        "descuento_pct": 14.2
       },
       {
         "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
+        "precio": 1250,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "AS-001",
-    "nombre": "Detergente Líquido Activo Concentrado 3 Litros",
-    "descripcion": "Fórmula con enzimas activas remueve manchas difíciles en ropa blanca y color. Rinde 45 lavados.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 65,
+    "sku": "BE-021",
+    "nombre": "Bebida Crush Sabor Piña 2.5 L",
+    "descripcion": "Bebida dulce de tradicional sabor a piña tropical muy popular en Chile.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 55,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/BE-021.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 7990,
+        "precio": 1990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 6790,
-        "descuento_pct": 15.0
+        "precio": 1710,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 5890,
+        "precio": 1470,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "BE-022",
+    "nombre": "Agua Mineral Vital con Gas 1.5L",
+    "descripcion": "Agua mineralizada con burbuja fina refrescante y minerales puros.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 70,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/BE-022.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 850,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 730,
         "descuento_pct": 26.3
       }
     ]
   },
   {
-    "sku": "AS-002",
-    "nombre": "Cloro Gel Desinfectante Triple Acción 900ml",
-    "descripcion": "Máxima adherencia y desinfección profunda. Elimina 99.9% de gérmenes y bacterias en superficies.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 95,
-    "stock_minimo": 20,
-    "imagen_url": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80",
+    "sku": "BE-023",
+    "nombre": "Vino Santa Helena Sauvignon Blanc 750ml",
+    "descripcion": "Blanco fresco y cítrico ideal para pescados, mariscos y pastas.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/BE-023.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1790,
+        "precio": 3490,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1490,
-        "descuento_pct": 16.8
+        "precio": 3000,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 2580,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "BE-024",
+    "nombre": "Espumante Valdivieso Brut 750ml",
+    "descripcion": "Vino espumoso chileno de método Charmat con burbujas persistentes.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 35,
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/BE-024.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 4990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 4290,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 3690,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "BE-025",
+    "nombre": "Limonada Minuto Verde con Menta y Jengibre 1L",
+    "descripcion": "Jugo natural de limón exprimido con menta fresca para hidratación.",
+    "categoria_tienda": "BEBIDAS",
+    "stock_actual": 50,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/BE-025.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2490,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 2140,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1840,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "AS-001",
+    "nombre": "Detergente Líquido Omo Concentrado 3L",
+    "descripcion": "Detergente concentrado de alto poder para lavado de ropa blanca y de color.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AS-001.jpg",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 9990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 8590,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 7390,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "AS-002",
+    "nombre": "Cloro Gel Clorox Triple Acción 900ml",
+    "descripcion": "Desinfectante denso que elimina el 99.9% de gérmenes y bacterias.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 80,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AS-002.jpg",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1690,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1450,
+        "descuento_pct": 14.2
       },
       {
         "umbral": 6,
         "precio": 1250,
-        "descuento_pct": 30.2
+        "descuento_pct": 26
       }
     ]
   },
   {
     "sku": "AS-003",
-    "nombre": "Lavaloza Bio Antigrasa Limón 750ml",
-    "descripcion": "Poderoso desengrasante con extracto de limón. Suave con las manos, alto poder espumante.",
+    "nombre": "Lavaloza Quix Bio Antigrasa Limón 750ml",
+    "descripcion": "Detergente desengrasante ultra concentrado para vajilla impecable.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 110,
+    "stock_actual": 90,
     "stock_minimo": 15,
-    "imagen_url": "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AS-003.jpg",
     "activo": true,
-    "destacado": false,
+    "destacado": true,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1990,
+        "precio": 1890,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1690,
-        "descuento_pct": 15.1
+        "precio": 1630,
+        "descuento_pct": 13.8
       },
       {
         "umbral": 6,
-        "precio": 1390,
-        "descuento_pct": 30.2
+        "precio": 1400,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
     "sku": "AS-004",
-    "nombre": "Papel Higiénico Doble Hoja Premium Pack 8x25m",
-    "descripcion": "Máxima suavidad y resistencia. 8 rollos compactos de fibra virgen seleccionada.",
+    "nombre": "Papel Higiénico Elite Doble Hoja Pack 8x25m",
+    "descripcion": "Papel higiénico suave y absorbente con textura esponjosa de alta calidad.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 85,
-    "stock_minimo": 15,
-    "imagen_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 65,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/AS-004.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 3890,
+        "precio": 3490,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 3290,
-        "descuento_pct": 15.4
+        "precio": 3000,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2790,
-        "descuento_pct": 28.3
+        "precio": 2580,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "AS-005",
-    "nombre": "Cloro Gel Desinfectante Triple Acción 900ml",
-    "descripcion": "Fórmula densa que se adhiere a inodoros y superficies eliminando 99.9% de gérmenes.",
+    "nombre": "Toalla Nova Clásica Jumbo Absorbente",
+    "descripcion": "Papel toalla absorbente para cocina, limpieza de superficies y frituras.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 55,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 70,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/AS-005.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 1490,
+        "precio": 2190,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
+        "precio": 1880,
+        "descuento_pct": 14.2
       },
       {
         "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
+        "precio": 1620,
+        "descuento_pct": 26
       }
     ]
   },
   {
     "sku": "AS-006",
-    "nombre": "Jabón Líquido para Manos Antibacterial 1L",
-    "descripcion": "Jabón espumoso con glicerina vegetal y aroma a coco vainilla en botella recargable.",
+    "nombre": "Limpiapisos Poett Lavanda Silvestre 1.8L",
+    "descripcion": "Limpiador desinfectante con fragancia de larga duración para pisos y baños.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 57,
+    "stock_actual": 55,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1608248597359-5b77ff683d7a?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AS-006.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2190,
+        "precio": 2390,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 1880,
-        "descuento_pct": 14.2
+        "precio": 2060,
+        "descuento_pct": 13.8
       },
       {
         "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
+        "precio": 1770,
+        "descuento_pct": 25.9
       }
     ]
   },
   {
     "sku": "AS-007",
-    "nombre": "Shampoo Familiar Brillo y Suavidad 750ml",
-    "descripcion": "Cuidado capilar diario para toda la familia con extracto de manzanilla.",
+    "nombre": "Desengrasante Mr Músculo Cocina Gatillo 500ml",
+    "descripcion": "Disuelve grasa quemada y suciedad difícil en campanas y encimeras.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 59,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AS-007.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2990,
+        "precio": 2690,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
+        "precio": 2310,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
+        "precio": 1990,
+        "descuento_pct": 26
       }
     ]
   },
   {
     "sku": "AS-008",
-    "nombre": "Acondicionador Reparador Nutritivo 750ml",
-    "descripcion": "Crema de enjuague desenredante con aceite de argán para puntas secas.",
+    "nombre": "Limpiavidrios Glassex Gatillo 500ml",
+    "descripcion": "Fórmula sin marcas para ventanas, cristales y espejos relucientes.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 61,
+    "stock_actual": 50,
     "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AS-008.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2990,
+        "precio": 1990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
+        "precio": 1710,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
+        "precio": 1470,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
     "sku": "AS-009",
-    "nombre": "Pasta Dental Protección Anticaries 90g",
-    "descripcion": "Crema dental con flúor activo y micropartículas blanqueadoras.",
+    "nombre": "Detergente en Polvo Ariel Doble Poder 3kg",
+    "descripcion": "Remueve manchas profundas cuidando las fibras y colores de tu ropa.",
     "categoria_tienda": "ASEO",
-    "stock_actual": 63,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1559591937-e1032b4923e3?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AS-010",
-    "nombre": "Cepillo Dental Cerdas Medias Pack 3u",
-    "descripcion": "Cabezal ergonómico con limpiador lingual y mango antideslizante.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 65,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-011",
-    "nombre": "Papel Higiénico Doble Hoja Premium Pack 12u",
-    "descripcion": "Rollos de papel ultra absorbente y suave con fibras 100% vírgenes.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 67,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 4290,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-012",
-    "nombre": "Toalla de Papel Absorbente Jumbo 120m",
-    "descripcion": "Rollo gigante de cocina con tecnología de absorción rápida de grasas.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 69,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2790,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2400,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2090,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-013",
-    "nombre": "Bolsas de Basura Resistentes 70x90cm 10u",
-    "descripcion": "Bolsas gruesas con fuelle inferior antigoteo para tachos de cocina y jardín.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 71,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1610492421922-12f2284d7c0f?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AS-014",
-    "nombre": "Esponjas de Cocina Salvaúñas Pack 3u",
-    "descripcion": "Fibra verde abrasiva de alta duración unida a esponja de celulosa suave.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 73,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1020,
-        "descuento_pct": 14.3
-      },
-      {
-        "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AS-015",
-    "nombre": "Limpiapisos Lavanda Silvestre 1.8L",
-    "descripcion": "Detergente para pisos lavables con perfume de larga duración.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 75,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1630,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-016",
-    "nombre": "Desengrasante de Cocina Gatillo 500ml",
-    "descripcion": "Disuelve grasa quemada en hornos, campanas y encimeras sin frotar fuerte.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 77,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1880,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-017",
-    "nombre": "Limpiador de Vidrios y Cristales 500ml",
-    "descripcion": "Líquido transparente que elimina marcas dactilares y polvo sin dejar vetas.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 79,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-018",
-    "nombre": "Detergente en Polvo Matic 3kg",
-    "descripcion": "Poder limpiador con enzimas activas para lavado a máquina en agua fría.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 46,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 5990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 5150,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 4490,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "AS-019",
-    "nombre": "Suavizante de Ropa Concentrado 1L",
-    "descripcion": "Fragancia floral duradera que deja las prendas fáciles de planchar.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 48,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2310,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 2020,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-020",
-    "nombre": "Quitamanchas de Ropa Oxígeno Activo 1L",
-    "descripcion": "Gel sin cloro seguro para telas blancas y de color.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 50,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2490,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 2170,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-021",
-    "nombre": "Pastillas Cloro para Estanque WC 2u",
-    "descripcion": "Mantiene la taza del baño higienizada y azul en cada descarga.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 52,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1200,
-        "descuento_pct": 13.7
-      },
-      {
-        "umbral": 6,
-        "precio": 1040,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AS-022",
-    "nombre": "Lustramuebles Aerosol Aroma Madera 360ml",
-    "descripcion": "Cera protectora que repele el polvo y da brillo a superficies barnizadas.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 54,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1970,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 1720,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-023",
-    "nombre": "Desodorante Ambiental Lavanda 360ml",
-    "descripcion": "Neutralizador de olores en aerosol para living, dormitorios y baños.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 56,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AS-024",
-    "nombre": "Paños de Microfibra Multiuso Pack 4u",
-    "descripcion": "Atrapan el polvo en seco y absorben líquidos sin rayar pantallas ni muebles.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 58,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-025",
-    "nombre": "Guantes de Goma para Aseo Talla M",
-    "descripcion": "Guantes de látex con interior afelpado para proteger las manos en el lavado.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 60,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 850,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 740,
-        "descuento_pct": 25.3
-      }
-    ]
-  },
-  {
-    "sku": "AS-026",
-    "nombre": "Escobillón de Cerdas Suaves sin Mango",
-    "descripcion": "Cerdas despuntadas que no rayan pisos flotantes ni cerámicas.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 62,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1590,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1370,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1190,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AS-027",
-    "nombre": "Mango de Metal con Rosca Universal 1.2m",
-    "descripcion": "Mango liviano plastificado adaptable a escobillones y mopas.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 64,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AS-028",
-    "nombre": "Mopa Trapeadora de Algodón Gruesa 250g",
-    "descripcion": "Hilos de algodón absorbente para limpieza profunda de pasillos.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 66,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1630,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-029",
-    "nombre": "Balde con Escurridor de Mopa 12L",
-    "descripcion": "Balde plástico reforzado con manija ergonómica y prensa escurridora.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 68,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3690,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3220,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-030",
-    "nombre": "Jabón en Barra Blanco Puro 3x120g",
-    "descripcion": "Jabón neutro humectante sin parabenos para piel sensible.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 70,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1608248597359-5b77ff683d7a?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1450,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1270,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-031",
-    "nombre": "Toallitas Húmedas Desinfectantes 40u",
-    "descripcion": "Toallitas antibacteriales listas para desinfectar manillas, llaves y celulares.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 72,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584556812952-905ffd0c611a?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1280,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1120,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AS-032",
-    "nombre": "Alcohol Gel Sanitizante de Manos 500ml",
-    "descripcion": "Gel al 70% con aloe vera de secado instantáneo sin sensación pegajosa.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 74,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-033",
-    "nombre": "Insecticida en Aerosol Casa y Jardín 400ml",
-    "descripcion": "Eficaz contra moscas, zancudos, hormigas y cucarachas sin olor residual.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 76,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2790,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2400,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2090,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-034",
-    "nombre": "Tabletas Antisarro para Hervidor Pack 3u",
-    "descripcion": "Elimina incrustaciones de calcio en hervidores eléctricos y cafeteras.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 78,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "AS-035",
-    "nombre": "Limpia Tapices y Alfombras en Espuma 400ml",
-    "descripcion": "Espuma activa que levanta manchas y suciedad seca de sofás y alfombras.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 45,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-036",
-    "nombre": "Virutilla de Acero Fina Pack 4u",
-    "descripcion": "Rollos de viruta metálica para desengrasar ollas y sartenes pesados.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 47,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 770,
-        "descuento_pct": 13.5
-      },
-      {
-        "umbral": 6,
-        "precio": 670,
-        "descuento_pct": 24.7
-      }
-    ]
-  },
-  {
-    "sku": "AS-037",
-    "nombre": "Limpia Metales y Bronce en Crema 200ml",
-    "descripcion": "Devuelve el brillo original a cubiertos, candelabros y adornos de cobre.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 49,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2140,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1870,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-038",
-    "nombre": "Desincrustante Sarro de Baño Gatillo 500ml",
-    "descripcion": "Disuelve sarro acumulado en griferías y mamparas de ducha.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 51,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2060,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1790,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-039",
-    "nombre": "Cera Líquida Autobrillo para Pisos 900ml",
-    "descripcion": "Cera acrílica que no requiere lustradora y deja un sellado impermeable.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 53,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2490,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 2170,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-040",
-    "nombre": "Removedor de Cera para Pisos 1L",
-    "descripcion": "Elimina capas viejas de cera para preparar el piso antes de renovar.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 55,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2310,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 2020,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-041",
-    "nombre": "Bolsas de Basura Jardinería 80x120cm 10u",
-    "descripcion": "Bolsas extra resistentes para poda de pasto, hojas y escombros livianos.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 57,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1610492421922-12f2284d7c0f?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2060,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1790,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-042",
-    "nombre": "Dispensador de Jabón Automático con Sensor",
-    "descripcion": "Dispositivo higiénico a pilas que dosifica sin contacto físico.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 59,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1608248597359-5b77ff683d7a?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 6010,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 5240,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "AS-043",
-    "nombre": "Pastilla Antipolillas para Armarios 100g",
-    "descripcion": "Protege ropa de lana y telas finas de insectos con suave aroma a cedro.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 61,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1020,
-        "descuento_pct": 14.3
-      },
-      {
-        "umbral": 6,
-        "precio": 890,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AS-044",
-    "nombre": "Detergente para Lavavajillas en Tabletas 20u",
-    "descripcion": "Fórmula con sal incorporada que deja copas y vajilla impecables.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 63,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 4290,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-045",
-    "nombre": "Abrillantador para Lavavajillas 500ml",
-    "descripcion": "Acelera el secado y previene manchas de agua en el cristal.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 65,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2690,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2310,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 2020,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-046",
-    "nombre": "Escobilla Limpiadora de Botellas y Mamaderas",
-    "descripcion": "Cerdas cilíndricas que limpian fondos angostos sin rayar.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 67,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1390,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1200,
-        "descuento_pct": 13.7
-      },
-      {
-        "umbral": 6,
-        "precio": 1040,
-        "descuento_pct": 25.2
-      }
-    ]
-  },
-  {
-    "sku": "AS-047",
-    "nombre": "Set de Paños de Cocina de Algodón Pack 3u",
-    "descripcion": "Paños secadores de tela nido de abeja de alto gramaje.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 69,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2140,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1870,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-048",
-    "nombre": "Destapacañerías en Gel Ultra Fuerte 1L",
-    "descripcion": "Disuelve grasa, cabellos y restos orgánicos en desagües tapados.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 71,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2830,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2470,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "AS-049",
-    "nombre": "Gel Antibacterial para Inodoro con Aplicador",
-    "descripcion": "Sello de gel que dura hasta 6 semanas perfumando y limpiando la taza.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 73,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1880,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "AS-050",
-    "nombre": "Esponja Mágica Borradora de Manchas Pack 2u",
-    "descripcion": "Microespuma de melamina que limpia paredes, zapatillas y rodapiés solo con agua.",
-    "categoria_tienda": "ASEO",
-    "stock_actual": 75,
-    "stock_minimo": 10,
-    "imagen_url": "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1110,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
-      }
-    ]
-  },
-  {
-    "sku": "DI-001",
-    "nombre": "Disfraz Superhéroe Nocturno Capa y Antifaz Talla Única",
-    "descripcion": "Capa de satín negro premium con antifaz ergonómico ajustable. Para eventos y cosplay.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 12990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 10990,
-        "descuento_pct": 15.4
-      },
-      {
-        "umbral": 6,
-        "precio": 8990,
-        "descuento_pct": 30.8
-      }
-    ]
-  },
-  {
-    "sku": "DI-002",
-    "nombre": "Máscara LED Neón Cosplay Fiesta Cyberpunk",
-    "descripcion": "Iluminación neón fría en 3 modos: fija, parpadeo lento y rápido. No calienta el rostro.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 42,
+    "stock_actual": 40,
     "stock_minimo": 8,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 8990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 7490,
-        "descuento_pct": 16.7
-      },
-      {
-        "umbral": 6,
-        "precio": 5990,
-        "descuento_pct": 33.4
-      }
-    ]
-  },
-  {
-    "sku": "DI-003",
-    "nombre": "Set Cotillón Carnaval Neón Glow Pack 25 Personas",
-    "descripcion": "Pack de fiesta temático: pulseras luminosas, antifaces metalizados, corbatas y serpentinas.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 14990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 12490,
-        "descuento_pct": 16.7
-      },
-      {
-        "umbral": 6,
-        "precio": 9990,
-        "descuento_pct": 33.4
-      }
-    ]
-  },
-  {
-    "sku": "DI-004",
-    "nombre": "Sombrero Mago Galera Terciopelo con Varita Mágica",
-    "descripcion": "Galera de alta costura con forro satinado y varita con punta metálica. Clásico infaltable.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 5790,
-        "descuento_pct": 17.2
-      },
-      {
-        "umbral": 6,
-        "precio": 4690,
-        "descuento_pct": 32.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-005",
-    "nombre": "Máscara Scream Clásica de Terror",
-    "descripcion": "Máscara de vinilo flexible con capucha de tela negra para fiestas de Halloween.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3430,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2990,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-006",
-    "nombre": "Disfraz de Bruja Hechicera de la Noche Talla M",
-    "descripcion": "Vestido largo negro con tul brillante y sombrero puntiagudo incluido.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 14990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 12890,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 11240,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-007",
-    "nombre": "Disfraz de Pirata del Caribe con Accesorios Talla L",
-    "descripcion": "Incluye camisa renacentista, chaleco símil cuero, cinturón y parche.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 16990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 14610,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 12740,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-008",
-    "nombre": "Capa de Vampiro Doble Faz Negro y Rojo 140cm",
-    "descripcion": "Capa satinada con cuello alto estructurado reversible para eventos nocturnos.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 7990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 6870,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 5990,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-009",
-    "nombre": "Peluca Afro Gigante Fiesta Disco Multicolor",
-    "descripcion": "Peluca sintética voluminosa de fibras rizadas para fiestas de disfraces.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3860,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3370,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-010",
-    "nombre": "Antifaz Veneciano Dorado con Plumas Elegantes",
-    "descripcion": "Máscara decorativa con detalles de filigrana metálica y lazo de ajuste.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3000,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2620,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-011",
-    "nombre": "Sombrero Cowboy Vaquero Gamuzado Café",
-    "descripcion": "Sombrero clásico del viejo oeste con ribete reforzado y correa ajustable.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 5990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 5150,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 4490,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-012",
-    "nombre": "Alas de Ángel Blancas de Plumas 60x45cm",
-    "descripcion": "Alas elaboradas con plumas naturales y elásticos cómodos para los brazos.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 6010,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 5240,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-013",
-    "nombre": "Disfraz de Superhéroe Murciélago Nocturno",
-    "descripcion": "Enterito elastizado con músculos termoformados y capa desmontable.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 18990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 16330,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 14240,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-014",
-    "nombre": "Diadema con Cuernos de Diabla Iluminados LED",
-    "descripcion": "Cintillo con cuernos rojos brillantes con baterías incluidas.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-015",
-    "nombre": "Set de Pintura Facial Artística 6 Colores con Pincel",
-    "descripcion": "Maquillaje al agua hipoalergénico no tóxico fácil de remover.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3430,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2990,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-016",
-    "nombre": "Sangre Falsa Teatral Espesa 60ml",
-    "descripcion": "Líquido de efectos especiales realista para heridas de maquillaje.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1710,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-017",
-    "nombre": "Dientes de Vampiro con Adhesivo Termoplástico",
-    "descripcion": "Colmillos realistas reutilizables que se amoldan a la dentadura.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2140,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 1870,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-018",
-    "nombre": "Disfraz Inflable de Dinosaurio T-Rex Adulto",
-    "descripcion": "Traje inflable con turbina a pilas integrada de rápida hinchada.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 28990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 24930,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 21740,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-019",
-    "nombre": "Disfraz de Esqueleto Fosforescente Enterito",
-    "descripcion": "Mono de cuerpo entero que brilla en la oscuridad bajo luz ultravioleta.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 12990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 11170,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 9740,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-020",
-    "nombre": "Máscara Veneciana Plateada Phantom Fantasma",
-    "descripcion": "Media máscara rígida de ópera con cinta de satén.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3290,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2830,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2470,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-021",
-    "nombre": "Gafas Retro Hippie Años 60 Cristales Redondos",
-    "descripcion": "Lentes redondos con marco metálico dorado y lunas de colores.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2190,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1880,
-        "descuento_pct": 14.2
-      },
-      {
-        "umbral": 6,
-        "precio": 1640,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-022",
-    "nombre": "Set Hawaiano Collar, Corona y Pulseras de Flores",
-    "descripcion": "Juego de 4 piezas con pétalos multicolores para fiestas de verano.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2790,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2400,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2090,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-023",
-    "nombre": "Disfraz de Científico Loco Bata Blanca y Gafas",
-    "descripcion": "Bata de laboratorio con manchas estampadas y gafas de protección.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 13990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 12030,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 10490,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-024",
-    "nombre": "Peluca Rubia Ondulada Larga Glamour",
-    "descripcion": "Fibras sintéticas de aspecto natural para personajes de fantasía.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 6990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 6010,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 5240,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-025",
-    "nombre": "Peluca de Payaso Rizada Roja Clásica",
-    "descripcion": "Peluca multicolor esponjosa para animación de cumpleaños y shows.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3430,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2990,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-026",
-    "nombre": "Nariz de Payaso de Espuma Suave Pack 3u",
-    "descripcion": "Nariz esférica con ranura para calzar cómodo en la nariz.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 850,
-        "descuento_pct": 14.1
-      },
-      {
-        "umbral": 6,
-        "precio": 740,
-        "descuento_pct": 25.3
-      }
-    ]
-  },
-  {
-    "sku": "DI-027",
-    "nombre": "Espada de Pirata Sable Curvo Infantil",
-    "descripcion": "Arma de juguete segura en plástico liviano con empuñadura dorada.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-028",
-    "nombre": "Varita Mágica de Hechicero con Luces y Sonido",
-    "descripcion": "Varita inspirada en escuelas de magia con punta LED interactiva.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3430,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2990,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-029",
-    "nombre": "Sombrero Chistera Copa Alta Satinado Negro",
-    "descripcion": "Sombrero victoriano para magos, caballeros antiguos y cabaret.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 4290,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-030",
-    "nombre": "Tirantes Elásticos y Humita de Fiesta Rojo",
-    "descripcion": "Conjunto de gala divertido ajustable con clips de acero.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3000,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2620,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-031",
-    "nombre": "Máscara de Payaso Diabólico con Pelo Sintético",
-    "descripcion": "Látex de alto detalle para caracterizaciones de terror espeluznantes.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/AS-009.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -5058,79 +1642,219 @@
       {
         "umbral": 3,
         "precio": 7730,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 6740,
-        "descuento_pct": 25.0
+        "precio": 6650,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "DI-032",
-    "nombre": "Disfraz de Policía Infantil Camisa y Placa",
-    "descripcion": "Incluye camisa oficial azul marino con insignia, gorro y esposas de plástico.",
-    "categoria_tienda": "DISFRACES",
+    "sku": "AS-010",
+    "nombre": "Suavizante Soft Floral Concentrado 3L",
+    "descripcion": "Brinda aroma prolongado y suavidad extrema a prendas de algodón.",
+    "categoria_tienda": "ASEO",
     "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/AS-010.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 15990,
+        "precio": 4990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 13750,
-        "descuento_pct": 14.0
+        "precio": 4290,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 11990,
-        "descuento_pct": 25.0
+        "precio": 3690,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-033",
-    "nombre": "Gorro de Marinero Blanco con Ancla Bordada",
-    "descripcion": "Gorra clásica de capitán de barco para celebraciones temáticas.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
+    "sku": "AS-011",
+    "nombre": "Jabón Líquido Dove Nutrición Profunda 700ml",
+    "descripcion": "Jabón con 1/4 de crema humectante para el cuidado de manos y cuerpo.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 60,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/AS-011.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 3290,
+        "precio": 2990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 2830,
-        "descuento_pct": 14.0
+        "precio": 2570,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2470,
-        "descuento_pct": 24.9
+        "precio": 2210,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-034",
-    "nombre": "Parche de Pirata con Calavera Pack 2u",
-    "descripcion": "Parche acolchado con elástico suave para el ojo.",
-    "categoria_tienda": "DISFRACES",
+    "sku": "AS-012",
+    "nombre": "Shampoo Sedal Restauración Instantánea 650ml",
+    "descripcion": "Cuidado capilar diario con keratina para reparar el daño en el cabello.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 50,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/AS-012.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 3690,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 3170,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 2730,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "AS-013",
+    "nombre": "Acondicionador Pantene Restauración 650ml",
+    "descripcion": "Crema acondicionadora enriquecida con provitaminas para suavidad y brillo.",
+    "categoria_tienda": "ASEO",
     "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AS-013.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 3890,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 3350,
+        "descuento_pct": 13.9
+      },
+      {
+        "umbral": 6,
+        "precio": 2880,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "AS-014",
+    "nombre": "Pasta Dental Colgate Total 12 Limpieza Profunda 90g",
+    "descripcion": "Protección antibacterial avanzada por 12 horas contra caries y placa.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 85,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AS-014.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1490,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1280,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1100,
+        "descuento_pct": 26.2
+      }
+    ]
+  },
+  {
+    "sku": "AS-015",
+    "nombre": "Cepillo Dental Oral-B Indicator Pack 3u",
+    "descripcion": "Cerdas con indicador de desgaste y cabezal redondeado para encías.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 65,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/AS-015.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2490,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 2140,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1840,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "AS-016",
+    "nombre": "Bolsas de Basura Virutex Resistentes 70x90cm 10u",
+    "descripcion": "Bolsas de alta densidad antifiltraciones para tachos de cocina y patio.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 90,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AS-016.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1690,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1450,
+        "descuento_pct": 14.2
+      },
+      {
+        "umbral": 6,
+        "precio": 1250,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "AS-017",
+    "nombre": "Esponjas de Cocina Virutex Salvaúñas Pack 3u",
+    "descripcion": "Fibra verde abrasiva y esponja con ranura ergonómica para proteger uñas.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 80,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AS-017.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -5142,25 +1866,81 @@
       {
         "umbral": 3,
         "precio": 1110,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 970,
-        "descuento_pct": 24.8
+        "precio": 950,
+        "descuento_pct": 26.4
       }
     ]
   },
   {
-    "sku": "DI-035",
-    "nombre": "Bigotes Postizos Autoadhesivos Set 6 Estilos",
-    "descripcion": "Variedad de bigotes postizos divertidos de fácil pegado y retiro.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
+    "sku": "AS-018",
+    "nombre": "Guantes Virutex Multiuso Amarillos Talla M",
+    "descripcion": "Guantes de látex con interior de algodón para labores de limpieza hogareña.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 70,
+    "stock_minimo": 12,
+    "imagen_url": "/images/products/AS-018.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1490,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1280,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1100,
+        "descuento_pct": 26.2
+      }
+    ]
+  },
+  {
+    "sku": "AS-019",
+    "nombre": "Paños de Microfibra Virutex Pack 4u",
+    "descripcion": "Paños ultra absorbentes que atrapan polvo y suciedad sin rayar superficies.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 55,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/AS-019.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 2570,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 2210,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "AS-020",
+    "nombre": "Desodorante Ambiental Glade Campos de Lavanda 360ml",
+    "descripcion": "Aerosol aromatizante instantáneo que neutraliza olores en el hogar.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 60,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/AS-020.jpg",
+    "activo": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
@@ -5174,159 +1954,47 @@
       },
       {
         "umbral": 6,
-        "precio": 1490,
-        "descuento_pct": 25.1
+        "precio": 1470,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-036",
-    "nombre": "Corona de Rey Dorada con Pedrería Fantasía",
-    "descripcion": "Corona metálica regulable con terciopelo rojo central.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 4490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3860,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 3370,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-037",
-    "nombre": "Tiara de Princesa Plateada con Cristales",
-    "descripcion": "Diadema brillante para cumpleaños y disfraces de cuentos de hadas.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 2990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 2570,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
-      }
-    ]
-  },
-  {
-    "sku": "DI-038",
-    "nombre": "Disfraz de Prisionero Rayas Blanco y Negro",
-    "descripcion": "Remera y pantalón a rayas con número de convicto estampado.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 11990,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 10310,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 8990,
-        "descuento_pct": 25.0
-      }
-    ]
-  },
-  {
-    "sku": "DI-039",
-    "nombre": "Guantes Blancos de Algodón para Mimo o Mago",
-    "descripcion": "Guantes finos elásticos de muñeca cerrada.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": false,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 1890,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 1630,
-        "descuento_pct": 13.8
-      },
-      {
-        "umbral": 6,
-        "precio": 1420,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-040",
-    "nombre": "Boina Negra Francesa de Fieltro Clásica",
-    "descripcion": "Boina tradicional para disfraces de pintor, artista o mimo.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
-    "activo": true,
-    "destacado": true,
-    "tramos": [
-      {
-        "umbral": 1,
-        "precio": 3490,
-        "descuento_pct": 0
-      },
-      {
-        "umbral": 3,
-        "precio": 3000,
-        "descuento_pct": 14.0
-      },
-      {
-        "umbral": 6,
-        "precio": 2620,
-        "descuento_pct": 24.9
-      }
-    ]
-  },
-  {
-    "sku": "DI-041",
-    "nombre": "Capa de Superhéroe Infantil con Antifaz",
-    "descripcion": "Capa de raso brillante con cierre de velcro en el cuello.",
-    "categoria_tienda": "DISFRACES",
+    "sku": "AS-021",
+    "nombre": "Pastilla para Inodoro Harpic Power Plus 2u",
+    "descripcion": "Canastillo higiénico desinfectante que limpia en cada descarga de agua.",
+    "categoria_tienda": "ASEO",
     "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/AS-021.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2290,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1970,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 1690,
+        "descuento_pct": 26.2
+      }
+    ]
+  },
+  {
+    "sku": "AS-022",
+    "nombre": "Mopa Trapeadora de Microfibra con Mango",
+    "descripcion": "Mopa giratoria de limpieza profunda para pisos flotantes y cerámicos.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 30,
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/AS-022.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -5338,51 +2006,79 @@
       {
         "umbral": 3,
         "precio": 4290,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 3740,
-        "descuento_pct": 25.1
+        "precio": 3690,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-042",
-    "nombre": "Máscara de Lobo Hombre con Piel Falsa",
-    "descripcion": "Careta aterradora con dientes afilados y pelaje tupido.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 25,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    "sku": "AS-023",
+    "nombre": "Virutilla de Acero Inoxidable Virutex Pack 2u",
+    "descripcion": "Espirales de acero para remover grasa adherida en ollas y sartenes.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 85,
+    "stock_minimo": 15,
+    "imagen_url": "/images/products/AS-023.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 7990,
+        "precio": 990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 6870,
-        "descuento_pct": 14.0
+        "precio": 850,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 5990,
-        "descuento_pct": 25.0
+        "precio": 730,
+        "descuento_pct": 26.3
       }
     ]
   },
   {
-    "sku": "DI-043",
-    "nombre": "Gorra de Graduado Birrete Universitario Negro",
-    "descripcion": "Birrete tradicional con borla dorada para eventos de licenciatura.",
-    "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80",
+    "sku": "AS-024",
+    "nombre": "Jabón en Barra Rexona Antibacterial 3x120g",
+    "descripcion": "Jabón de tocador desodorante que elimina hasta el 99% de bacterias.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 65,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/AS-024.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2190,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1880,
+        "descuento_pct": 14.2
+      },
+      {
+        "umbral": 6,
+        "precio": 1620,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "AS-025",
+    "nombre": "Destapacañerías Drano Líquido Potente 1L",
+    "descripcion": "Fórmula en gel que disuelve obstrucciones de grasa y cabello en desagües.",
+    "categoria_tienda": "ASEO",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/AS-025.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -5394,25 +2090,81 @@
       {
         "umbral": 3,
         "precio": 3430,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2990,
-        "descuento_pct": 25.1
+        "precio": 2950,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-044",
-    "nombre": "Disfraz de Ninja Sombra con Pasamontañas",
-    "descripcion": "Traje completo negro con cintas rojas cruzadas y máscara facial.",
+    "sku": "DI-001",
+    "nombre": "Disfraz Spiderman Infantil con Máscara Talla M",
+    "descripcion": "Traje de superhéroe con estampado full color y máscara desmontable.",
     "categoria_tienda": "DISFRACES",
     "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/DI-001.jpg",
     "activo": true,
-    "destacado": false,
+    "destacado": true,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 12990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 11170,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 9610,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-002",
+    "nombre": "Disfraz Merlina Addams Vestido Negro Niña Talla L",
+    "descripcion": "Vestido clásico gótico de fiesta con cuello blanco y detalles satinados.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 30,
+    "stock_minimo": 5,
+    "imagen_url": "/images/products/DI-002.jpg",
+    "activo": true,
+    "destacado": true,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 14990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 12890,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 11090,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-003",
+    "nombre": "Disfraz Harry Potter Capa y Varita Mágica Talla Única",
+    "descripcion": "Túnica de mago de Gryffindor con capucha forrada y varita de hechicero.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 25,
+    "stock_minimo": 5,
+    "imagen_url": "/images/products/DI-003.jpg",
+    "activo": true,
+    "destacado": true,
     "tramos": [
       {
         "umbral": 1,
@@ -5422,51 +2174,51 @@
       {
         "umbral": 3,
         "precio": 13750,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 11990,
-        "descuento_pct": 25.0
+        "precio": 11830,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "DI-045",
-    "nombre": "Guadaña de la Muerte Desarmable en 4 Piezas",
-    "descripcion": "Accesorio plástico de 1 metro de largo liviano y seguro.",
+    "sku": "DI-004",
+    "nombre": "Disfraz Pirata del Caribe con Accesorios Adulto Talla L",
+    "descripcion": "Camisa, chaleco, cinturón, parche y bandana de bucanero de los mares.",
     "categoria_tienda": "DISFRACES",
-    "stock_actual": 40,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 20,
+    "stock_minimo": 4,
+    "imagen_url": "/images/products/DI-004.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 3290,
+        "precio": 16990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 2830,
-        "descuento_pct": 14.0
+        "precio": 14610,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2470,
-        "descuento_pct": 24.9
+        "precio": 12570,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "DI-046",
-    "nombre": "Tridente de Diablo Rojo Desarmable",
-    "descripcion": "Horquilla infernal de 1.1m en plástico desmontable.",
+    "sku": "DI-005",
+    "nombre": "Máscara La Casa de Papel Salvador Dalí",
+    "descripcion": "Máscara rígida de plástico con el icónico rostro de Dalí y elástico.",
     "categoria_tienda": "DISFRACES",
-    "stock_actual": 45,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 50,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/DI-005.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -5478,51 +2230,415 @@
       {
         "umbral": 3,
         "precio": 2570,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2240,
-        "descuento_pct": 25.1
+        "precio": 2210,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-047",
-    "nombre": "Antifaz de Gatita Negra con Encaje y Orejas",
-    "descripcion": "Diseño misterioso con antifaz calado y orejitas erguidas.",
+    "sku": "DI-006",
+    "nombre": "Máscara Scream Clásica de Terror Halloween",
+    "descripcion": "Máscara de fantasma con capucha de tela negra para fiestas de disfraces.",
     "categoria_tienda": "DISFRACES",
-    "stock_actual": 50,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-006.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 2890,
+        "precio": 3490,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 2490,
-        "descuento_pct": 13.8
+        "precio": 3000,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 2170,
-        "descuento_pct": 24.9
+        "precio": 2580,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-048",
-    "nombre": "Disfraz Inflable de Extraterrestre Alien Verde",
-    "descripcion": "El traje simula que un extraterrestre te lleva en brazos.",
+    "sku": "DI-007",
+    "nombre": "Máscara LED Neón Cosplay Fiesta Cyberpunk",
+    "descripcion": "Máscara iluminada con hilo electroluminiscente y control de 3 modos.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 35,
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/DI-007.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 7990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 6870,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 5910,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-008",
+    "nombre": "Capa Drácula Vampiro Reversible Negro y Rojo 140cm",
+    "descripcion": "Capa con cuello rígido alto de terciopelo para caracterización de conde.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-008.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 6990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 6010,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 5170,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-009",
+    "nombre": "Sombrero Seleccionador de Mago Terciopelo",
+    "descripcion": "Sombrero arrugado café con expresiones faciales bordadas para magos.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 30,
+    "stock_minimo": 5,
+    "imagen_url": "/images/products/DI-009.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 5490,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 4720,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 4060,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-010",
+    "nombre": "Boina Vasca de Fieltro Clásica Negra",
+    "descripcion": "Gorra boina francesa tradicional de lana/fieltro para mimos y artistas.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-010.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 4990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 4290,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 3690,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-011",
+    "nombre": "Peluca Afro Gigante Fiesta Disco Multicolor",
+    "descripcion": "Peluca voluminosa de rulos sintéticos para carnaval y fiestas retro.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-011.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 4990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 4290,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 3690,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-012",
+    "nombre": "Set Bigotes Postizos Autoadhesivos 6 Diseños",
+    "descripcion": "Variedad de bigotes postizos autoadhesivos de felpa para disfraces.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 60,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/DI-012.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1710,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1470,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-013",
+    "nombre": "Corona de Rey Dorada con Pedrería Fiesta",
+    "descripcion": "Accesorio real decorativo para rey o príncipe con gemas de fantasía.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 35,
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/DI-013.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 3290,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 2830,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 2430,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-014",
+    "nombre": "Tiara de Princesa Plateada con Cristales",
+    "descripcion": "Corona tiara brillante con peinetas para sujetar al cabello de niñas.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-014.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 2570,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 2210,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-015",
+    "nombre": "Sangre Falsa Teatral Halloween 60ml",
+    "descripcion": "Maquillaje de efectos especiales de alta viscosidad y fácil remoción.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 55,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/DI-015.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1710,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1470,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-016",
+    "nombre": "Set Cotillón Fiesta Neón Glow Pack 25 Personas",
+    "descripcion": "Pulseras luminosas, lentes glow, collares y barras flúor para eventos.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 30,
+    "stock_minimo": 5,
+    "imagen_url": "/images/products/DI-016.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 8990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 7730,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 6650,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-017",
+    "nombre": "Antifaz Veneciano Dorado con Plumas Elegante",
+    "descripcion": "Máscara de gala veneciana con ribetes dorados y cinta de amarre.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 35,
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/DI-017.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 3990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 3430,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 2950,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-018",
+    "nombre": "Sombrero Cowboy Vaquero Gamuzado Café",
+    "descripcion": "Sombrero estilo western texano con cordón ajustable para fiestas temáticas.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-018.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 4990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 4290,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 3690,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-019",
+    "nombre": "Alas de Ángel Blancas de Plumas 60x45cm",
+    "descripcion": "Alas elaboradas con plumas naturales y elásticos cómodos para hombros.",
     "categoria_tienda": "DISFRACES",
     "stock_actual": 25,
     "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "imagen_url": "/images/products/DI-019.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 6990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 6010,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 5170,
+        "descuento_pct": 26
+      }
+    ]
+  },
+  {
+    "sku": "DI-020",
+    "nombre": "Disfraz Inflable Dinosaurio T-Rex Adulto",
+    "descripcion": "Traje inflable de cuerpo entero con ventilador a pilas para gran diversión.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 15,
+    "stock_minimo": 3,
+    "imagen_url": "/images/products/DI-020.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
@@ -5534,68 +2650,152 @@
       {
         "umbral": 3,
         "precio": 25790,
-        "descuento_pct": 14.0
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 22490,
-        "descuento_pct": 25.0
+        "precio": 22190,
+        "descuento_pct": 26
       }
     ]
   },
   {
-    "sku": "DI-049",
-    "nombre": "Máscara de Animal Látex Cabeza de Caballo",
-    "descripcion": "Máscara viral cómica de cabeza entera con crin sintética.",
+    "sku": "DI-021",
+    "nombre": "Espada de Pirata Sable Curvo Infantil",
+    "descripcion": "Sable plástico liviano y seguro con empuñadura dorada de corsario.",
     "categoria_tienda": "DISFRACES",
-    "stock_actual": 30,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    "stock_actual": 45,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-021.jpg",
     "activo": true,
     "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 9990,
+        "precio": 2490,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 8590,
-        "descuento_pct": 14.0
+        "precio": 2140,
+        "descuento_pct": 14.1
       },
       {
         "umbral": 6,
-        "precio": 7490,
-        "descuento_pct": 25.0
+        "precio": 1840,
+        "descuento_pct": 26.1
       }
     ]
   },
   {
-    "sku": "DI-050",
-    "nombre": "Disfraz de Astronauta Mameluco Espacial Blanco",
-    "descripcion": "Enterito con parches bordados de misión espacial y cinturones.",
+    "sku": "DI-022",
+    "nombre": "Peluca de Payaso Rizada Roja Clásica",
+    "descripcion": "Peluca de fiesta con rulos sintéticos rojos de alta densidad para circo.",
     "categoria_tienda": "DISFRACES",
     "stock_actual": 35,
-    "stock_minimo": 5,
-    "imagen_url": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "stock_minimo": 6,
+    "imagen_url": "/images/products/DI-022.jpg",
     "activo": true,
-    "destacado": true,
+    "destacado": false,
     "tramos": [
       {
         "umbral": 1,
-        "precio": 19990,
+        "precio": 3990,
         "descuento_pct": 0
       },
       {
         "umbral": 3,
-        "precio": 17190,
-        "descuento_pct": 14.0
+        "precio": 3430,
+        "descuento_pct": 14
       },
       {
         "umbral": 6,
-        "precio": 14990,
-        "descuento_pct": 25.0
+        "precio": 2950,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-023",
+    "nombre": "Nariz de Payaso de Espuma Pack 3u",
+    "descripcion": "Narices rojas de gomaespuma blanda con ranura anatómica cómoda.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 60,
+    "stock_minimo": 10,
+    "imagen_url": "/images/products/DI-023.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1490,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1280,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1100,
+        "descuento_pct": 26.2
+      }
+    ]
+  },
+  {
+    "sku": "DI-024",
+    "nombre": "Guantes Blancos de Algodón para Mimo o Mago",
+    "descripcion": "Guantes elásticos finos de tela blanca para caracterización teatral.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 50,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-024.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 1990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 1710,
+        "descuento_pct": 14.1
+      },
+      {
+        "umbral": 6,
+        "precio": 1470,
+        "descuento_pct": 26.1
+      }
+    ]
+  },
+  {
+    "sku": "DI-025",
+    "nombre": "Diadema con Cuernos de Diabla Iluminados LED",
+    "descripcion": "Cintillo rojo con cuernos luminosos y botón de encendido para fiestas.",
+    "categoria_tienda": "DISFRACES",
+    "stock_actual": 40,
+    "stock_minimo": 8,
+    "imagen_url": "/images/products/DI-025.jpg",
+    "activo": true,
+    "destacado": false,
+    "tramos": [
+      {
+        "umbral": 1,
+        "precio": 2990,
+        "descuento_pct": 0
+      },
+      {
+        "umbral": 3,
+        "precio": 2570,
+        "descuento_pct": 14
+      },
+      {
+        "umbral": 6,
+        "precio": 2210,
+        "descuento_pct": 26.1
       }
     ]
   }

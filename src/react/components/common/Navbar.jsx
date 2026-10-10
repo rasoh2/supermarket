@@ -1,10 +1,20 @@
 import React from 'react';
 import { useAuth } from '../../context/AuthContext.jsx';
 import { useCart } from '../../context/CartContext.jsx';
+import { useCatalog } from '../../context/CatalogContext.jsx';
 
 export default function Navbar({ currentView, onNavigate }) {
   const { totalUnidades, openCart } = useCart();
   const { user, isAuthenticated, logout } = useAuth();
+  const { resetFilters } = useCatalog();
+
+  const handleGoToCatalog = () => {
+    resetFilters();
+    onNavigate('catalog');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
+  };
 
   return (
     <header className="navbar-custom sticky-top py-2" id="main-site-header">
@@ -13,7 +23,7 @@ export default function Navbar({ currentView, onNavigate }) {
         <div 
           className="d-flex align-items-center cursor-pointer text-decoration-none" 
           role="button" 
-          onClick={() => onNavigate('catalog')}
+          onClick={handleGoToCatalog}
           id="navbar-brand-btn"
         >
           <div className="brand-badge-logo">SM</div>
@@ -28,8 +38,8 @@ export default function Navbar({ currentView, onNavigate }) {
           <button
             id="nav-btn-catalog"
             className={`btn btn-sm ${currentView === 'catalog' ? 'btn-primary' : 'btn-outline-light'}`}
-            onClick={() => onNavigate('catalog')}
-            title="Catálogo"
+            onClick={handleGoToCatalog}
+            title="Ver catálogo completo"
           >
             <i className="bi bi-shop me-1"></i> <span className="d-none d-sm-inline">Catálogo</span>
           </button>

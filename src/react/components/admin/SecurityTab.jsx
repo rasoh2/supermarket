@@ -37,7 +37,7 @@ export default function SecurityTab() {
             Bitácora de Seguridad SIEM (CU-12)
           </h4>
           <p className="text-secondary small mb-0">
-            Registro inmutable de auditoría: intentos de acceso, bloqueos WAF (XSS/SQLi) y mutaciones críticas.
+            Bitácora de auditoría interna: accesos de usuarios, eventos de seguridad y cambios administrativos.
           </p>
         </div>
 

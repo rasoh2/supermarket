@@ -5,16 +5,17 @@
   "type": "module",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "server": "node server/server.js",
+    "start": "node --env-file=.env server/server.js",
+    "server": "node --env-file=.env server/server.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/cli-test-runner.js && node tests/test-admin-view.js && node tests/test-sqlite-api.js && node tests/test-crypto-security.js",
-    "test:cli": "node tests/cli-test-runner.js",
-    "test:admin": "node tests/test-admin-view.js",
-    "test:sqlite": "node tests/test-sqlite-api.js",
-    "test:crypto": "node tests/test-crypto-security.js"
+    "test": "node --env-file=.env tests/cli-test-runner.js && node --env-file=.env tests/test-admin-view.js && node --env-file=.env tests/test-sqlite-api.js && node --env-file=.env tests/test-crypto-security.js && node tests/test-qa-admin-auth.js",
+    "test:cli": "node --env-file=.env tests/cli-test-runner.js",
+    "test:admin": "node --env-file=.env tests/test-admin-view.js",
+    "test:sqlite": "node --env-file=.env tests/test-sqlite-api.js",
+    "test:crypto": "node --env-file=.env tests/test-crypto-security.js",
+    "test:qa": "node tests/test-qa-admin-auth.js"
   },
   "keywords": [
     "marketplace",
